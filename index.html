@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Comparador de Juegos - Steam, GOG, GMG</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Catálogo de Juegos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <style>
     * {
       box-sizing: border-box;
@@ -21,136 +22,182 @@
     }
 
     header {
-      padding: 1rem 2rem;
-      background: #020617;
+      padding: 1.5rem 1.5rem 0.75rem;
       border-bottom: 1px solid #1f2937;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
+      background: #020617;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     header h1 {
-      font-size: 1.4rem;
-      font-weight: 600;
-      color: #fbbf24;
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
     }
 
-    .filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      align-items: center;
-    }
-
-    .filters label {
+    header p {
       font-size: 0.9rem;
       color: #9ca3af;
     }
 
-    .filters select, .filters input {
-      padding: 0.4rem 0.6rem;
-      border-radius: 0.5rem;
-      border: 1px solid #4b5563;
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .controls select,
+    .controls input {
       background: #020617;
+      border: 1px solid #374151;
       color: #e5e7eb;
+      padding: 0.4rem 0.7rem;
+      border-radius: 0.5rem;
       font-size: 0.9rem;
     }
 
+    .controls input::placeholder {
+      color: #6b7280;
+    }
+
     main {
+      padding: 1.25rem;
       flex: 1;
-      padding: 1.5rem 2rem 2rem;
+    }
+
+    .stats {
+      margin-bottom: 1rem;
+      font-size: 0.85rem;
+      color: #9ca3af;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
     }
 
     .card {
       background: #020617;
-      border-radius: 0.9rem;
+      border-radius: 0.8rem;
       border: 1px solid #1f2937;
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.35);
       transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
     }
 
     .card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 16px 30px rgba(0,0,0,0.5);
-      border-color: #4b5563;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      border-color: #22c55e;
     }
 
     .card img {
       width: 100%;
-      height: 140px;
+      height: 150px;
       object-fit: cover;
       background: #111827;
     }
 
     .card-body {
-      padding: 0.9rem 1rem 1rem;
+      padding: 0.9rem 0.9rem 0.8rem;
       display: flex;
       flex-direction: column;
-      gap: 0.35rem;
+      gap: 0.4rem;
       flex: 1;
     }
 
-    .card-title {
-      font-size: 0.98rem;
-      font-weight: 600;
-      color: #f9fafb;
-      line-height: 1.2;
-      min-height: 2.4em;
+    .title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.4rem;
     }
 
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      padding: 0.2rem 0.5rem;
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .badge-site {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.5rem;
       border-radius: 999px;
-      font-size: 0.75rem;
-      font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.03em;
+      background: #111827;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      white-space: nowrap;
     }
-
-    .badge-steam { background: rgba(56,189,248,0.15); color: #38bdf8; }
-    .badge-gog   { background: rgba(244,114,182,0.15); color: #f472b6; }
-    .badge-gmg   { background: rgba(52,211,153,0.15); color: #34d399; }
 
     .price-row {
       display: flex;
       align-items: baseline;
       gap: 0.4rem;
-      margin-top: 0.25rem;
+      font-size: 0.95rem;
+      flex-wrap: wrap;
     }
 
     .price-discount {
-      font-weight: 700;
-      color: #4ade80;
-      font-size: 1rem;
+      color: #22c55e;
+      font-weight: 600;
     }
 
     .price-regular {
+      color: #6b7280;
+      text-decoration: line-through;
+      font-size: 0.85rem;
+    }
+
+    .discount-label {
+      font-size: 0.75rem;
+      color: #f97316;
+      background: rgba(248, 113, 113, 0.1);
+      padding: 0.1rem 0.45rem;
+      border-radius: 999px;
+      border: 1px solid rgba(248, 113, 113, 0.4);
+    }
+
+    .discount-label.no-discount {
+      color: #9ca3af;
+      background: transparent;
+      border-color: #4b5563;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
       font-size: 0.8rem;
       color: #9ca3af;
-      text-decoration: line-through;
+    }
+
+    .meta-row span {
+      padding: 0.12rem 0.4rem;
+      border-radius: 999px;
+      background: #020617;
+      border: 1px solid #1f2937;
     }
 
     .rating {
-      font-size: 0.85rem;
-      color: #fbbf24;
+      color: #facc15;
+      font-weight: 600;
     }
 
-    .hours {
-      font-size: 0.78rem;
-      color: #9ca3af;
+    .hltb {
+      color: #38bdf8;
+    }
+
+    .dist {
+      color: #a855f7;
+    }
+
+    .platforms {
+      color: #6ee7b7;
     }
 
     .card-footer {
@@ -158,477 +205,376 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 0.4rem;
+      font-size: 0.8rem;
     }
 
-    .btn {
-      border: none;
-      border-radius: 999px;
-      padding: 0.45rem 0.9rem;
-      font-size: 0.8rem;
-      cursor: pointer;
-      font-weight: 500;
+    .btn-link {
       display: inline-flex;
       align-items: center;
-      gap: 0.3rem;
-      transition: background 0.12s ease, transform 0.12s ease, box-shadow 0.12s ease;
-      white-space: nowrap;
+      gap: 0.25rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 999px;
+      border: 1px solid #22c55e;
+      color: #22c55e;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 500;
+      background: transparent;
+      transition: background 0.15s ease, color 0.15s ease;
     }
 
-    .btn-details {
-      background: linear-gradient(135deg,#4f46e5,#7c3aed);
-      color: #f9fafb;
-      box-shadow: 0 4px 12px rgba(79,70,229,0.45);
+    .btn-link:hover {
+      background: #22c55e;
+      color: #001b0d;
     }
 
-    .btn-details:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 6px 16px rgba(79,70,229,0.6);
+    .updated-at {
+      color: #6b7280;
     }
 
-    .btn-store {
-      background: rgba(15,23,42,0.8);
-      color: #e5e7eb;
-      border: 1px solid #4b5563;
-    }
-
-    .btn-store:hover {
-      background: #111827;
-    }
-
-    .empty-msg {
+    .no-results {
       margin-top: 2rem;
       text-align: center;
       color: #9ca3af;
-      font-size: 0.95rem;
-    }
-
-    /* MODAL DETALLE */
-
-    .modal-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(15,23,42,0.8);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-      z-index: 30;
-    }
-
-    .modal-backdrop.show {
-      display: flex;
-    }
-
-    .modal {
-      background: #020617;
-      border-radius: 1rem;
-      border: 1px solid #4b5563;
-      max-width: 720px;
-      width: 100%;
-      max-height: 90vh;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 25px 50px rgba(0,0,0,0.9);
-    }
-
-    .modal-header {
-      padding: 0.9rem 1.2rem;
-      border-bottom: 1px solid #1f2937;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 0.6rem;
-    }
-
-    .modal-header h2 {
-      font-size: 1rem;
-      font-weight: 600;
-      color: #f9fafb;
-    }
-
-    .modal-close {
-      background: transparent;
-      border: none;
-      color: #9ca3af;
-      font-size: 1.2rem;
-      cursor: pointer;
-    }
-
-    .modal-body {
-      padding: 0.9rem 1.2rem 1.1rem;
-      overflow-y: auto;
-      display: grid;
-      grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
-      gap: 1rem;
-    }
-
-    .modal-body img {
-      width: 100%;
-      border-radius: 0.7rem;
-      object-fit: cover;
-      max-height: 220px;
-      background: #020617;
-    }
-
-    .modal-section {
       font-size: 0.9rem;
-      color: #d1d5db;
     }
 
-    .modal-section h3 {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #9ca3af;
-      margin-bottom: 0.3rem;
+    @media (max-width: 900px) {
+      .controls {
+        flex-direction: column;
+        align-items: stretch;
+      }
     }
 
-    .modal-row {
-      margin-bottom: 0.35rem;
-    }
-
-    .modal-row span.label {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #9ca3af;
-      display: block;
-    }
-
-    .modal-row span.value {
-      font-size: 0.92rem;
-      color: #e5e7eb;
-    }
-
-    .modal-footer {
-      padding: 0.8rem 1.2rem 1rem;
-      border-top: 1px solid #1f2937;
-      display: flex;
-      justify-content: flex-end;
-      gap: 0.6rem;
-      flex-wrap: wrap;
-    }
-
-    .store-link {
-      text-decoration: none;
-    }
-
-    @media (max-width: 720px) {
+    @media (max-width: 600px) {
       header {
-        padding: 1rem;
+        padding: 1rem 1rem 0.5rem;
       }
       main {
         padding: 1rem;
-      }
-      .modal-body {
-        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Comparador de Juegos · Steam · GOG · GMG</h1>
-    <div class="filters">
-      <label for="storeFilter">Tienda:</label>
+    <h1>Catálogo de Juegos</h1>
+    <p>Datos generados automáticamente desde Steam, GOG y Green Man Gaming (GMG).</p>
+    <div class="controls">
+      <!-- TIENDA -->
       <select id="storeFilter">
-        <option value="all">Todas</option>
+        <option value="all">Todas las tiendas</option>
         <option value="steam">Steam</option>
         <option value="gog">GOG</option>
-        <option value="gmg">GMG</option>
+        <option value="gmg">Green Man Gaming</option>
       </select>
 
-      <label for="searchInput">Buscar:</label>
-      <input type="text" id="searchInput" placeholder="Nombre del juego...">
+      <!-- FORMATO -->
+      <select id="formatFilter">
+        <option value="all">Todos los formatos</option>
+        <option value="digital">Digital</option>
+        <option value="fisico">Físico</option>
+        <option value="mixto">Digital y físico</option>
+        <option value="otro">Otro / sin info</option>
+      </select>
+
+      <!-- PLATAFORMA (se rellena dinámicamente) -->
+      <select id="platformFilter">
+        <option value="all">Todas las plataformas</option>
+      </select>
+
+      <!-- ORDENAR -->
+      <select id="orderSelect">
+        <option value="default">Orden original</option>
+        <option value="name-asc">Nombre (A → Z)</option>
+        <option value="name-desc">Nombre (Z → A)</option>
+        <option value="price-asc">Precio (más barato primero)</option>
+        <option value="price-desc">Precio (más caro primero)</option>
+        <option value="discount-desc">% Descuento (mayor primero)</option>
+        <option value="discount-asc">% Descuento (menor primero)</option>
+        <option value="rating-desc">Metacritic (mayor primero)</option>
+        <option value="rating-asc">Metacritic (menor primero)</option>
+      </select>
+
+      <!-- BUSCADOR -->
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Buscar por nombre de juego..."
+      />
     </div>
   </header>
 
   <main>
-    <div id="cardsContainer" class="grid"></div>
-    <div id="emptyMessage" class="empty-msg" style="display:none;">
+    <div class="stats" id="stats">
+      Cargando datos...
+    </div>
+    <div class="grid" id="gamesGrid"></div>
+    <div class="no-results" id="noResults" style="display:none;">
       No se encontraron juegos con esos filtros.
     </div>
   </main>
 
-  <!-- MODAL DETALLE -->
-  <div id="modalBackdrop" class="modal-backdrop">
-    <div class="modal">
-      <div class="modal-header">
-        <h2 id="modalTitle">Título del juego</h2>
-        <button class="modal-close" id="modalCloseBtn">&times;</button>
-      </div>
-      <div class="modal-body">
-        <div>
-          <img id="modalImage" src="" alt="Portada del juego">
-        </div>
-        <div class="modal-section">
-          <div class="modal-row">
-            <span class="label">Tienda</span>
-            <span class="value" id="modalStore"></span>
-          </div>
-          <div class="modal-row">
-            <span class="label">Precio normal</span>
-            <span class="value" id="modalPriceRegular"></span>
-          </div>
-          <div class="modal-row">
-            <span class="label">Precio con descuento</span>
-            <span class="value" id="modalPriceDiscount"></span>
-          </div>
-          <div class="modal-row">
-            <span class="label">Rating</span>
-            <span class="value" id="modalRating"></span>
-          </div>
-          <div class="modal-row">
-            <span class="label">Plataformas</span>
-            <span class="value" id="modalPlatforms"></span>
-          </div>
-          <div class="modal-row">
-            <span class="label">Horas estimadas de juego (HowLongToBeat)</span>
-            <span class="value" id="modalHLTB"></span>
-          </div>
-          <div class="modal-row">
-            <span class="label">Tipo de distribución</span>
-            <span class="value" id="modalDistribution"></span>
-          </div>
-          <div class="modal-row">
-            <span class="label">URL original</span>
-            <span class="value" id="modalUrl"></span>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <a id="modalStoreLink" href="#" target="_blank" rel="noopener noreferrer" class="store-link">
-          <button class="btn btn-store">Ver en tienda original</button>
-        </a>
-        <button class="btn btn-details" id="modalCloseBtn2">Cerrar</button>
-      </div>
-    </div>
-  </div>
-
   <script>
-    const cardsContainer = document.getElementById('cardsContainer');
-    const emptyMessage = document.getElementById('emptyMessage');
-    const storeFilter = document.getElementById('storeFilter');
-    const searchInput = document.getElementById('searchInput');
-
-    const modalBackdrop = document.getElementById('modalBackdrop');
-    const modalTitle = document.getElementById('modalTitle');
-    const modalImage = document.getElementById('modalImage');
-    const modalStore = document.getElementById('modalStore');
-    const modalPriceRegular = document.getElementById('modalPriceRegular');
-    const modalPriceDiscount = document.getElementById('modalPriceDiscount');
-    const modalRating = document.getElementById('modalRating');
-    const modalPlatforms = document.getElementById('modalPlatforms');
-    const modalHLTB = document.getElementById('modalHLTB');
-    const modalDistribution = document.getElementById('modalDistribution');
-    const modalUrl = document.getElementById('modalUrl');
-    const modalStoreLink = document.getElementById('modalStoreLink');
-    const modalCloseBtn = document.getElementById('modalCloseBtn');
-    const modalCloseBtn2 = document.getElementById('modalCloseBtn2');
+    const grid = document.getElementById("gamesGrid");
+    const statsEl = document.getElementById("stats");
+    const storeFilter = document.getElementById("storeFilter");
+    const formatFilter = document.getElementById("formatFilter");
+    const platformFilter = document.getElementById("platformFilter");
+    const orderSelect = document.getElementById("orderSelect");
+    const searchInput = document.getElementById("searchInput");
+    const noResultsEl = document.getElementById("noResults");
 
     let allGames = [];
 
-    function getStoreBadgeClass(site) {
-      if (site === 'steam') return 'badge badge-steam';
-      if (site === 'gog') return 'badge badge-gog';
-      if (site === 'gmg') return 'badge badge-gmg';
-      return 'badge';
-    }
-
-    function getStoreLabel(site) {
-      if (site === 'steam') return 'Steam';
-      if (site === 'gog') return 'GOG';
-      if (site === 'gmg') return 'Green Man Gaming';
-      return site || 'Desconocida';
-    }
-
     function formatPrice(value) {
-      if (value === null || value === undefined || value === '' || isNaN(Number(value))) {
-        return 'N/D';
+      if (value === null || value === undefined || value === "" || isNaN(value)) {
+        return "N/D";
       }
-      const num = Number(value);
-      return num.toFixed(2) + ' USD';
+      return "₡" + Number(value).toFixed(2);
     }
 
-    function openModal(game) {
-      modalTitle.textContent = game.name || 'Juego sin nombre';
-      modalImage.src = game.image_url || 'https://via.placeholder.com/460x215/333333/ffffff?text=Juego';
-      modalImage.alt = game.name || 'Juego';
-
-      modalStore.textContent = getStoreLabel(game.site);
-      modalPriceRegular.textContent = formatPrice(game.price_regular);
-      modalPriceDiscount.textContent = formatPrice(game.price_discount);
-      modalRating.textContent = game.rating ? game.rating + ' / 100' : 'N/D';
-
-      let platforms = game.platforms;
-      if (Array.isArray(platforms)) {
-        platforms = platforms.join(', ');
+    function calcDiscountPercent(regular, discount) {
+      if (
+        regular === null || discount === null ||
+        regular === undefined || discount === undefined ||
+        isNaN(regular) || isNaN(discount) ||
+        regular <= 0
+      ) {
+        return null;
       }
-      modalPlatforms.textContent = platforms || 'No especificadas';
-
-      if (game.howlongtobeat !== null && game.howlongtobeat !== undefined && game.howlongtobeat !== '') {
-        modalHLTB.textContent = game.howlongtobeat + ' horas aprox.';
-      } else {
-        modalHLTB.textContent = 'N/D';
-      }
-
-      modalDistribution.textContent = game.distribution_type || 'N/D';
-
-      if (game.url) {
-        modalUrl.textContent = game.url;
-        modalStoreLink.href = game.url;
-      } else {
-        modalUrl.textContent = 'No disponible';
-        modalStoreLink.href = '#';
-      }
-
-      modalBackdrop.classList.add('show');
+      const pct = Math.round((1 - (discount / regular)) * 100);
+      if (!isFinite(pct) || pct <= 0) return null;
+      return pct;
     }
 
-    function closeModal() {
-      modalBackdrop.classList.remove('show');
+    function capitalizeSite(site) {
+      if (!site) return "";
+      if (site.toLowerCase() === "gmg") return "Green Man Gaming";
+      if (site.toLowerCase() === "gog") return "GOG";
+      if (site.toLowerCase() === "steam") return "Steam";
+      return site.toUpperCase();
     }
 
-    modalCloseBtn.addEventListener('click', closeModal);
-    modalCloseBtn2.addEventListener('click', closeModal);
-    modalBackdrop.addEventListener('click', (e) => {
-      if (e.target === modalBackdrop) closeModal();
-    });
+    function normalizedFormat(raw) {
+      const t = (raw || "").toLowerCase();
+      const hasDigital = t.includes("digital");
+      const hasFisico = t.includes("físico") || t.includes("fisico");
 
-    function renderCards(games) {
-      cardsContainer.innerHTML = '';
+      if (hasDigital && hasFisico) return "mixto";
+      if (hasDigital) return "digital";
+      if (hasFisico) return "fisico";
+      if (!t) return "otro";
+      return "otro";
+    }
 
-      if (!games || games.length === 0) {
-        emptyMessage.style.display = 'block';
-        return;
-      } else {
-        emptyMessage.style.display = 'none';
+    function renderGames() {
+      const storeVal = storeFilter.value;
+      const formatVal = formatFilter.value;
+      const platformVal = platformFilter.value;
+      const query = searchInput.value.trim().toLowerCase();
+
+      let filtered = allGames.slice();
+
+      // FILTRO POR TIENDA
+      if (storeVal !== "all") {
+        filtered = filtered.filter(g => (g.site || "").toLowerCase() === storeVal);
       }
 
-      games.forEach((game, index) => {
-        const card = document.createElement('article');
-        card.className = 'card';
+      // FILTRO POR FORMATO
+      if (formatVal !== "all") {
+        filtered = filtered.filter(g => {
+          const f = normalizedFormat(g.distribution_type);
+          return f === formatVal;
+        });
+      }
 
-        const img = document.createElement('img');
-        img.src = game.image_url || 'https://via.placeholder.com/460x215/333333/ffffff?text=Juego';
-        img.alt = game.name || 'Juego';
+      // FILTRO POR PLATAFORMA
+      if (platformVal !== "all") {
+        filtered = filtered.filter(g =>
+          (g.platforms || []).map(p => String(p)).includes(platformVal)
+        );
+      }
 
-        const body = document.createElement('div');
-        body.className = 'card-body';
+      // FILTRO POR TEXTO
+      if (query) {
+        filtered = filtered.filter(g =>
+          (g.name || "").toLowerCase().includes(query)
+        );
+      }
 
-        const title = document.createElement('h2');
-        title.className = 'card-title';
-        title.textContent = game.name || 'Juego sin nombre';
+      // ORDENAMIENTO
+      const sortVal = orderSelect.value;
+      if (sortVal !== "default") {
+        filtered.sort((a, b) => {
+          const aReg = Number(a.price_regular);
+          const aDis = Number(a.price_discount);
+          const bReg = Number(b.price_regular);
+          const bDis = Number(b.price_discount);
+          const aPct = calcDiscountPercent(aReg, aDis) ?? -1;
+          const bPct = calcDiscountPercent(bReg, bDis) ?? -1;
 
-        const storeBadge = document.createElement('span');
-        storeBadge.className = getStoreBadgeClass(game.site);
-        storeBadge.textContent = getStoreLabel(game.site);
+          switch (sortVal) {
+            case "name-asc":
+              return (a.name || "").localeCompare(b.name || "");
+            case "name-desc":
+              return (b.name || "").localeCompare(a.name || "");
+            case "price-asc": {
+              const pa = isNaN(aDis) ? Infinity : aDis;
+              const pb = isNaN(bDis) ? Infinity : bDis;
+              return pa - pb;
+            }
+            case "price-desc": {
+              const pa = isNaN(aDis) ? -Infinity : aDis;
+              const pb = isNaN(bDis) ? -Infinity : bDis;
+              return pb - pa;
+            }
+            case "discount-desc":
+              return bPct - aPct;
+            case "discount-asc":
+              return aPct - bPct;
+            case "rating-desc": {
+              const ra = Number(a.rating) || 0;
+              const rb = Number(b.rating) || 0;
+              return rb - ra;
+            }
+            case "rating-asc": {
+              const ra2 = Number(a.rating) || 0;
+              const rb2 = Number(b.rating) || 0;
+              return ra2 - rb2;
+            }
+            default:
+              return 0;
+          }
+        });
+      }
 
-        const priceRow = document.createElement('div');
-        priceRow.className = 'price-row';
+      // RENDER
+      grid.innerHTML = "";
 
-        const priceDiscount = document.createElement('span');
-        priceDiscount.className = 'price-discount';
-        priceDiscount.textContent = formatPrice(game.price_discount);
+      if (filtered.length === 0) {
+        noResultsEl.style.display = "block";
+      } else {
+        noResultsEl.style.display = "none";
+      }
 
-        const priceRegular = document.createElement('span');
-        priceRegular.className = 'price-regular';
-        priceRegular.textContent = formatPrice(game.price_regular);
+      filtered.forEach(game => {
+        const regular = Number(game.price_regular);
+        const discount = Number(game.price_discount);
+        const pct = calcDiscountPercent(regular, discount);
 
-        priceRow.appendChild(priceDiscount);
-        priceRow.appendChild(priceRegular);
+        const card = document.createElement("article");
+        card.className = "card";
 
-        const rating = document.createElement('div');
-        rating.className = 'rating';
-        rating.textContent = game.rating ? `⭐ ${game.rating}/100` : '⭐ N/D';
+        const imgSrc = game.image_url || "https://via.placeholder.com/460x215/333333/ffffff?text=Juego";
 
-        const hours = document.createElement('div');
-        hours.className = 'hours';
-        if (game.howlongtobeat !== null && game.howlongtobeat !== undefined && game.howlongtobeat !== '') {
-          hours.textContent = `⏱ ${game.howlongtobeat} h aprox.`;
-        } else {
-          hours.textContent = '⏱ N/D';
-        }
+        const discountLabel = pct
+          ? `<span class="discount-label">-${pct}%</span>`
+          : `<span class="discount-label no-discount">Sin descuento</span>`;
 
-        const footer = document.createElement('div');
-        footer.className = 'card-footer';
+        card.innerHTML = `
+          <img src="${imgSrc}" alt="${game.name || "Juego"}" loading="lazy" />
+          <div class="card-body">
+            <div class="title-row">
+              <h2 class="card-title" title="${game.name || ""}">${game.name || "Juego sin nombre"}</h2>
+              <span class="badge-site">${capitalizeSite(game.site)}</span>
+            </div>
 
-        const detailsBtn = document.createElement('button');
-        detailsBtn.className = 'btn btn-details';
-        detailsBtn.textContent = 'Ver detalles';
-        detailsBtn.addEventListener('click', () => openModal(game));
+            <div class="price-row">
+              <span class="price-discount">${formatPrice(discount)}</span>
+              ${
+                regular && discount && regular !== discount
+                  ? `<span class="price-regular">${formatPrice(regular)}</span>`
+                  : ""
+              }
+              ${discountLabel}
+            </div>
 
-        const storeLink = document.createElement('a');
-        storeLink.target = '_blank';
-        storeLink.rel = 'noopener noreferrer';
-        storeLink.href = game.url || '#';
-        const storeBtn = document.createElement('button');
-        storeBtn.className = 'btn btn-store';
-        storeBtn.textContent = 'Ver en tienda';
-        storeLink.appendChild(storeBtn);
+            <div class="meta-row">
+              <span class="rating">⭐ Metacritic: ${game.rating || "N/D"}</span>
+              <span class="hltb">⏱ ${game.howlongtobeat ? game.howlongtobeat + " h" : "N/D"}</span>
+              <span class="dist">${game.distribution_type || "Digital"}</span>
+              <span class="platforms">${(game.platforms || []).join(", ") || "N/D"}</span>
+            </div>
 
-        footer.appendChild(detailsBtn);
-        footer.appendChild(storeLink);
+            <div class="card-footer">
+              <a class="btn-link" href="${game.url || "#"}" target="_blank" rel="noopener noreferrer">
+                Ver en tienda
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+        `;
 
-        body.appendChild(title);
-        body.appendChild(storeBadge);
-        body.appendChild(priceRow);
-        body.appendChild(rating);
-        body.appendChild(hours);
-        body.appendChild(footer);
+        grid.appendChild(card);
+      });
 
-        card.appendChild(img);
-        card.appendChild(body);
+      const total = allGames.length;
+      const current = filtered.length;
+      const bySite = {
+        steam: allGames.filter(g => (g.site || "").toLowerCase() === "steam").length,
+        gog: allGames.filter(g => (g.site || "").toLowerCase() === "gog").length,
+        gmg: allGames.filter(g => (g.site || "").toLowerCase() === "gmg").length,
+      };
 
-        cardsContainer.appendChild(card);
+      const now = new Date();
+      const formattedDate = now.toLocaleString("es-CR", {
+        dateStyle: "short",
+        timeStyle: "short"
+      });
+
+      statsEl.innerHTML = `
+        Mostrando <strong>${current}</strong> de <strong>${total}</strong> juegos. 
+        Steam: ${bySite.steam} · GOG: ${bySite.gog} · GMG: ${bySite.gmg} 
+        <span class="updated-at">| Última actualización local: ${formattedDate}</span>
+      `;
+    }
+
+    function fillPlatformFilter() {
+      const set = new Set();
+      allGames.forEach(g => {
+        (g.platforms || []).forEach(p => {
+          if (p) set.add(String(p));
+        });
+      });
+
+      platformFilter.innerHTML = '<option value="all">Todas las plataformas</option>';
+      Array.from(set).sort().forEach(p => {
+        const opt = document.createElement("option");
+        opt.value = p;
+        opt.textContent = p;
+        platformFilter.appendChild(opt);
       });
     }
 
-    function applyFilters() {
-      const storeValue = storeFilter.value;
-      const searchValue = searchInput.value.trim().toLowerCase();
-
-      const filtered = allGames.filter(game => {
-        let okStore = storeValue === 'all' || (game.site && game.site.toLowerCase() === storeValue);
-        let okSearch = true;
-
-        if (searchValue) {
-          const name = (game.name || '').toLowerCase();
-          okSearch = name.includes(searchValue);
+    async function loadData() {
+      try {
+        const res = await fetch("results.json?_=" + Date.now());
+        if (!res.ok) {
+          statsEl.textContent = "No se pudo cargar results.json. Revisa que el archivo exista en el mismo directorio.";
+          return;
         }
-
-        return okStore && okSearch;
-      });
-
-      renderCards(filtered);
-    }
-
-    storeFilter.addEventListener('change', applyFilters);
-    searchInput.addEventListener('input', applyFilters);
-
-    fetch('results.json')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('No se pudo cargar results.json');
-        }
-        return response.json();
-      })
-      .then(data => {
+        const data = await res.json();
         if (!Array.isArray(data)) {
-          console.error('results.json no es un array');
-          allGames = [];
-        } else {
-          allGames = data;
+          statsEl.textContent = "El formato de results.json no es un arreglo.";
+          return;
         }
-        applyFilters();
-      })
-      .catch(err => {
-        console.error('Error cargando results.json:', err);
-        emptyMessage.style.display = 'block';
-        emptyMessage.textContent = 'No se pudo cargar results.json. Revisa la consola del navegador.';
-      });
+        allGames = data;
+        fillPlatformFilter();
+        renderGames();
+      } catch (err) {
+        console.error(err);
+        statsEl.textContent = "Error cargando los datos.";
+      }
+    }
+
+    storeFilter.addEventListener("change", renderGames);
+    formatFilter.addEventListener("change", renderGames);
+    platformFilter.addEventListener("change", renderGames);
+    orderSelect.addEventListener("change", renderGames);
+    searchInput.addEventListener("input", renderGames);
+
+    loadData();
   </script>
 </body>
 </html>
