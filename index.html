@@ -205,12 +205,15 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 0.4rem;
       font-size: 0.8rem;
+      flex-wrap: wrap;
     }
 
     .btn-link {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 0.25rem;
       padding: 0.3rem 0.65rem;
       border-radius: 999px;
@@ -220,12 +223,23 @@
       font-size: 0.8rem;
       font-weight: 500;
       background: transparent;
+      cursor: pointer;
       transition: background 0.15s ease, color 0.15s ease;
     }
 
     .btn-link:hover {
       background: #22c55e;
       color: #001b0d;
+    }
+
+    .btn-secondary {
+      border-color: #4b5563;
+      color: #e5e7eb;
+    }
+
+    .btn-secondary:hover {
+      background: #4b5563;
+      color: #f9fafb;
     }
 
     .updated-at {
@@ -237,6 +251,84 @@
       text-align: center;
       color: #9ca3af;
       font-size: 0.9rem;
+    }
+
+    /* MODAL DETALLE */
+
+    .detail-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.85);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 50;
+      padding: 1rem;
+    }
+
+    .detail-overlay.active {
+      display: flex;
+    }
+
+    .detail-modal {
+      background: #020617;
+      border-radius: 1rem;
+      border: 1px solid #1f2937;
+      max-width: 650px;
+      width: 100%;
+      max-height: 90vh;
+      overflow: auto;
+      padding: 1.25rem 1.5rem 1.4rem;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    .detail-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .detail-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .detail-close {
+      border: none;
+      background: transparent;
+      color: #9ca3af;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .detail-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .detail-label {
+      color: #9ca3af;
+      min-width: 90px;
+    }
+
+    .detail-value {
+      color: #e5e7eb;
+    }
+
+    .detail-footer {
+      margin-top: 0.9rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .detail-highlight {
+      font-weight: 600;
+      color: #22c55e;
     }
 
     @media (max-width: 900px) {
@@ -269,16 +361,14 @@
         <option value="gmg">Green Man Gaming</option>
       </select>
 
-      <!-- FORMATO -->
+      <!-- FORMATO (solo Digital / Físico) -->
       <select id="formatFilter">
         <option value="all">Todos los formatos</option>
         <option value="digital">Digital</option>
         <option value="fisico">Físico</option>
-        <option value="mixto">Digital y físico</option>
-        <option value="otro">Otro / sin info</option>
       </select>
 
-      <!-- PLATAFORMA (se rellena dinámicamente) -->
+      <!-- PLATAFORMA (se rellena dinámicamente, pero siempre muestra PC / PlayStation / Xbox) -->
       <select id="platformFilter">
         <option value="all">Todas las plataformas</option>
       </select>
@@ -315,6 +405,27 @@
     </div>
   </main>
 
+  <!-- MODAL DETALLE -->
+  <div id="detailOverlay" class="detail-overlay">
+    <div class="detail-modal">
+      <div class="detail-header">
+        <div>
+          <div id="detailTitle" class="detail-title"></div>
+          <div id="detailStore" class="badge-site" style="margin-top: 0.25rem;"></div>
+        </div>
+        <button class="detail-close" id="detailClose" aria-label="Cerrar detalle">✕</button>
+      </div>
+
+      <div id="detailContent"></div>
+
+      <div class="detail-footer">
+        <button class="btn-link" id="detailStoreBtn" type="button">
+          Ver en tienda <span>↗</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <script>
     const grid = document.getElementById("gamesGrid");
     const statsEl = document.getElementById("stats");
@@ -324,6 +435,13 @@
     const orderSelect = document.getElementById("orderSelect");
     const searchInput = document.getElementById("searchInput");
     const noResultsEl = document.getElementById("noResults");
+
+    const detailOverlay = document.getElementById("detailOverlay");
+    const detailTitle = document.getElementById("detailTitle");
+    const detailStore = document.getElementById("detailStore");
+    const detailContent = document.getElementById("detailContent");
+    const detailClose = document.getElementById("detailClose");
+    const detailStoreBtn = document.getElementById("detailStoreBtn");
 
     let allGames = [];
 
@@ -368,6 +486,74 @@
       return "otro";
     }
 
+    function openDetail(game) {
+      const regular = Number(game.price_regular);
+      const discount = Number(game.price_discount);
+      const pct = calcDiscountPercent(regular, discount);
+      const discountText = pct ? `-${pct}%` : "Sin descuento";
+
+      detailTitle.textContent = game.name || "Juego sin nombre";
+      detailStore.textContent = capitalizeSite(game.site);
+
+      const hltb = game.howlongtobeat ? `${game.howlongtobeat} h aprox.` : "N/D";
+      const dist = game.distribution_type || "Digital";
+      const platforms = (game.platforms || []).join(", ") || "N/D";
+      const rating = game.rating || "N/D";
+
+      detailContent.innerHTML = `
+        <div class="detail-row">
+          <span class="detail-label">Precio:</span>
+          <span class="detail-value">
+            <span class="detail-highlight">${formatPrice(discount)}</span>
+            ${
+              regular && discount && regular !== discount
+                ? ` <span style="text-decoration: line-through; color:#6b7280;">${formatPrice(regular)}</span>`
+                : ""
+            }
+            <span style="margin-left:0.4rem; font-size:0.85rem; color:${pct ? "#f97316" : "#9ca3af"};">
+              ${discountText}
+            </span>
+          </span>
+        </div>
+
+        <div class="detail-row">
+          <span class="detail-label">Metacritic:</span>
+          <span class="detail-value">${rating}</span>
+        </div>
+
+        <div class="detail-row">
+          <span class="detail-label">Duración:</span>
+          <span class="detail-value">${hltb}</span>
+        </div>
+
+        <div class="detail-row">
+          <span class="detail-label">Formato:</span>
+          <span class="detail-value">${dist}</span>
+        </div>
+
+        <div class="detail-row">
+          <span class="detail-label">Plataformas:</span>
+          <span class="detail-value">${platforms}</span>
+        </div>
+      `;
+
+      if (game.url) {
+        detailStoreBtn.onclick = () => {
+          window.open(game.url, "_blank", "noopener");
+        };
+        detailStoreBtn.disabled = false;
+      } else {
+        detailStoreBtn.onclick = null;
+        detailStoreBtn.disabled = true;
+      }
+
+      detailOverlay.classList.add("active");
+    }
+
+    function closeDetail() {
+      detailOverlay.classList.remove("active");
+    }
+
     function renderGames() {
       const storeVal = storeFilter.value;
       const formatVal = formatFilter.value;
@@ -381,7 +567,7 @@
         filtered = filtered.filter(g => (g.site || "").toLowerCase() === storeVal);
       }
 
-      // FILTRO POR FORMATO
+      // FILTRO POR FORMATO (solo digital / fisico)
       if (formatVal !== "all") {
         filtered = filtered.filter(g => {
           const f = normalizedFormat(g.distribution_type);
@@ -498,6 +684,9 @@
             </div>
 
             <div class="card-footer">
+              <button class="btn-link btn-secondary btn-detail" data-id="${game._id}" type="button">
+                Ver detalle
+              </button>
               <a class="btn-link" href="${game.url || "#"}" target="_blank" rel="noopener noreferrer">
                 Ver en tienda
                 <span>↗</span>
@@ -531,7 +720,8 @@
     }
 
     function fillPlatformFilter() {
-      const set = new Set();
+      const set = new Set(["PC", "PlayStation", "Xbox"]); // siempre visibles
+
       allGames.forEach(g => {
         (g.platforms || []).forEach(p => {
           if (p) set.add(String(p));
@@ -559,7 +749,7 @@
           statsEl.textContent = "El formato de results.json no es un arreglo.";
           return;
         }
-        allGames = data;
+        allGames = data.map((g, idx) => ({ ...g, _id: idx }));
         fillPlatformFilter();
         renderGames();
       } catch (err) {
@@ -573,6 +763,23 @@
     platformFilter.addEventListener("change", renderGames);
     orderSelect.addEventListener("change", renderGames);
     searchInput.addEventListener("input", renderGames);
+
+    grid.addEventListener("click", (e) => {
+      const btn = e.target.closest(".btn-detail");
+      if (!btn) return;
+      const id = btn.getAttribute("data-id");
+      const game = allGames.find(g => String(g._id) === String(id));
+      if (game) {
+        openDetail(game);
+      }
+    });
+
+    detailClose.addEventListener("click", closeDetail);
+    detailOverlay.addEventListener("click", (e) => {
+      if (e.target === detailOverlay) {
+        closeDetail();
+      }
+    });
 
     loadData();
   </script>
