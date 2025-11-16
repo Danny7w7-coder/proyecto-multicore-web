@@ -1,169 +1,365 @@
 [
   {
-    "name": "BALL x PIT",
-    "price_regular": 22.48,
-    "price_discount": 17.98,
-    "rating": 93,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2062430/44a538f825381f4b58a82bab4cae1796be21fb88/capsule_616x353.jpg?t=1761935510",
-    "distribution_type": "Digital",
-    "howlongtobeat": 28.6,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/2062430/BALL_x_PIT/"
-  },
-  {
-    "name": "Apex Legends™",
-    "price_regular": 34.99,
-    "price_discount": 34.99,
-    "rating": 83,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/1eab2d507fbc0cfbfac0a4e2da51edc19703f4e4/capsule_616x353.jpg?t=1762457261",
-    "distribution_type": "Digital",
-    "howlongtobeat": 43.9,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/1172470/Apex_Legends/"
-  },
-  {
-    "name": "Path of Exile",
-    "price_regular": 49.99,
-    "price_discount": 44.99,
-    "rating": 92,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/238960/02d879d4222afc69026c3eb424b3d5b1f4382d0b/capsule_616x353.jpg?t=1761681686",
-    "distribution_type": "Digital",
-    "howlongtobeat": 18.2,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/238960/Path_of_Exile/"
-  },
-  {
-    "name": "Enshrouded",
-    "price_regular": 29.99,
-    "price_discount": 23.99,
-    "rating": 87,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1203620/335cc72676b206925095e06ba2f17fcfd71b9654/capsule_616x353.jpg?t=1762874493",
-    "distribution_type": "Digital",
-    "howlongtobeat": 37.2,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/1203620/Enshrouded/"
-  },
-  {
-    "name": "War Thunder",
-    "price_regular": 49.99,
-    "price_discount": 39.99,
-    "rating": 81,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/236390/233a0826804a77f4db932907ec0ae9ad46faa156/capsule_616x353.jpg?t=1762859368",
-    "distribution_type": "Digital",
-    "howlongtobeat": 23.6,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/236390/War_Thunder/"
-  },
-  {
-    "name": "Crusader Kings III",
-    "price_regular": 39.99,
-    "price_discount": 39.99,
-    "rating": 81,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/76f8bd6fe02c04173055b933b42f103346019b42/capsule_616x353_alt_assets_11_spanish.jpg?t=1762165597",
-    "distribution_type": "Digital",
-    "howlongtobeat": 42.4,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/1158310/Crusader_Kings_III/"
-  },
-  {
-    "name": "PEAK",
-    "price_regular": 7.99,
-    "price_discount": 4.95,
-    "rating": 82,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3527290/77bf763cd09a92a7a7455ddf2623c8d5b10c2c8a/capsule_616x353_alt_assets_2.jpg?t=1762370967",
-    "distribution_type": "Digital",
-    "howlongtobeat": 18.3,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/3527290/PEAK/"
-  },
-  {
-    "name": "theHunter: Call of the Wild™",
-    "price_regular": 24.99,
-    "price_discount": 24.99,
-    "rating": 93,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/518790/155f34303686b7560b329ae3fe0c133b512a9ac7/capsule_616x353_alt_assets_22.jpg?t=1762167270",
-    "distribution_type": "Digital",
-    "howlongtobeat": 32.6,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/518790/theHunter_Call_of_the_Wild/"
-  },
-  {
-    "name": "Counter-Strike 2",
-    "price_regular": 59.99,
-    "price_discount": 59.99,
-    "rating": 99,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/capsule_616x353.jpg?t=1749053861",
-    "distribution_type": "Digital",
-    "howlongtobeat": 40.3,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/730/CounterStrike_2/"
-  },
-  {
-    "name": "Dota 2",
-    "price_regular": 29.99,
-    "price_discount": 29.99,
-    "rating": 85,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/570/capsule_616x353.jpg?t=1762820658",
-    "distribution_type": "Digital",
-    "howlongtobeat": 21.8,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/570/Dota_2/"
-  },
-  {
     "name": "Dispatch",
-    "price_regular": 34.99,
-    "price_discount": 31.49,
-    "rating": 85,
+    "price_regular": 59.99,
+    "price_discount": 53.99,
+    "rating": 88,
     "platforms": [
       "PC"
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2592160/fcfd39596c29e58f0d0c44ca56b8490d91fb3b76/capsule_616x353.jpg?t=1762980554",
     "distribution_type": "Digital",
-    "howlongtobeat": 41.9,
+    "howlongtobeat": 31.9,
     "site": "steam",
     "url": "https://store.steampowered.com/app/2592160/Dispatch/"
   },
   {
-    "name": "EA SPORTS FC™ 26",
+    "name": "Sid Meier's Civilization VII",
+    "price_regular": 69.99,
+    "price_discount": 45.49,
+    "rating": 95,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1295660/35916ac210ed4c2ca5dceed43a3566ac7b900c39/capsule_616x353_alt_assets_2_spanish.jpg?t=1762277940",
+    "distribution_type": "Digital",
+    "howlongtobeat": 40.4,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/1295660/Sid_Meiers_Civilization_VII/"
+  },
+  {
+    "name": "Destiny 2",
     "price_regular": 4.99,
-    "price_discount": 4.49,
+    "price_discount": 4.99,
+    "rating": 84,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1085660/capsule_616x353_spanish.jpg?t=1762978895",
+    "distribution_type": "Digital",
+    "howlongtobeat": 29.1,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/1085660/Destiny_2/"
+  },
+  {
+    "name": "ARC Raiders",
+    "price_regular": 39.99,
+    "price_discount": 39.99,
+    "rating": 83,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1808500/fbfa7906f1a4f2fd67c6425ac5b69c69c328f9ac/capsule_616x353.jpg?t=1762957298",
+    "distribution_type": "Digital",
+    "howlongtobeat": 27.4,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/1808500/ARC_Raiders/"
+  },
+  {
+    "name": "VRChat",
+    "price_regular": 4.99,
+    "price_discount": 4.24,
+    "rating": 89,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/438100/capsule_616x353.jpg?t=1762366454",
+    "distribution_type": "Digital",
+    "howlongtobeat": 32.5,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/438100/VRChat/"
+  },
+  {
+    "name": "The Sims™ 4",
+    "price_regular": 59.99,
+    "price_discount": 44.99,
+    "rating": 99,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1222670/capsule_616x353.jpg?t=1763056950",
+    "distribution_type": "Digital",
+    "howlongtobeat": 34.5,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/1222670/The_Sims_4/"
+  },
+  {
+    "name": "BALL x PIT",
+    "price_regular": 22.48,
+    "price_discount": 17.98,
+    "rating": 98,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2062430/44a538f825381f4b58a82bab4cae1796be21fb88/capsule_616x353.jpg?t=1761935510",
+    "distribution_type": "Digital",
+    "howlongtobeat": 42.2,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2062430/BALL_x_PIT/"
+  },
+  {
+    "name": "Enshrouded",
+    "price_regular": 29.99,
+    "price_discount": 23.99,
     "rating": 88,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1203620/335cc72676b206925095e06ba2f17fcfd71b9654/capsule_616x353.jpg?t=1762874493",
+    "distribution_type": "Digital",
+    "howlongtobeat": 21.1,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/1203620/Enshrouded/"
+  },
+  {
+    "name": "theHunter: Call of the Wild™",
+    "price_regular": 14.99,
+    "price_discount": 11.24,
+    "rating": 97,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/518790/155f34303686b7560b329ae3fe0c133b512a9ac7/capsule_616x353_alt_assets_22.jpg?t=1762167270",
+    "distribution_type": "Digital",
+    "howlongtobeat": 43.6,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/518790/theHunter_Call_of_the_Wild/"
+  },
+  {
+    "name": "ARK: Survival Ascended",
+    "price_regular": 44.99,
+    "price_discount": 22.49,
+    "rating": 90,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2399830/157abe35b22e96ea4ecea8eb723fb923ea198715/capsule_616x353.jpg?t=1760216941",
+    "distribution_type": "Digital",
+    "howlongtobeat": 33.8,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2399830/ARK_Survival_Ascended/"
+  },
+  {
+    "name": "Anno 117: Pax Romana",
+    "price_regular": 59.99,
+    "price_discount": 59.99,
+    "rating": 88,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3274580/2306afed9e16e7988c9cd6599d5eb16bb4d339a4/capsule_616x353_alt_assets_2_spanish.jpg?t=1763143344",
+    "distribution_type": "Digital",
+    "howlongtobeat": 35.6,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/3274580/Anno_117_Pax_Romana/"
+  },
+  {
+    "name": "Black Desert",
+    "price_regular": 9.99,
+    "price_discount": 0.99,
+    "rating": 92,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/582660/af4dbaf8e712b209d17d37d4f63fabea1c6fbb3f/capsule_616x353.jpg?t=1758315448",
+    "distribution_type": "Digital",
+    "howlongtobeat": 33.0,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/582660/Black_Desert/"
+  },
+  {
+    "name": "The Outer Worlds 2",
+    "price_regular": 69.99,
+    "price_discount": 69.99,
+    "rating": 84,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1449110/0130c9add6d097099cc7796a04def57bee93e58d/capsule_616x353.jpg?t=1761760147",
+    "distribution_type": "Digital",
+    "howlongtobeat": 19.8,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/1449110/The_Outer_Worlds_2/"
+  },
+  {
+    "name": "Magic: The Gathering Arena",
+    "price_regular": 29.99,
+    "price_discount": 23.99,
+    "rating": 93,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2141910/37a5aefee44ae5635544ca3e3002423c053d5787/capsule_616x353_spanish.jpg?t=1761086517",
+    "distribution_type": "Digital",
+    "howlongtobeat": 26.5,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2141910/Magic_The_Gathering_Arena/"
+  },
+  {
+    "name": "Marvel Rivals",
+    "price_regular": 39.99,
+    "price_discount": 31.99,
+    "rating": 92,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2767030/07fdfc4364f4cf9b570c8c7ee025caebc91befa5/capsule_616x353.jpg?t=1763125674",
+    "distribution_type": "Digital",
+    "howlongtobeat": 44.1,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2767030/Marvel_Rivals/"
+  },
+  {
+    "name": "Apex Legends™",
+    "price_regular": 49.99,
+    "price_discount": 42.49,
+    "rating": 92,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/1eab2d507fbc0cfbfac0a4e2da51edc19703f4e4/capsule_616x353.jpg?t=1762457261",
+    "distribution_type": "Digital",
+    "howlongtobeat": 43.4,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/1172470/Apex_Legends/"
+  },
+  {
+    "name": "NBA 2K26",
+    "price_regular": 69.99,
+    "price_discount": 69.99,
+    "rating": 96,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3472040/8fcf0134e71247654358733e1dd360f93c4d2a6a/capsule_616x353_alt_assets_0.jpg?t=1761580807",
+    "distribution_type": "Digital",
+    "howlongtobeat": 21.0,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/3472040/NBA_2K26/"
+  },
+  {
+    "name": "Rust",
+    "price_regular": 29.99,
+    "price_discount": 29.99,
+    "rating": 84,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/252490/c05e66e166b0fc5fc2a06711d7bfa1b4cb2f45f6/capsule_616x353.jpg?t=1761667247",
+    "distribution_type": "Digital",
+    "howlongtobeat": 39.6,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/252490/Rust/"
+  },
+  {
+    "name": "INAZUMA ELEVEN: Heroes' Victory Road",
+    "price_regular": 69.99,
+    "price_discount": 69.99,
+    "rating": 80,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2799860/671cfa4647b375f1086c2cb3c22b5752d2e59686/capsule_616x353_spanish.jpg?t=1763265397",
+    "distribution_type": "Digital",
+    "howlongtobeat": 42.6,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2799860/INAZUMA_ELEVEN_Heroes_Victory_Road/"
+  },
+  {
+    "name": "Battlefield™ 6",
+    "price_regular": 69.99,
+    "price_discount": 69.99,
+    "rating": 81,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2807960/5dc50319d192ca49d082f87fe95fefb8363fc9b4/capsule_616x353_alt_assets_7_spanish.jpg?t=1762876911",
+    "distribution_type": "Digital",
+    "howlongtobeat": 23.7,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2807960/Battlefield_6/"
+  },
+  {
+    "name": "Team Fortress 2",
+    "price_regular": 19.99,
+    "price_discount": 14.99,
+    "rating": 93,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/440/capsule_616x353.jpg?t=1757348372",
+    "distribution_type": "Digital",
+    "howlongtobeat": 19.5,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/440/Team_Fortress_2/"
+  },
+  {
+    "name": "Digimon Story Time Stranger",
+    "price_regular": 69.99,
+    "price_discount": 69.99,
+    "rating": 95,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1984270/86a9e0f67df177da7f74a01ad51a086c1b9ae3e0/capsule_616x353.jpg?t=1759485332",
+    "distribution_type": "Digital",
+    "howlongtobeat": 29.8,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/1984270/Digimon_Story_Time_Stranger/"
+  },
+  {
+    "name": "Assetto Corsa Rally",
+    "price_regular": 29.99,
+    "price_discount": 23.99,
+    "rating": 86,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3917090/71ea0e9d731013c3c81b249d33db393ff53b6045/capsule_616x353_alt_assets_0.jpg?t=1763053664",
+    "distribution_type": "Digital",
+    "howlongtobeat": 31.2,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/3917090/Assetto_Corsa_Rally/"
+  },
+  {
+    "name": "Hades II",
+    "price_regular": 29.99,
+    "price_discount": 23.99,
+    "rating": 80,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145350/65e1c51cf2950d70209d63e288d1c5ba3f86044b/capsule_616x353.jpg?t=1759973532",
+    "distribution_type": "Digital",
+    "howlongtobeat": 40.7,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/1145350/Hades_II/"
+  },
+  {
+    "name": "Planet Zoo",
+    "price_regular": 44.99,
+    "price_discount": 13.49,
+    "rating": 94,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/703080/capsule_616x353.jpg?t=1750845999",
+    "distribution_type": "Digital",
+    "howlongtobeat": 43.3,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/703080/Planet_Zoo/"
+  },
+  {
+    "name": "EA SPORTS FC™ 26",
+    "price_regular": 44.99,
+    "price_discount": 31.49,
+    "rating": 89,
     "platforms": [
       "PC"
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3405690/7a4a2467300194840eb2116c2126c2d2422b4e12/capsule_616x353.jpg?t=1761904811",
     "distribution_type": "Digital",
-    "howlongtobeat": 29.6,
+    "howlongtobeat": 35.7,
     "site": "steam",
     "url": "https://store.steampowered.com/app/3405690/EA_SPORTS_FC_26/"
   },
@@ -177,555 +373,457 @@
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3450310/b84977c9a2df5f158889ad52db26b3029f6dfcb6/capsule_616x353_alt_assets_0_spanish.jpg?t=1762296010",
     "distribution_type": "Digital",
-    "howlongtobeat": 20.3,
+    "howlongtobeat": 44.6,
     "site": "steam",
     "url": "https://store.steampowered.com/app/3450310/Europa_Universalis_V/"
-  },
-  {
-    "name": "The Sims™ 4",
-    "price_regular": 44.99,
-    "price_discount": 40.49,
-    "rating": 89,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1222670/capsule_616x353.jpg?t=1763056950",
-    "distribution_type": "Digital",
-    "howlongtobeat": 36.5,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/1222670/The_Sims_4/"
-  },
-  {
-    "name": "Battlefield™ REDSEC",
-    "price_regular": 59.99,
-    "price_discount": 53.99,
-    "rating": 84,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3028330/956fd320a3f57b524ec1638194f24c29f92e2357/capsule_616x353_spanish.jpg?t=1763146696",
-    "distribution_type": "Digital",
-    "howlongtobeat": 11.5,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/3028330/Battlefield_REDSEC/"
-  },
-  {
-    "name": "Planet Zoo",
-    "price_regular": 44.99,
-    "price_discount": 13.49,
-    "rating": 87,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/703080/capsule_616x353.jpg?t=1750845999",
-    "distribution_type": "Digital",
-    "howlongtobeat": 38.1,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/703080/Planet_Zoo/"
-  },
-  {
-    "name": "Battlefield™ 6",
-    "price_regular": 69.99,
-    "price_discount": 69.99,
-    "rating": 82,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2807960/5dc50319d192ca49d082f87fe95fefb8363fc9b4/capsule_616x353_alt_assets_7_spanish.jpg?t=1762876911",
-    "distribution_type": "Digital",
-    "howlongtobeat": 15.4,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/2807960/Battlefield_6/"
-  },
-  {
-    "name": "Farming Simulator 25",
-    "price_regular": 14.99,
-    "price_discount": 14.99,
-    "rating": 99,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2300320/capsule_616x353.jpg?t=1761296764",
-    "distribution_type": "Digital",
-    "howlongtobeat": 26.5,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/2300320/Farming_Simulator_25/"
-  },
-  {
-    "name": "Hades II",
-    "price_regular": 29.99,
-    "price_discount": 23.99,
-    "rating": 92,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145350/65e1c51cf2950d70209d63e288d1c5ba3f86044b/capsule_616x353.jpg?t=1759973532",
-    "distribution_type": "Digital",
-    "howlongtobeat": 31.3,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/1145350/Hades_II/"
-  },
-  {
-    "name": "Black Desert",
-    "price_regular": 9.99,
-    "price_discount": 0.99,
-    "rating": 95,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/582660/af4dbaf8e712b209d17d37d4f63fabea1c6fbb3f/capsule_616x353.jpg?t=1758315448",
-    "distribution_type": "Digital",
-    "howlongtobeat": 31.5,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/582660/Black_Desert/"
-  },
-  {
-    "name": "Magic: The Gathering Arena",
-    "price_regular": 44.99,
-    "price_discount": 44.99,
-    "rating": 94,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2141910/37a5aefee44ae5635544ca3e3002423c053d5787/capsule_616x353_spanish.jpg?t=1761086517",
-    "distribution_type": "Digital",
-    "howlongtobeat": 21.2,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/2141910/Magic_The_Gathering_Arena/"
-  },
-  {
-    "name": "Team Fortress 2",
-    "price_regular": 19.99,
-    "price_discount": 16.99,
-    "rating": 98,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/440/capsule_616x353.jpg?t=1757348372",
-    "distribution_type": "Digital",
-    "howlongtobeat": 25.8,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/440/Team_Fortress_2/"
   },
   {
     "name": "Escape from Tarkov",
     "price_regular": 49.99,
     "price_discount": 42.49,
-    "rating": 88,
+    "rating": 90,
     "platforms": [
       "PC"
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3932890/b2f778ce89eabef7a6ce498cfa1731aa02e0c1ed/capsule_616x353.jpg?t=1763204479",
     "distribution_type": "Digital",
-    "howlongtobeat": 24.5,
+    "howlongtobeat": 37.0,
     "site": "steam",
     "url": "https://store.steampowered.com/app/3932890/Escape_from_Tarkov/"
   },
   {
-    "name": "Jurassic World Evolution 3",
-    "price_regular": 19.99,
-    "price_discount": 17.99,
-    "rating": 81,
+    "name": "Path of Exile",
+    "price_regular": 9.99,
+    "price_discount": 9.99,
+    "rating": 88,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2958130/616c3965d246dbb92f857c5aa93afdc845fa6fce/capsule_616x353.jpg?t=1762944230",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/238960/02d879d4222afc69026c3eb424b3d5b1f4382d0b/capsule_616x353.jpg?t=1761681686",
     "distribution_type": "Digital",
-    "howlongtobeat": 25.9,
+    "howlongtobeat": 40.4,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/2958130/Jurassic_World_Evolution_3/"
+    "url": "https://store.steampowered.com/app/238960/Path_of_Exile/"
   },
   {
     "name": "PowerWash Simulator 2",
     "price_regular": 24.99,
     "price_discount": 24.99,
-    "rating": 90,
+    "rating": 83,
     "platforms": [
       "PC"
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2968420/374fc7a0419c7361cda3ae7fa6fe4e383f206e5d/capsule_616x353.jpg?t=1761725794",
     "distribution_type": "Digital",
-    "howlongtobeat": 31.9,
+    "howlongtobeat": 43.8,
     "site": "steam",
     "url": "https://store.steampowered.com/app/2968420/PowerWash_Simulator_2/"
   },
   {
-    "name": "ARK: Survival Ascended",
+    "name": "Jurassic World Evolution 3",
     "price_regular": 44.99,
-    "price_discount": 22.49,
-    "rating": 93,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2399830/157abe35b22e96ea4ecea8eb723fb923ea198715/capsule_616x353.jpg?t=1760216941",
-    "distribution_type": "Digital",
-    "howlongtobeat": 20.5,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/2399830/ARK_Survival_Ascended/"
-  },
-  {
-    "name": "Rust",
-    "price_regular": 59.99,
-    "price_discount": 44.99,
-    "rating": 93,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/252490/c05e66e166b0fc5fc2a06711d7bfa1b4cb2f45f6/capsule_616x353.jpg?t=1761667247",
-    "distribution_type": "Digital",
-    "howlongtobeat": 44.8,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/252490/Rust/"
-  },
-  {
-    "name": "Marvel Rivals",
-    "price_regular": 9.99,
-    "price_discount": 9.99,
-    "rating": 89,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2767030/07fdfc4364f4cf9b570c8c7ee025caebc91befa5/capsule_616x353.jpg?t=1763125674",
-    "distribution_type": "Digital",
-    "howlongtobeat": 20.7,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/2767030/Marvel_Rivals/"
-  },
-  {
-    "name": "Temporada 1 Battlefield Pro - Battlefield™ 6 y REDSEC",
-    "price_regular": 24.99,
-    "price_discount": 24.99,
+    "price_discount": 35.99,
     "rating": 85,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3880840/826259c222cb556878eedc81e3d20a5fe2f15f47/capsule_616x353.jpg?t=1763066359",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2958130/616c3965d246dbb92f857c5aa93afdc845fa6fce/capsule_616x353.jpg?t=1762944230",
     "distribution_type": "Digital",
-    "howlongtobeat": 24.7,
+    "howlongtobeat": 38.1,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/3880840/Temporada_1_Battlefield_Pro__Battlefield_6_y_REDSEC/"
+    "url": "https://store.steampowered.com/app/2958130/Jurassic_World_Evolution_3/"
   },
   {
-    "name": "The Outer Worlds 2",
-    "price_regular": 69.99,
-    "price_discount": 69.99,
-    "rating": 80,
+    "name": "Phasmophobia",
+    "price_regular": 19.99,
+    "price_discount": 19.99,
+    "rating": 94,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1449110/0130c9add6d097099cc7796a04def57bee93e58d/capsule_616x353.jpg?t=1761760147",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/739630/f5328c8324f7723f7598ab4cf21fca050f8ba5d9/capsule_616x353_alt_assets_5.jpg?t=1762865621",
     "distribution_type": "Digital",
-    "howlongtobeat": 28.1,
+    "howlongtobeat": 18.3,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/1449110/The_Outer_Worlds_2/"
+    "url": "https://store.steampowered.com/app/739630/Phasmophobia/"
   },
   {
-    "name": "Sid Meier's Civilization VII",
-    "price_regular": 69.99,
-    "price_discount": 45.49,
-    "rating": 98,
+    "name": "PEAK",
+    "price_regular": 7.99,
+    "price_discount": 4.95,
+    "rating": 92,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1295660/35916ac210ed4c2ca5dceed43a3566ac7b900c39/capsule_616x353_alt_assets_2_spanish.jpg?t=1762277940",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3527290/77bf763cd09a92a7a7455ddf2623c8d5b10c2c8a/capsule_616x353_alt_assets_2.jpg?t=1762370967",
     "distribution_type": "Digital",
-    "howlongtobeat": 56.4,
+    "howlongtobeat": 44.5,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/1295660/Sid_Meiers_Civilization_VII/"
+    "url": "https://store.steampowered.com/app/3527290/PEAK/"
   },
   {
-    "name": "Anno 117: Pax Romana",
-    "price_regular": 59.99,
-    "price_discount": 59.99,
-    "rating": 98,
+    "name": "Crusader Kings III",
+    "price_regular": 9.99,
+    "price_discount": 9.99,
+    "rating": 93,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3274580/2306afed9e16e7988c9cd6599d5eb16bb4d339a4/capsule_616x353_alt_assets_2_spanish.jpg?t=1763143344",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/76f8bd6fe02c04173055b933b42f103346019b42/capsule_616x353_alt_assets_11_spanish.jpg?t=1762165597",
     "distribution_type": "Digital",
-    "howlongtobeat": 37.6,
+    "howlongtobeat": 29.4,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/3274580/Anno_117_Pax_Romana/"
+    "url": "https://store.steampowered.com/app/1158310/Crusader_Kings_III/"
   },
   {
-    "name": "Digimon Story Time Stranger",
-    "price_regular": 69.99,
-    "price_discount": 69.99,
-    "rating": 84,
+    "name": "War Thunder",
+    "price_regular": 19.99,
+    "price_discount": 17.99,
+    "rating": 93,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1984270/86a9e0f67df177da7f74a01ad51a086c1b9ae3e0/capsule_616x353.jpg?t=1759485332",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/236390/233a0826804a77f4db932907ec0ae9ad46faa156/capsule_616x353.jpg?t=1762859368",
     "distribution_type": "Digital",
-    "howlongtobeat": 20.2,
+    "howlongtobeat": 37.8,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/1984270/Digimon_Story_Time_Stranger/"
-  },
-  {
-    "name": "INAZUMA ELEVEN: Heroes' Victory Road",
-    "price_regular": 69.99,
-    "price_discount": 69.99,
-    "rating": 81,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2799860/671cfa4647b375f1086c2cb3c22b5752d2e59686/capsule_616x353_spanish.jpg?t=1763265397",
-    "distribution_type": "Digital",
-    "howlongtobeat": 18.9,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/2799860/INAZUMA_ELEVEN_Heroes_Victory_Road/"
-  },
-  {
-    "name": "ARC Raiders",
-    "price_regular": 39.99,
-    "price_discount": 39.99,
-    "rating": 98,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1808500/fbfa7906f1a4f2fd67c6425ac5b69c69c328f9ac/capsule_616x353.jpg?t=1762957298",
-    "distribution_type": "Digital",
-    "howlongtobeat": 29.1,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/1808500/ARC_Raiders/"
-  },
-  {
-    "name": "NBA 2K26",
-    "price_regular": 69.99,
-    "price_discount": 69.99,
-    "rating": 82,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3472040/8fcf0134e71247654358733e1dd360f93c4d2a6a/capsule_616x353_alt_assets_0.jpg?t=1761580807",
-    "distribution_type": "Digital",
-    "howlongtobeat": 26.8,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/3472040/NBA_2K26/"
-  },
-  {
-    "name": "Destiny 2",
-    "price_regular": 24.99,
-    "price_discount": 24.99,
-    "rating": 96,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1085660/capsule_616x353_spanish.jpg?t=1762978895",
-    "distribution_type": "Digital",
-    "howlongtobeat": 25.1,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/1085660/Destiny_2/"
-  },
-  {
-    "name": "Assetto Corsa Rally",
-    "price_regular": 29.99,
-    "price_discount": 23.99,
-    "rating": 90,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3917090/71ea0e9d731013c3c81b249d33db393ff53b6045/capsule_616x353_alt_assets_0.jpg?t=1763053664",
-    "distribution_type": "Digital",
-    "howlongtobeat": 35.9,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/3917090/Assetto_Corsa_Rally/"
+    "url": "https://store.steampowered.com/app/236390/War_Thunder/"
   },
   {
     "name": "Guild Wars 2",
-    "price_regular": 29.99,
-    "price_discount": 23.99,
-    "rating": 80,
+    "price_regular": 19.99,
+    "price_discount": 14.99,
+    "rating": 87,
     "platforms": [
       "PC"
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1284210/9f7e5a2965f5bbf99cec82c798305a27967ac837/capsule_616x353.jpg?t=1761669967",
     "distribution_type": "Digital",
-    "howlongtobeat": 35.5,
+    "howlongtobeat": 31.6,
     "site": "steam",
     "url": "https://store.steampowered.com/app/1284210/Guild_Wars_2/"
   },
   {
-    "name": "VRChat",
-    "price_regular": 44.99,
-    "price_discount": 31.49,
+    "name": "Battlefield™ REDSEC",
+    "price_regular": 14.99,
+    "price_discount": 11.24,
+    "rating": 89,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3028330/956fd320a3f57b524ec1638194f24c29f92e2357/capsule_616x353_spanish.jpg?t=1763146696",
+    "distribution_type": "Digital",
+    "howlongtobeat": 24.5,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/3028330/Battlefield_REDSEC/"
+  },
+  {
+    "name": "Temporada 1 Battlefield Pro - Battlefield™ 6 y REDSEC",
+    "price_regular": 24.99,
+    "price_discount": 24.99,
+    "rating": 86,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3880840/826259c222cb556878eedc81e3d20a5fe2f15f47/capsule_616x353.jpg?t=1763066359",
+    "distribution_type": "Digital",
+    "howlongtobeat": 22.9,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/3880840/Temporada_1_Battlefield_Pro__Battlefield_6_y_REDSEC/"
+  },
+  {
+    "name": "Counter-Strike 2",
+    "price_regular": 9.99,
+    "price_discount": 8.49,
+    "rating": 97,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/capsule_616x353.jpg?t=1749053861",
+    "distribution_type": "Digital",
+    "howlongtobeat": 33.8,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/730/CounterStrike_2/"
+  },
+  {
+    "name": "Farming Simulator 25",
+    "price_regular": 34.99,
+    "price_discount": 34.99,
+    "rating": 95,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2300320/capsule_616x353.jpg?t=1761296764",
+    "distribution_type": "Digital",
+    "howlongtobeat": 40.0,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2300320/Farming_Simulator_25/"
+  },
+  {
+    "name": "Dota 2",
+    "price_regular": 19.99,
+    "price_discount": 19.99,
+    "rating": 83,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/570/capsule_616x353.jpg?t=1762820658",
+    "distribution_type": "Digital",
+    "howlongtobeat": 27.6,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/570/Dota_2/"
+  },
+  {
+    "name": "Species: Unknown",
+    "price_regular": 4.99,
+    "price_discount": 3.99,
+    "rating": 82,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2747330/849bd7b30d47adcca43768930e96ffa6304f728b/capsule_616x353.jpg?t=1762416826",
+    "distribution_type": "Digital",
+    "howlongtobeat": 42.3,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2747330/Species_Unknown/"
+  },
+  {
+    "name": "American Truck Simulator",
+    "price_regular": 14.99,
+    "price_discount": 14.99,
+    "rating": 89,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/270880/dbdd34f3a2fe8479c1b2758f6786cf861c3438cc/capsule_616x353.jpg?t=1762507148",
+    "distribution_type": "Digital",
+    "howlongtobeat": 25.4,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/270880/American_Truck_Simulator/"
+  },
+  {
+    "name": "STORY OF SEASONS: Grand Bazaar",
+    "price_regular": 49.99,
+    "price_discount": 39.99,
+    "rating": 96,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2508780/9995ac7398486997071ead0ec291cd6ad7f6eb95/capsule_616x353.jpg?t=1763145508",
+    "distribution_type": "Digital",
+    "howlongtobeat": 27.8,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2508780/STORY_OF_SEASONS_Grand_Bazaar/"
+  },
+  {
+    "name": "MISERY",
+    "price_regular": 49.99,
+    "price_discount": 42.49,
+    "rating": 99,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2119830/5bf3128f79b8a3550e5efdedefd657bd43b007c1/capsule_616x353.jpg?t=1763070794",
+    "distribution_type": "Digital",
+    "howlongtobeat": 25.9,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2119830/MISERY/"
+  },
+  {
+    "name": "Palia",
+    "price_regular": 39.99,
+    "price_discount": 35.99,
+    "rating": 97,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2707930/7f196240a08ea7c3f0f9fbaf88b2b2f3972cdfa1/capsule_616x353.jpg?t=1747075758",
+    "distribution_type": "Digital",
+    "howlongtobeat": 40.3,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2707930/Palia/"
+  },
+  {
+    "name": "Cities: Skylines II",
+    "price_regular": 39.99,
+    "price_discount": 35.99,
+    "rating": 91,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/949230/331a5bcc257a69132f6502ad146984142e0d4aeb/capsule_616x353.jpg?t=1762794219",
+    "distribution_type": "Digital",
+    "howlongtobeat": 35.3,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/949230/Cities_Skylines_II/"
+  },
+  {
+    "name": "Sons Of The Forest",
+    "price_regular": 29.99,
+    "price_discount": 29.99,
+    "rating": 99,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1326470/capsule_616x353.jpg?t=1708624856",
+    "distribution_type": "Digital",
+    "howlongtobeat": 28.8,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/1326470/Sons_Of_The_Forest/"
+  },
+  {
+    "name": "Satisfactory",
+    "price_regular": 4.99,
+    "price_discount": 4.49,
+    "rating": 84,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/526870/290c413f4075e43a5d2e106dcbbaa036b3271621/capsule_616x353.jpg?t=1749717464",
+    "distribution_type": "Digital",
+    "howlongtobeat": 38.4,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/526870/Satisfactory/"
+  },
+  {
+    "name": "MIMESIS",
+    "price_regular": 9.99,
+    "price_discount": 9.99,
+    "rating": 95,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2827200/53c429fa056cf5008c3bb2f45e47431c9e738c4f/capsule_616x353.jpg?t=1762480368",
+    "distribution_type": "Digital",
+    "howlongtobeat": 44.5,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2827200/MIMESIS/"
+  },
+  {
+    "name": "World of Warships",
+    "price_regular": 30.0,
+    "price_discount": 3.0,
     "rating": 90,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/438100/capsule_616x353.jpg?t=1762366454",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/552990/44df1098b3ff8475f887f3df5969a26aa0a5139c/capsule_616x353_alt_assets_8.jpg?t=1763127841",
     "distribution_type": "Digital",
-    "howlongtobeat": 36.7,
+    "howlongtobeat": 26.2,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/438100/VRChat/"
+    "url": "https://store.steampowered.com/app/552990/World_of_Warships/"
   },
   {
-    "name": "Phasmophobia",
+    "name": "Overwatch® 2",
     "price_regular": 19.99,
     "price_discount": 19.99,
     "rating": 88,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/739630/f5328c8324f7723f7598ab4cf21fca050f8ba5d9/capsule_616x353_alt_assets_5.jpg?t=1762865621",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2357570/d0142847ab1c8f499173a075d240d10852f676fe/capsule_616x353_alt_assets_17.jpg?t=1763157251",
     "distribution_type": "Digital",
-    "howlongtobeat": 18.9,
+    "howlongtobeat": 18.1,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/739630/Phasmophobia/"
+    "url": "https://store.steampowered.com/app/2357570/Overwatch_2/"
   },
   {
-    "name": "Risk of Rain 2",
-    "price_regular": 59.99,
-    "price_discount": 53.99,
+    "name": "Solo Leveling: ARISE OVERDRIVE",
+    "price_regular": 39.99,
+    "price_discount": 39.99,
+    "rating": 97,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2373990/076c85e9fccad9865b82d91e939f73a4a7314632/capsule_616x353.jpg?t=1761102638",
+    "distribution_type": "Digital",
+    "howlongtobeat": 22.9,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2373990/Solo_Leveling_ARISE_OVERDRIVE/"
+  },
+  {
+    "name": "Fellowship",
+    "price_regular": 44.99,
+    "price_discount": 44.99,
     "rating": 95,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/632360/capsule_616x353.jpg?t=1751308044",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2352620/9774101c60f79795cc2f5caafdb238c159228cfc/capsule_616x353.jpg?t=1762362216",
     "distribution_type": "Digital",
-    "howlongtobeat": 36.0,
+    "howlongtobeat": 32.7,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/632360/Risk_of_Rain_2/"
+    "url": "https://store.steampowered.com/app/2352620/Fellowship/"
   },
   {
-    "name": "Mandos de Valve Index",
-    "price_regular": 279.0,
-    "price_discount": 279.0,
-    "rating": 94,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1059550/header.jpg?t=1645043939",
-    "distribution_type": "Digital",
-    "howlongtobeat": 34.2,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/1059550/Mandos_de_Valve_Index/"
-  },
-  {
-    "name": "Winter Burrow",
-    "price_regular": 19.99,
-    "price_discount": 17.99,
-    "rating": 92,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3008740/326bca492912816d3891da7eaa8081574a51759e/capsule_616x353.jpg?t=1763221344",
-    "distribution_type": "Digital",
-    "howlongtobeat": 43.0,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/3008740/Winter_Burrow/"
-  },
-  {
-    "name": "Ready or Not",
-    "price_regular": 9.99,
-    "price_discount": 9.99,
-    "rating": 80,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1144200/capsule_616x353.jpg?t=1753984272",
-    "distribution_type": "Digital",
-    "howlongtobeat": 24.7,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/1144200/Ready_or_Not/"
-  },
-  {
-    "name": "CloverPit",
-    "price_regular": 9.99,
-    "price_discount": 8.99,
-    "rating": 94,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3314790/f35db1ac0a758bba1e62446784ce383a1a7d2553/capsule_616x353_alt_assets_0.jpg?t=1762971320",
-    "distribution_type": "Digital",
-    "howlongtobeat": 35.0,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/3314790/CloverPit/"
-  },
-  {
-    "name": "Factorio",
+    "name": "Split Fiction",
     "price_regular": 49.99,
     "price_discount": 49.99,
-    "rating": 94,
+    "rating": 98,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/427520/capsule_616x353.jpg?t=1730307306",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001120/5a3209f496e911ff2fa6dccd58c682c89632d09b/capsule_616x353.jpg?t=1748910778",
     "distribution_type": "Digital",
-    "howlongtobeat": 27.2,
+    "howlongtobeat": 30.0,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/427520/Factorio/"
+    "url": "https://store.steampowered.com/app/2001120/Split_Fiction/"
   },
   {
-    "name": "American Truck Simulator",
-    "price_regular": 29.99,
-    "price_discount": 23.99,
-    "rating": 92,
+    "name": "Stardew Valley",
+    "price_regular": 14.99,
+    "price_discount": 14.99,
+    "rating": 85,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/270880/dbdd34f3a2fe8479c1b2758f6786cf861c3438cc/capsule_616x353.jpg?t=1762507148",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/capsule_616x353.jpg?t=1754692865",
     "distribution_type": "Digital",
-    "howlongtobeat": 26.2,
+    "howlongtobeat": 25.5,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/270880/American_Truck_Simulator/"
-  },
-  {
-    "name": "Worms W.M.D",
-    "price_regular": 29.99,
-    "price_discount": 4.49,
-    "rating": 86,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/327030/capsule_616x353.jpg?t=1762957133",
-    "distribution_type": "Digital",
-    "howlongtobeat": 30.9,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/327030/Worms_WMD/"
+    "url": "https://store.steampowered.com/app/413150/Stardew_Valley/"
   },
   {
     "name": "Battlestar Galactica Deadlock",
-    "price_regular": 59.99,
-    "price_discount": 50.99,
-    "rating": 98,
+    "price_regular": 14.99,
+    "price_discount": 14.99,
+    "rating": 92,
     "platforms": [
       "PC"
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/544610/839f9701f8c35340c151580e6cb89bd1607cd9a3/capsule_616x353.jpg?t=1752740483",
     "distribution_type": "Digital",
-    "howlongtobeat": 8.9,
+    "howlongtobeat": 14.3,
     "site": "steam",
     "url": "https://store.steampowered.com/app/544610/Battlestar_Galactica_Deadlock/"
   },
   {
-    "name": "Sid Meier’s Civilization® VI",
-    "price_regular": 59.99,
-    "price_discount": 5.99,
-    "rating": 82,
+    "name": "Tavern Keeper 🍻",
+    "price_regular": 29.99,
+    "price_discount": 23.99,
+    "rating": 93,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/289070/capsule_616x353.jpg?t=1740607040",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/436780/388239f24d8f2b36b82a4a16b5e5637eaf4d5e85/capsule_616x353.jpg?t=1762343337",
     "distribution_type": "Digital",
-    "howlongtobeat": 82.0,
+    "howlongtobeat": 33.5,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/"
+    "url": "https://store.steampowered.com/app/436780/Tavern_Keeper/"
   },
   {
-    "name": "Hollow Knight: Silksong",
-    "price_regular": 9.99,
-    "price_discount": 8.49,
-    "rating": 92,
+    "name": "Mandos de Valve Index",
+    "price_regular": 279.0,
+    "price_discount": 279.0,
+    "rating": 91,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1030300/eb4f42b7595ecf3b9c9131aaadec283158c1019e/capsule_616x353.jpg?t=1756994410",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1059550/header.jpg?t=1645043939",
     "distribution_type": "Digital",
-    "howlongtobeat": 26.2,
+    "howlongtobeat": 27.3,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/"
+    "url": "https://store.steampowered.com/app/1059550/Mandos_de_Valve_Index/"
   },
   {
     "name": "Path of Exile 2",
@@ -737,233 +835,135 @@
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2694490/7a67002ef9c07ecce9506caf5f74f2109d96c195/capsule_616x353.jpg?t=1762717997",
     "distribution_type": "Digital",
-    "howlongtobeat": 33.1,
+    "howlongtobeat": 38.8,
     "site": "steam",
     "url": "https://store.steampowered.com/app/2694490/Path_of_Exile_2/"
   },
   {
-    "name": "Solo Leveling: ARISE OVERDRIVE",
-    "price_regular": 39.99,
-    "price_discount": 39.99,
-    "rating": 84,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2373990/076c85e9fccad9865b82d91e939f73a4a7314632/capsule_616x353.jpg?t=1761102638",
-    "distribution_type": "Digital",
-    "howlongtobeat": 35.7,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/2373990/Solo_Leveling_ARISE_OVERDRIVE/"
-  },
-  {
-    "name": "Overwatch® 2",
-    "price_regular": 9.99,
-    "price_discount": 8.49,
-    "rating": 89,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2357570/d0142847ab1c8f499173a075d240d10852f676fe/capsule_616x353_alt_assets_17.jpg?t=1763157251",
-    "distribution_type": "Digital",
-    "howlongtobeat": 22.2,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/2357570/Overwatch_2/"
-  },
-  {
-    "name": "World of Warships",
-    "price_regular": 30.0,
-    "price_discount": 3.0,
-    "rating": 87,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/552990/44df1098b3ff8475f887f3df5969a26aa0a5139c/capsule_616x353_alt_assets_8.jpg?t=1763127841",
-    "distribution_type": "Digital",
-    "howlongtobeat": 29.2,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/552990/World_of_Warships/"
-  },
-  {
-    "name": "Disney Dreamlight Valley",
-    "price_regular": 39.99,
-    "price_discount": 39.99,
-    "rating": 94,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1401590/cc40f3ca71ca1d87088539e685ee0d3df24efa66/capsule_616x353_alt_assets_3.jpg?t=1762963951",
-    "distribution_type": "Digital",
-    "howlongtobeat": 25.7,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/1401590/Disney_Dreamlight_Valley/"
-  },
-  {
-    "name": "Sons Of The Forest",
-    "price_regular": 29.99,
-    "price_discount": 29.99,
-    "rating": 83,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1326470/capsule_616x353.jpg?t=1708624856",
-    "distribution_type": "Digital",
-    "howlongtobeat": 25.7,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/1326470/Sons_Of_The_Forest/"
-  },
-  {
-    "name": "Stardew Valley",
-    "price_regular": 14.99,
-    "price_discount": 14.99,
-    "rating": 82,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/capsule_616x353.jpg?t=1754692865",
-    "distribution_type": "Digital",
-    "howlongtobeat": 18.8,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/413150/Stardew_Valley/"
-  },
-  {
-    "name": "Cities: Skylines II",
-    "price_regular": 49.99,
-    "price_discount": 49.99,
-    "rating": 84,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/949230/331a5bcc257a69132f6502ad146984142e0d4aeb/capsule_616x353.jpg?t=1762794219",
-    "distribution_type": "Digital",
-    "howlongtobeat": 39.9,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/949230/Cities_Skylines_II/"
-  },
-  {
-    "name": "Rune Factory: Guardians of Azuma",
-    "price_regular": 59.99,
-    "price_discount": 38.99,
-    "rating": 91,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2864560/c95df840c72cd47337f81bf70a85af08489dde47/capsule_616x353.jpg?t=1763057053",
-    "distribution_type": "Digital",
-    "howlongtobeat": 23.5,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/2864560/Rune_Factory_Guardians_of_Azuma/"
-  },
-  {
-    "name": "STORY OF SEASONS: Grand Bazaar",
-    "price_regular": 49.99,
-    "price_discount": 39.99,
-    "rating": 83,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2508780/9995ac7398486997071ead0ec291cd6ad7f6eb95/capsule_616x353.jpg?t=1763145508",
-    "distribution_type": "Digital",
-    "howlongtobeat": 43.1,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/2508780/STORY_OF_SEASONS_Grand_Bazaar/"
-  },
-  {
     "name": "RimWorld",
-    "price_regular": 59.99,
-    "price_discount": 50.99,
-    "rating": 86,
+    "price_regular": 39.99,
+    "price_discount": 39.99,
+    "rating": 83,
     "platforms": [
       "PC"
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/294100/capsule_616x353.jpg?t=1762524275",
     "distribution_type": "Digital",
-    "howlongtobeat": 43.9,
+    "howlongtobeat": 36.6,
     "site": "steam",
     "url": "https://store.steampowered.com/app/294100/RimWorld/"
   },
   {
-    "name": "Split Fiction",
-    "price_regular": 49.99,
-    "price_discount": 49.99,
+    "name": "CloverPit",
+    "price_regular": 9.99,
+    "price_discount": 8.99,
     "rating": 85,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001120/5a3209f496e911ff2fa6dccd58c682c89632d09b/capsule_616x353.jpg?t=1748910778",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3314790/f35db1ac0a758bba1e62446784ce383a1a7d2553/capsule_616x353_alt_assets_0.jpg?t=1762971320",
     "distribution_type": "Digital",
-    "howlongtobeat": 23.7,
+    "howlongtobeat": 27.6,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/2001120/Split_Fiction/"
+    "url": "https://store.steampowered.com/app/3314790/CloverPit/"
   },
   {
-    "name": "Escape Simulator 2",
-    "price_regular": 24.99,
-    "price_discount": 22.49,
-    "rating": 80,
+    "name": "Ready or Not",
+    "price_regular": 39.99,
+    "price_discount": 39.99,
+    "rating": 96,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2879840/9938ed17af2b55241ee4fe7f50ae97713dd5a6a3/capsule_616x353.jpg?t=1761724381",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1144200/capsule_616x353.jpg?t=1753984272",
     "distribution_type": "Digital",
-    "howlongtobeat": 39.5,
+    "howlongtobeat": 18.5,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/2879840/Escape_Simulator_2/"
+    "url": "https://store.steampowered.com/app/1144200/Ready_or_Not/"
   },
   {
-    "name": "Lossless Scaling",
-    "price_regular": 6.99,
-    "price_discount": 3.49,
-    "rating": 87,
+    "name": "Risk of Rain 2",
+    "price_regular": 4.99,
+    "price_discount": 3.99,
+    "rating": 96,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/993090/ceffb40bf98905ea2639b4b9978d3d64aa3329fd/capsule_616x353.jpg?t=1762179586",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/632360/capsule_616x353.jpg?t=1751308044",
     "distribution_type": "Digital",
-    "howlongtobeat": 29.5,
+    "howlongtobeat": 37.5,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/993090/Lossless_Scaling/"
+    "url": "https://store.steampowered.com/app/632360/Risk_of_Rain_2/"
   },
   {
-    "name": "Species: Unknown",
-    "price_regular": 24.99,
-    "price_discount": 17.49,
-    "rating": 85,
+    "name": "Revenge of the Savage Planet",
+    "price_regular": 29.99,
+    "price_discount": 11.99,
+    "rating": 99,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2747330/849bd7b30d47adcca43768930e96ffa6304f728b/capsule_616x353.jpg?t=1762416826",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2787320/7c33f910900aee96c7070ca324831e1f8c420a07/capsule_616x353.jpg?t=1762459578",
     "distribution_type": "Digital",
-    "howlongtobeat": 24.3,
+    "howlongtobeat": 37.6,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/2747330/Species_Unknown/"
+    "url": "https://store.steampowered.com/app/2787320/Revenge_of_the_Savage_Planet/"
   },
   {
     "name": "Megabonk",
     "price_regular": 9.99,
     "price_discount": 9.99,
-    "rating": 93,
+    "rating": 85,
     "platforms": [
       "PC"
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3405340/8c557b0ace38af77f6e49eaa6aafa29ccea4b987/capsule_616x353.jpg?t=1760445338",
     "distribution_type": "Digital",
-    "howlongtobeat": 25.3,
+    "howlongtobeat": 18.8,
     "site": "steam",
     "url": "https://store.steampowered.com/app/3405340/Megabonk/"
   },
   {
-    "name": "Absolum",
-    "price_regular": 35.98,
-    "price_discount": 34.63,
-    "rating": 80,
+    "name": "Drive Beyond Horizons",
+    "price_regular": 34.99,
+    "price_discount": 34.99,
+    "rating": 90,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1904480/33ade00552879948450968586802d222b31e7af5/capsule_616x353.jpg?t=1762958571",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2625420/capsule_616x353.jpg?t=1760433117",
     "distribution_type": "Digital",
-    "howlongtobeat": 24.1,
+    "howlongtobeat": 26.9,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/1904480/Absolum/"
+    "url": "https://store.steampowered.com/app/2625420/Drive_Beyond_Horizons/"
+  },
+  {
+    "name": "Pack Liderar el camino - Battlefield™ 6 y REDSEC",
+    "price_regular": 11.99,
+    "price_discount": 11.99,
+    "rating": 83,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3933070/9a5dc71c433c3726cdec36ff53868325638a3ce0/capsule_616x353.jpg?t=1763068081",
+    "distribution_type": "Digital",
+    "howlongtobeat": 16.8,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/3933070/Pack_Liderar_el_camino__Battlefield_6_y_REDSEC/"
+  },
+  {
+    "name": "Lossless Scaling",
+    "price_regular": 6.99,
+    "price_discount": 3.49,
+    "rating": 90,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/993090/ceffb40bf98905ea2639b4b9978d3d64aa3329fd/capsule_616x353.jpg?t=1762179586",
+    "distribution_type": "Digital",
+    "howlongtobeat": 34.9,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/993090/Lossless_Scaling/"
   },
   {
     "name": "BeamNG.drive",
@@ -975,203 +975,189 @@
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/284160/capsule_616x353.jpg?t=1762791830",
     "distribution_type": "Digital",
-    "howlongtobeat": 20.5,
+    "howlongtobeat": 38.3,
     "site": "steam",
     "url": "https://store.steampowered.com/app/284160/BeamNGdrive/"
   },
   {
-    "name": "Drive Beyond Horizons",
-    "price_regular": 34.99,
-    "price_discount": 34.99,
-    "rating": 97,
+    "name": "Worms W.M.D",
+    "price_regular": 29.99,
+    "price_discount": 4.49,
+    "rating": 90,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2625420/capsule_616x353.jpg?t=1760433117",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/327030/capsule_616x353.jpg?t=1762957133",
     "distribution_type": "Digital",
-    "howlongtobeat": 22.1,
+    "howlongtobeat": 28.1,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/2625420/Drive_Beyond_Horizons/"
+    "url": "https://store.steampowered.com/app/327030/Worms_WMD/"
+  },
+  {
+    "name": "Escape Simulator 2",
+    "price_regular": 14.99,
+    "price_discount": 13.49,
+    "rating": 89,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2879840/9938ed17af2b55241ee4fe7f50ae97713dd5a6a3/capsule_616x353.jpg?t=1761724381",
+    "distribution_type": "Digital",
+    "howlongtobeat": 27.7,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2879840/Escape_Simulator_2/"
+  },
+  {
+    "name": "Wuthering Waves",
+    "price_regular": 44.99,
+    "price_discount": 31.49,
+    "rating": 89,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3513350/7d5de795d33a23b029689ba9817dafac31637679/capsule_616x353.jpg?t=1759954991",
+    "distribution_type": "Digital",
+    "howlongtobeat": 39.2,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/3513350/Wuthering_Waves/"
   },
   {
     "name": "Microsoft Flight Simulator 2024",
     "price_regular": 69.99,
     "price_discount": 69.99,
-    "rating": 87,
+    "rating": 97,
     "platforms": [
       "PC"
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2537590/8fa176d72210f43c71d50f4c8ffca70a4f171e62/capsule_616x353.jpg?t=1747324291",
     "distribution_type": "Digital",
-    "howlongtobeat": 40.6,
+    "howlongtobeat": 33.7,
     "site": "steam",
     "url": "https://store.steampowered.com/app/2537590/Microsoft_Flight_Simulator_2024/"
   },
   {
-    "name": "Revenge of the Savage Planet",
-    "price_regular": 29.99,
-    "price_discount": 11.99,
-    "rating": 85,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2787320/7c33f910900aee96c7070ca324831e1f8c420a07/capsule_616x353.jpg?t=1762459578",
-    "distribution_type": "Digital",
-    "howlongtobeat": 31.1,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/2787320/Revenge_of_the_Savage_Planet/"
-  },
-  {
-    "name": "MISERY",
-    "price_regular": 9.99,
-    "price_discount": 6.99,
-    "rating": 92,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2119830/5bf3128f79b8a3550e5efdedefd657bd43b007c1/capsule_616x353.jpg?t=1763070794",
-    "distribution_type": "Digital",
-    "howlongtobeat": 31.4,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/2119830/MISERY/"
-  },
-  {
-    "name": "Stellaris",
-    "price_regular": 39.99,
-    "price_discount": 39.99,
-    "rating": 95,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/281990/a87012836a8ca34bca814140d20521021baf2b51/capsule_616x353.jpg?t=1761224518",
-    "distribution_type": "Digital",
-    "howlongtobeat": 33.7,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/281990/Stellaris/"
-  },
-  {
     "name": "THE FINALS",
-    "price_regular": 24.99,
-    "price_discount": 19.99,
-    "rating": 82,
+    "price_regular": 34.99,
+    "price_discount": 34.99,
+    "rating": 94,
     "platforms": [
       "PC"
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2073850/0fd05393807f259080ff018bc7b7e08d51eeadc0/capsule_616x353.jpg?t=1763115033",
     "distribution_type": "Digital",
-    "howlongtobeat": 29.8,
+    "howlongtobeat": 40.1,
     "site": "steam",
     "url": "https://store.steampowered.com/app/2073850/THE_FINALS/"
   },
   {
     "name": "Jump Space",
-    "price_regular": 44.99,
-    "price_discount": 44.99,
-    "rating": 81,
+    "price_regular": 4.99,
+    "price_discount": 3.74,
+    "rating": 98,
     "platforms": [
       "PC"
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1757300/a008e9002a04ce87c85f0e042054b50361a81e91/capsule_616x353.jpg?t=1761652302",
     "distribution_type": "Digital",
-    "howlongtobeat": 26.8,
+    "howlongtobeat": 31.3,
     "site": "steam",
     "url": "https://store.steampowered.com/app/1757300/Jump_Space/"
+  },
+  {
+    "name": "Rune Factory: Guardians of Azuma",
+    "price_regular": 59.99,
+    "price_discount": 38.99,
+    "rating": 96,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2864560/c95df840c72cd47337f81bf70a85af08489dde47/capsule_616x353.jpg?t=1763057053",
+    "distribution_type": "Digital",
+    "howlongtobeat": 18.4,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/2864560/Rune_Factory_Guardians_of_Azuma/"
+  },
+  {
+    "name": "Surviving Mars: Relaunched",
+    "price_regular": 39.99,
+    "price_discount": 39.99,
+    "rating": 92,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3215050/3404521352db1339a1d1c028bbab81c0aa305e45/capsule_616x353_alt_assets_0_spanish.jpg?t=1762794022",
+    "distribution_type": "Digital",
+    "howlongtobeat": 22.6,
+    "site": "steam",
+    "url": "https://store.steampowered.com/app/3215050/Surviving_Mars_Relaunched/"
   },
   {
     "name": "Dying Light: The Beast",
     "price_regular": 59.99,
     "price_discount": 59.99,
-    "rating": 87,
+    "rating": 91,
     "platforms": [
       "PC"
     ],
     "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3008130/56babf2f7988a87d73e86dd434bf2a2ee2b8c624/capsule_616x353_alt_assets_0.jpg?t=1762544269",
     "distribution_type": "Digital",
-    "howlongtobeat": 30.9,
+    "howlongtobeat": 29.1,
     "site": "steam",
     "url": "https://store.steampowered.com/app/3008130/Dying_Light_The_Beast/"
   },
   {
-    "name": "Pack Liderar el camino - Battlefield™ 6 y REDSEC",
-    "price_regular": 11.99,
-    "price_discount": 11.99,
-    "rating": 91,
+    "name": "Palworld",
+    "price_regular": 39.99,
+    "price_discount": 33.99,
+    "rating": 80,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3933070/9a5dc71c433c3726cdec36ff53868325638a3ce0/capsule_616x353.jpg?t=1763068081",
+    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/c961ac047294838bfe382bf193ade5c64b19e573/capsule_616x353.jpg?t=1761725354",
     "distribution_type": "Digital",
-    "howlongtobeat": 8.8,
+    "howlongtobeat": 38.7,
     "site": "steam",
-    "url": "https://store.steampowered.com/app/3933070/Pack_Liderar_el_camino__Battlefield_6_y_REDSEC/"
+    "url": "https://store.steampowered.com/app/1623730/Palworld/"
   },
   {
-    "name": "Hearts of Iron IV",
-    "price_regular": 4.99,
-    "price_discount": 4.99,
-    "rating": 81,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/394360/capsule_616x353.jpg?t=1762197878",
-    "distribution_type": "Digital",
-    "howlongtobeat": 20.5,
-    "site": "steam",
-    "url": "https://store.steampowered.com/app/394360/Hearts_of_Iron_IV/"
-  },
-  {
-    "name": "Return to Castle Wolfenstein",
-    "price_regular": 4.99,
-    "price_discount": 1.99,
-    "rating": 97,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/9f488ee21ce09b232da64769a396493fa4561a4b524ac1fa53db48f79b865725.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 30.1,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/return_to_castle_wolfenstein"
-  },
-  {
-    "name": "RollerCoaster Tycoon® Deluxe",
+    "name": "Nox™",
     "price_regular": 5.99,
-    "price_discount": 2.99,
-    "rating": 92,
+    "price_discount": 1.37,
+    "rating": 87,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/e3a43206b1f6d4d20f0a7a3f1fbd791da17c743f931ca9416064783d8ac2ff60.jpg",
+    "image_url": "https://images.gog-statics.com/319f768899cd2190b977fc0b420ccb2169b375e14a43c3d88a4f2d740d1da6e7.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 32.5,
+    "howlongtobeat": 37.5,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/rollercoaster_tycoon_deluxe"
+    "url": "https://www.gog.com/en/game/nox"
   },
   {
-    "name": "Baldur's Gate: Enhanced Edition",
-    "price_regular": 19.99,
-    "price_discount": 9.99,
-    "rating": 95,
+    "name": "Sid Meier's Civilization® III Complete",
+    "price_regular": 5.99,
+    "price_discount": 1.19,
+    "rating": 84,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/90ba7463dae94110fd495957a6311648a6e1999bab1a0fcc2d5176b3f46141e8.jpg",
+    "image_url": "https://images.gog-statics.com/65ca82dd9ec2282c864330530a3dfdf777f07759783ecddf9ed31e4560d11a2f.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 35.5,
+    "howlongtobeat": 99.0,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/baldurs_gate_enhanced_edition"
+    "url": "https://www.gog.com/en/game/sid_meiers_civilization_iii_complete"
   },
   {
     "name": "Songs of Conquest",
     "price_regular": 29.99,
     "price_discount": 8.99,
-    "rating": 90,
+    "rating": 92,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.gog-statics.com/10c897b2c5811a437a39e76f7719b4bf9cd4997e2e3e4816c9df2a6d468b8656.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 40.9,
+    "howlongtobeat": 36.6,
     "site": "gog",
     "url": "https://www.gog.com/en/game/songs_of_conquest"
   },
@@ -1179,225 +1165,71 @@
     "name": "SPORE™ Collection",
     "price_regular": 29.99,
     "price_discount": 9.89,
-    "rating": 92,
+    "rating": 95,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.gog-statics.com/a844cf7a2a287621f4b18af0e0ce6b3372848ae716214b953ec4325678c0981e.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 44.6,
+    "howlongtobeat": 38.2,
     "site": "gog",
     "url": "https://www.gog.com/en/game/spore_collection"
-  },
-  {
-    "name": "Baldur's Gate II: Enhanced Edition",
-    "price_regular": 19.99,
-    "price_discount": 9.99,
-    "rating": 90,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/865e412024677b4594a91ea7cc3da75077ce8114adc26d5b92cb82c7f9b4509f.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 24.3,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/baldurs_gate_2_enhanced_edition"
-  },
-  {
-    "name": "DOOM (2016)",
-    "price_regular": 19.99,
-    "price_discount": 3.99,
-    "rating": 96,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/82a7cd303997644e10450fad1be3a3666f5cb0cfbc1fa44b38b429e607e64426.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 33.7,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/doom_2016"
-  },
-  {
-    "name": "Fallout",
-    "price_regular": 9.99,
-    "price_discount": 4.99,
-    "rating": 82,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/6fc6210c7392910ddf30d026b5216e67a7dcdb53e07dd9670d028aa4da1244d3.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 42.7,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/fallout"
-  },
-  {
-    "name": "Kingdom Come: Deliverance",
-    "price_regular": 29.99,
-    "price_discount": 5.99,
-    "rating": 96,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/3d3a31a86183d7e6f9f31a160b7ee37810837746f0b64e0d3e8165bb38466894.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 40.2,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/kingdom_come_deliverance"
-  },
-  {
-    "name": "Nobody Wants to Die",
-    "price_regular": 24.99,
-    "price_discount": 6.24,
-    "rating": 81,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/ebe168a9d74751cb16db933e2af557efb107f8301a493b41700a29e039b3a74c.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 34.2,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/nobody_wants_to_die"
-  },
-  {
-    "name": "Heroes of Might and Magic® 3: Complete",
-    "price_regular": 9.99,
-    "price_discount": 4.99,
-    "rating": 88,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/a18a7017bdca7bdd14fb003a46522e320051d3e9c1fb939559a4517d90f86170.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 25.0,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/heroes_of_might_and_magic_3_complete_edition"
-  },
-  {
-    "name": "Sniper Ghost Warrior Contracts",
-    "price_regular": 29.99,
-    "price_discount": 2.99,
-    "rating": 99,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/a097900bad23d791770b69decf3b47931101fc439e62afd6ea7be9fc4e039c5f.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 38.9,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/sniper_ghost_warrior_contracts"
-  },
-  {
-    "name": "Kingdom Come: Deliverance II Royal Edition",
-    "price_regular": 79.99,
-    "price_discount": 51.99,
-    "rating": 87,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/326029a858e0e9add303ed2844ec5c460656e62fe4d70cf664868d46477d4f4c.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 34.3,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/kingdom_come_deliverance_ii_royal_edition"
-  },
-  {
-    "name": "Heroes of Might and Magic® 4: Complete",
-    "price_regular": 9.99,
-    "price_discount": 4.99,
-    "rating": 83,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/3549b565446a62a7aa085620de0de02d2d587df6bf9a0f3fe6b8445a4f63c525.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 38.8,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/heroes_of_might_and_magic_4_complete"
-  },
-  {
-    "name": "Sid Meier's Civilization® III Complete",
-    "price_regular": 5.99,
-    "price_discount": 1.19,
-    "rating": 83,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/65ca82dd9ec2282c864330530a3dfdf777f07759783ecddf9ed31e4560d11a2f.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 78.4,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/sid_meiers_civilization_iii_complete"
-  },
-  {
-    "name": "The Settlers® 4: Gold Edition",
-    "price_regular": 9.99,
-    "price_discount": 2.49,
-    "rating": 90,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/ec17bc980b3f67c8318cb8b92807b42381b2061c076ecf12ca10d6b240bc311a.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 35.9,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/the_settlers_4_gold_edition"
   },
   {
     "name": "Medal of Honor™: Pacific Assault",
     "price_regular": 9.99,
     "price_discount": 2.49,
-    "rating": 80,
+    "rating": 96,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.gog-statics.com/8e13aeef741dfe3f75f57fac388221c9b5b946ca37adcf48e523626e9ecfb43b.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 39.4,
+    "howlongtobeat": 36.8,
     "site": "gog",
     "url": "https://www.gog.com/en/game/medal_of_honor_pacific_assault"
+  },
+  {
+    "name": "Fallout: New Vegas Ultimate Edition",
+    "price_regular": 19.99,
+    "price_discount": 9.99,
+    "rating": 82,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/d18b14716866d6edda0361a30661f25a4e326698561e03d3b5ac1ce15d97e884.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 22.1,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/fallout_new_vegas_ultimate_edition"
+  },
+  {
+    "name": "Kingdom Come: Deliverance II Royal Edition",
+    "price_regular": 79.99,
+    "price_discount": 51.99,
+    "rating": 92,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/326029a858e0e9add303ed2844ec5c460656e62fe4d70cf664868d46477d4f4c.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 28.0,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/kingdom_come_deliverance_ii_royal_edition"
   },
   {
     "name": "World in Conflict: Complete Edition",
     "price_regular": 9.99,
     "price_discount": 2.49,
-    "rating": 89,
+    "rating": 94,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.gog-statics.com/4829015ac0659f0ccd6ab212ed0fead101db794af571a093a33d73a11f870209.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 43.4,
+    "howlongtobeat": 26.6,
     "site": "gog",
     "url": "https://www.gog.com/en/game/world_in_conflict_complete_edition"
-  },
-  {
-    "name": "The Elder Scrolls III: Morrowind GOTY Edition",
-    "price_regular": 14.99,
-    "price_discount": 7.49,
-    "rating": 97,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/408994da00dea6d8c398cdc0e0d419c386355441216f74573880155dbf4deb79.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 77.0,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/the_elder_scrolls_iii_morrowind_goty_edition"
-  },
-  {
-    "name": "Saints Row 2",
-    "price_regular": 9.99,
-    "price_discount": 1.49,
-    "rating": 91,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/e5054aacbe4d66cc91783dfe5d2eb996e49d08523f8ed6f2cb07bd9cc747aed2.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 29.9,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/saints_row_2"
   },
   {
     "name": "Diablo + Hellfire",
@@ -1409,233 +1241,107 @@
     ],
     "image_url": "https://images.gog-statics.com/2a351ec2315d2b082c120a1499434480758e56603d2cf21a93e544300c0f3829.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 28.0,
+    "howlongtobeat": 30.2,
     "site": "gog",
     "url": "https://www.gog.com/en/game/diablo"
-  },
-  {
-    "name": "Cyberpunk 2077: Phantom Liberty",
-    "price_regular": 29.99,
-    "price_discount": 29.99,
-    "rating": 93,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/45a284386e693f1576b96d98a0023a7905d3956c6f9aa913d3fe5d09a5994bee.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 37.7,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/cyberpunk_2077_phantom_liberty"
-  },
-  {
-    "name": "Fallout 2",
-    "price_regular": 9.99,
-    "price_discount": 4.99,
-    "rating": 96,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/35d3d17c64d03d60395fe5e891a72e8d430e24190a8a187ac8aab31efe56b9ea.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 23.9,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/fallout_2"
-  },
-  {
-    "name": "The Settlers® 2: 10th Anniversary",
-    "price_regular": 9.99,
-    "price_discount": 2.49,
-    "rating": 87,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/1914e99f5b95875fa0616047ea0857762ef8360d9b55b3ae41ec933778200634.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 23.7,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/the_settlers_2_10th_anniversary"
-  },
-  {
-    "name": "The Inner World",
-    "price_regular": 14.99,
-    "price_discount": 1.19,
-    "rating": 87,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/0aa917c241a298a96b31a5bcdf5929e3d5f37571907ca0f7106647e7695648e8.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 39.8,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/the_inner_world"
-  },
-  {
-    "name": "The Witcher 3: Wild Hunt - Complete Edition",
-    "price_regular": 49.99,
-    "price_discount": 49.99,
-    "rating": 81,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/71d71c40052877a42c096b8230c71856a560d42132208cfa8e719243b5c6626b.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 71.0,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/the_witcher_3_wild_hunt_game_of_the_year_edition"
-  },
-  {
-    "name": "The Elder Scrolls V: Skyrim Special Edition",
-    "price_regular": 39.99,
-    "price_discount": 9.99,
-    "rating": 98,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/7a75d49946cb5ff732f0a889f44dd49fb3bede3ad7212c84b7c34a6d29aeff77.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 99.7,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/the_elder_scrolls_v_skyrim_special_edition"
   },
   {
     "name": "Anno 1404: Gold Edition",
     "price_regular": 14.99,
     "price_discount": 7.49,
-    "rating": 84,
+    "rating": 89,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.gog-statics.com/37083c95f959a69801aada2d765817592e7802111e04e924c61c7cd5cb605d63.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 19.6,
+    "howlongtobeat": 35.2,
     "site": "gog",
     "url": "https://www.gog.com/en/game/anno_1404_gold_edition"
   },
   {
-    "name": "Electrician Simulator",
-    "price_regular": 17.99,
-    "price_discount": 1.79,
-    "rating": 98,
+    "name": "POSTAL 2",
+    "price_regular": 9.99,
+    "price_discount": 0.99,
+    "rating": 93,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/cb191824d082cb79481cfa74c48f799c1a4607e11924228a5c2df1bb054f069a.jpg",
+    "image_url": "https://images.gog-statics.com/d852a13d79875678614aee8b5f534cd391eafcc51d443053d42b8210f1cb1d2a.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 22.4,
+    "howlongtobeat": 33.0,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/electrician_simulator"
+    "url": "https://www.gog.com/en/game/postal_2"
   },
   {
-    "name": "Shadow of the Tomb Raider: Definitive Edition",
-    "price_regular": 39.6,
-    "price_discount": 7.92,
-    "rating": 85,
+    "name": "Nobody Wants to Die",
+    "price_regular": 24.99,
+    "price_discount": 6.24,
+    "rating": 80,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/02b836f02d1fdb3a850efab0a82d81aab037d4089fbdd6f5a3d700f10f8aea40.jpg",
+    "image_url": "https://images.gog-statics.com/ebe168a9d74751cb16db933e2af557efb107f8301a493b41700a29e039b3a74c.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 41.7,
+    "howlongtobeat": 38.5,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/shadow_of_the_tomb_raider_definitive_edition"
-  },
-  {
-    "name": "Sniper: Ghost Warrior",
-    "price_regular": 5.99,
-    "price_discount": 0.59,
-    "rating": 88,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/d5525ae1ce5aaf97ddd32a7f57f84ccc9f010250122af691e045572a0d9fa571.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 38.9,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/sniper_ghost_warrior"
-  },
-  {
-    "name": "Kingdom Come: Deliverance Royal Edition",
-    "price_regular": 39.99,
-    "price_discount": 7.99,
-    "rating": 85,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/5e94ea37d9b60f625402695a729688e8c408de76ce4d856d842c50684491eab4.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 44.0,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/kingdom_come_deliverance_royal_edition"
-  },
-  {
-    "name": "Worms Forts: Under Siege",
-    "price_regular": 5.99,
-    "price_discount": 1.19,
-    "rating": 96,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/f157398c6c8248ad5d17aca2a78b3eb718aa253e5b435b825cf47a554ffc9576.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 29.7,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/worms_forts_under_siege"
+    "url": "https://www.gog.com/en/game/nobody_wants_to_die"
   },
   {
     "name": "This War of Mine: Complete Edition",
     "price_regular": 27.17,
     "price_discount": 2.71,
-    "rating": 97,
+    "rating": 81,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.gog-statics.com/dfd410aa604189754deea84fb56856c4895eed3ed96fa0ab04fbef1c1fd556a9.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 29.4,
+    "howlongtobeat": 28.8,
     "site": "gog",
     "url": "https://www.gog.com/en/game/this_war_of_mine_complete_edition"
   },
   {
-    "name": "Sacred 2 Remaster",
+    "name": "Shadow of the Tomb Raider: Definitive Edition",
+    "price_regular": 39.6,
+    "price_discount": 7.92,
+    "rating": 86,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/02b836f02d1fdb3a850efab0a82d81aab037d4089fbdd6f5a3d700f10f8aea40.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 32.5,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/shadow_of_the_tomb_raider_definitive_edition"
+  },
+  {
+    "name": "Dragon Age™: Origins - Ultimate Edition",
     "price_regular": 19.99,
-    "price_discount": 17.99,
-    "rating": 99,
+    "price_discount": 7.99,
+    "rating": 93,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/77a2426c4710a880bb82fedf0922b9439a1d4dfc2c3be53f8d3763b3fc55175f.jpg",
+    "image_url": "https://images.gog-statics.com/78485317312e881a175c686eaab8a988202b208942623acba641f35384f8dc12.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 19.3,
+    "howlongtobeat": 31.1,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/sacred_2_remaster"
+    "url": "https://www.gog.com/en/game/dragon_age_origins"
   },
   {
-    "name": "Fallout 4: Game of the Year Edition",
-    "price_regular": 39.99,
-    "price_discount": 15.99,
-    "rating": 81,
+    "name": "Kingdom Come: Deliverance",
+    "price_regular": 29.99,
+    "price_discount": 5.99,
+    "rating": 93,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/8b074a51347f0377d0a60ac241e8c5535d829540fe9c2e7ddf9277e4cc6d53d1.jpg",
+    "image_url": "https://images.gog-statics.com/3d3a31a86183d7e6f9f31a160b7ee37810837746f0b64e0d3e8165bb38466894.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 38.9,
+    "howlongtobeat": 29.1,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/fallout_4_game_of_the_year_edition"
-  },
-  {
-    "name": "Settlers® 3: Ultimate Collection",
-    "price_regular": 9.99,
-    "price_discount": 2.49,
-    "rating": 94,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/4359ca2ce063d4c20fd75747b600101f19bd7ef98195a91ee15fd435d60a59f0.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 32.0,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/the_settlers_3_ultimate_collection"
+    "url": "https://www.gog.com/en/game/kingdom_come_deliverance"
   },
   {
     "name": "The Settlers® 2: Gold Edition",
@@ -1647,21 +1353,497 @@
     ],
     "image_url": "https://images.gog-statics.com/df8399dd08c66cee193241b63a74cc8c786ab677f6ec3f2101eb96cb222e5d71.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 24.1,
+    "howlongtobeat": 28.8,
     "site": "gog",
     "url": "https://www.gog.com/en/game/the_settlers_2_gold_edition"
+  },
+  {
+    "name": "Sacred 2 Remaster",
+    "price_regular": 19.99,
+    "price_discount": 17.99,
+    "rating": 98,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/77a2426c4710a880bb82fedf0922b9439a1d4dfc2c3be53f8d3763b3fc55175f.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 21.7,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/sacred_2_remaster"
+  },
+  {
+    "name": "Rise of the Tomb Raider: 20 Year Celebration",
+    "price_regular": 29.99,
+    "price_discount": 4.49,
+    "rating": 93,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/e85d21bec9cecb99ff0e2e63255b9d7b309344a14696a8380b5dd010cf93927d.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 18.5,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/rise_of_the_tomb_raider_20_year_celebration"
+  },
+  {
+    "name": "Lords of the Fallen Game of the Year Edition 2014",
+    "price_regular": 29.99,
+    "price_discount": 1.49,
+    "rating": 85,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/2ea0c4180a881c4349c7b53377483760b18131f8672366e12701cd3c48edf5e6.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 31.8,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/lords_of_the_fallen_game_of_the_year_edition"
+  },
+  {
+    "name": "Electrician Simulator",
+    "price_regular": 17.99,
+    "price_discount": 1.79,
+    "rating": 85,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/cb191824d082cb79481cfa74c48f799c1a4607e11924228a5c2df1bb054f069a.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 24.1,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/electrician_simulator"
+  },
+  {
+    "name": "Heroes of Might and Magic® 4: Complete",
+    "price_regular": 9.99,
+    "price_discount": 4.99,
+    "rating": 99,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/3549b565446a62a7aa085620de0de02d2d587df6bf9a0f3fe6b8445a4f63c525.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 39.6,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/heroes_of_might_and_magic_4_complete"
+  },
+  {
+    "name": "Neverwinter Nights: Enhanced Edition Digital Deluxe Edition",
+    "price_regular": 68.29,
+    "price_discount": 6.82,
+    "rating": 80,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/3835cdf37b0927a05d44a7a7972d6828345afbc04f270914ab361350cbc2ad2d.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 39.8,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/neverwinter_nights_enhanced_edition_digital_deluxe_edition"
+  },
+  {
+    "name": "The Witcher 3: Wild Hunt - Complete Edition",
+    "price_regular": 49.99,
+    "price_discount": 49.99,
+    "rating": 83,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/71d71c40052877a42c096b8230c71856a560d42132208cfa8e719243b5c6626b.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 98.1,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/the_witcher_3_wild_hunt_game_of_the_year_edition"
+  },
+  {
+    "name": "Baldur's Gate II: Enhanced Edition",
+    "price_regular": 19.99,
+    "price_discount": 9.99,
+    "rating": 85,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/865e412024677b4594a91ea7cc3da75077ce8114adc26d5b92cb82c7f9b4509f.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 36.2,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/baldurs_gate_2_enhanced_edition"
+  },
+  {
+    "name": "Cyberpunk 2077: Phantom Liberty",
+    "price_regular": 29.99,
+    "price_discount": 29.99,
+    "rating": 84,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/45a284386e693f1576b96d98a0023a7905d3956c6f9aa913d3fe5d09a5994bee.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 39.8,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/cyberpunk_2077_phantom_liberty"
+  },
+  {
+    "name": "Tainted Grail: The Fall of Avalon",
+    "price_regular": 44.99,
+    "price_discount": 35.99,
+    "rating": 80,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/e980ac6231f889bed24be1f0563a9b06d2ad9e70345d741b4458fb0210158cde.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 28.8,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/tainted_grail_the_fall_of_avalon"
+  },
+  {
+    "name": "Crysis Remastered Trilogy",
+    "price_regular": 49.48,
+    "price_discount": 17.31,
+    "rating": 99,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/88a2478fa665c1f86aa74cf7ff07f85d1f5c01ae7c4bbb37f5cbbe9e8bfd09d8.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 25.1,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/crysis_remastered_trilogy"
+  },
+  {
+    "name": "ATOM RPG: Post-apocalyptic indie game",
+    "price_regular": 14.99,
+    "price_discount": 2.99,
+    "rating": 87,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/8ace748c976e8cb92b3b854480d560b413ca6cad76f8ee0d0bdc5cac7b77d0fb.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 67.9,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/atom_rpg_postapocalyptic_indie_game"
+  },
+  {
+    "name": "Sniper Ghost Warrior Contracts",
+    "price_regular": 29.99,
+    "price_discount": 2.99,
+    "rating": 83,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/a097900bad23d791770b69decf3b47931101fc439e62afd6ea7be9fc4e039c5f.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 29.3,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/sniper_ghost_warrior_contracts"
+  },
+  {
+    "name": "The Elder Scrolls V: Skyrim Special Edition",
+    "price_regular": 39.99,
+    "price_discount": 9.99,
+    "rating": 88,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/7a75d49946cb5ff732f0a889f44dd49fb3bede3ad7212c84b7c34a6d29aeff77.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 79.9,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/the_elder_scrolls_v_skyrim_special_edition"
+  },
+  {
+    "name": "Fallout 2",
+    "price_regular": 9.99,
+    "price_discount": 4.99,
+    "rating": 81,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/35d3d17c64d03d60395fe5e891a72e8d430e24190a8a187ac8aab31efe56b9ea.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 18.3,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/fallout_2"
+  },
+  {
+    "name": "Bloodshed",
+    "price_regular": 12.99,
+    "price_discount": 4.41,
+    "rating": 97,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/446da885c09351f2415a401e50a47770ae3928b2b8162009a07f05d214635938.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 44.0,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/bloodshed"
+  },
+  {
+    "name": "Kingdom Come: Deliverance Royal Edition",
+    "price_regular": 39.99,
+    "price_discount": 7.99,
+    "rating": 84,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/5e94ea37d9b60f625402695a729688e8c408de76ce4d856d842c50684491eab4.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 28.5,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/kingdom_come_deliverance_royal_edition"
+  },
+  {
+    "name": "Fallout",
+    "price_regular": 9.99,
+    "price_discount": 4.99,
+    "rating": 93,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/6fc6210c7392910ddf30d026b5216e67a7dcdb53e07dd9670d028aa4da1244d3.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 43.4,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/fallout"
+  },
+  {
+    "name": "The Inner World",
+    "price_regular": 14.99,
+    "price_discount": 1.19,
+    "rating": 98,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/0aa917c241a298a96b31a5bcdf5929e3d5f37571907ca0f7106647e7695648e8.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 31.3,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/the_inner_world"
+  },
+  {
+    "name": "Worms Forts: Under Siege",
+    "price_regular": 5.99,
+    "price_discount": 1.19,
+    "rating": 89,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/f157398c6c8248ad5d17aca2a78b3eb718aa253e5b435b825cf47a554ffc9576.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 43.9,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/worms_forts_under_siege"
+  },
+  {
+    "name": "Dungeon Keeper Gold™",
+    "price_regular": 5.99,
+    "price_discount": 2.39,
+    "rating": 80,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/59d47094960f0ba6b8712a046a2022ba23c8047bc4c75fda94d6c8b2304e4794.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 25.9,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/dungeon_keeper"
+  },
+  {
+    "name": "RollerCoaster Tycoon® Deluxe",
+    "price_regular": 5.99,
+    "price_discount": 2.99,
+    "rating": 82,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/e3a43206b1f6d4d20f0a7a3f1fbd791da17c743f931ca9416064783d8ac2ff60.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 24.5,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/rollercoaster_tycoon_deluxe"
+  },
+  {
+    "name": "DOOM (2016)",
+    "price_regular": 19.99,
+    "price_discount": 3.99,
+    "rating": 92,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/82a7cd303997644e10450fad1be3a3666f5cb0cfbc1fa44b38b429e607e64426.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 34.3,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/doom_2016"
+  },
+  {
+    "name": "Mafia Trilogy",
+    "price_regular": 59.99,
+    "price_discount": 11.99,
+    "rating": 81,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/b1d5e1605ef4c93efc5036f4dcb917e7da2c3a098d4023f4d16c187072c880f9.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 34.1,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/mafia_trilogy"
+  },
+  {
+    "name": "The Settlers® 4: Gold Edition",
+    "price_regular": 9.99,
+    "price_discount": 2.49,
+    "rating": 98,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/ec17bc980b3f67c8318cb8b92807b42381b2061c076ecf12ca10d6b240bc311a.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 34.5,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/the_settlers_4_gold_edition"
+  },
+  {
+    "name": "Medal of Honor: Allied Assault War Chest",
+    "price_regular": 9.99,
+    "price_discount": 2.49,
+    "rating": 86,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/5c91eb2e789f75422df7dbd85964dddcd38d90102db901049c48882d1fce26a2.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 23.7,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/medal_of_honor_allied_assault_war_chest"
+  },
+  {
+    "name": "The Settlers® 2: 10th Anniversary",
+    "price_regular": 9.99,
+    "price_discount": 2.49,
+    "rating": 95,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/1914e99f5b95875fa0616047ea0857762ef8360d9b55b3ae41ec933778200634.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 43.9,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/the_settlers_2_10th_anniversary"
+  },
+  {
+    "name": "Return to Castle Wolfenstein",
+    "price_regular": 4.99,
+    "price_discount": 1.99,
+    "rating": 94,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/9f488ee21ce09b232da64769a396493fa4561a4b524ac1fa53db48f79b865725.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 25.9,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/return_to_castle_wolfenstein"
+  },
+  {
+    "name": "SimCity™ 2000 Special Edition",
+    "price_regular": 5.99,
+    "price_discount": 2.99,
+    "rating": 82,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/6158456175ba7ca5a0a4951841e98282b3bcc5c1b48209c2215810fb40708204.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 43.6,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/simcity_2000_special_edition"
+  },
+  {
+    "name": "Sniper: Ghost Warrior",
+    "price_regular": 5.99,
+    "price_discount": 0.59,
+    "rating": 81,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/d5525ae1ce5aaf97ddd32a7f57f84ccc9f010250122af691e045572a0d9fa571.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 43.4,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/sniper_ghost_warrior"
+  },
+  {
+    "name": "Frostpunk: Game of the Year Edition",
+    "price_regular": 48.99,
+    "price_discount": 5.38,
+    "rating": 90,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/d11e79f5f4a12295974e03c039de49d6f9f82a8e9980627f5d8a339b910f4f6c.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 41.8,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/frostpunk_game_of_the_year_edition"
+  },
+  {
+    "name": "Saints Row 2",
+    "price_regular": 9.99,
+    "price_discount": 1.49,
+    "rating": 96,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/e5054aacbe4d66cc91783dfe5d2eb996e49d08523f8ed6f2cb07bd9cc747aed2.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 25.9,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/saints_row_2"
+  },
+  {
+    "name": "Empire Earth 2 Gold Edition",
+    "price_regular": 9.99,
+    "price_discount": 9.99,
+    "rating": 84,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/3a21d52fd60b3122d144714f32b58e905bac9d3d497f0e1bca46b89cc1bf2a49.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 25.2,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/empire_earth_2_gold"
+  },
+  {
+    "name": "Baldur's Gate: Enhanced Edition",
+    "price_regular": 19.99,
+    "price_discount": 9.99,
+    "rating": 83,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/90ba7463dae94110fd495957a6311648a6e1999bab1a0fcc2d5176b3f46141e8.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 41.8,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/baldurs_gate_enhanced_edition"
   },
   {
     "name": "Call of Cthulhu®",
     "price_regular": 19.99,
     "price_discount": 2.99,
-    "rating": 97,
+    "rating": 96,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.gog-statics.com/17313f2ca09f07b7a8e63700834e248521dc0c4c5ccde786d4fbfd11216214de.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 22.9,
+    "howlongtobeat": 38.2,
     "site": "gog",
     "url": "https://www.gog.com/en/game/call_of_cthulhu"
   },
@@ -1675,401 +1857,275 @@
     ],
     "image_url": "https://images.gog-statics.com/e5aa16043bc1434164e51299695d6802909228943005f7c331bbe746db1845ac.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 35.9,
+    "howlongtobeat": 24.8,
     "site": "gog",
     "url": "https://www.gog.com/en/game/everspace"
-  },
-  {
-    "name": "ATOM RPG: Post-apocalyptic indie game",
-    "price_regular": 14.99,
-    "price_discount": 2.99,
-    "rating": 98,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/8ace748c976e8cb92b3b854480d560b413ca6cad76f8ee0d0bdc5cac7b77d0fb.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 74.8,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/atom_rpg_postapocalyptic_indie_game"
-  },
-  {
-    "name": "Empire Earth 2 Gold Edition",
-    "price_regular": 9.99,
-    "price_discount": 9.99,
-    "rating": 87,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/3a21d52fd60b3122d144714f32b58e905bac9d3d497f0e1bca46b89cc1bf2a49.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 29.6,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/empire_earth_2_gold"
   },
   {
     "name": "Fallout 3: Game of the Year Edition",
     "price_regular": 19.99,
     "price_discount": 6.59,
-    "rating": 91,
+    "rating": 94,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.gog-statics.com/ba4ee4cbc04910b91f58115d2dbb5a0fecb6819b7d8abe6176e6300e9200ca48.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 23.7,
+    "howlongtobeat": 19.4,
     "site": "gog",
     "url": "https://www.gog.com/en/game/fallout_3_game_of_the_year_edition"
-  },
-  {
-    "name": "Dragon Age™: Origins - Ultimate Edition",
-    "price_regular": 19.99,
-    "price_discount": 7.99,
-    "rating": 96,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/78485317312e881a175c686eaab8a988202b208942623acba641f35384f8dc12.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 35.6,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/dragon_age_origins"
-  },
-  {
-    "name": "Empire Earth Gold Edition",
-    "price_regular": 5.99,
-    "price_discount": 5.99,
-    "rating": 96,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/df49f2b1be2f16ce1664b0653fd623223066cf80e9723cc86049185eea1fa0c9.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 21.7,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/empire_earth_gold_edition"
-  },
-  {
-    "name": "POSTAL 2",
-    "price_regular": 9.99,
-    "price_discount": 0.99,
-    "rating": 89,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/d852a13d79875678614aee8b5f534cd391eafcc51d443053d42b8210f1cb1d2a.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 24.9,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/postal_2"
-  },
-  {
-    "name": "Dungeon Keeper Gold™",
-    "price_regular": 5.99,
-    "price_discount": 2.39,
-    "rating": 99,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/59d47094960f0ba6b8712a046a2022ba23c8047bc4c75fda94d6c8b2304e4794.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 18.1,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/dungeon_keeper"
-  },
-  {
-    "name": "Medal of Honor: Allied Assault War Chest",
-    "price_regular": 9.99,
-    "price_discount": 2.49,
-    "rating": 98,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/5c91eb2e789f75422df7dbd85964dddcd38d90102db901049c48882d1fce26a2.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 35.6,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/medal_of_honor_allied_assault_war_chest"
-  },
-  {
-    "name": "Fallout: New Vegas Ultimate Edition",
-    "price_regular": 19.99,
-    "price_discount": 9.99,
-    "rating": 93,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/d18b14716866d6edda0361a30661f25a4e326698561e03d3b5ac1ce15d97e884.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 27.4,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/fallout_new_vegas_ultimate_edition"
-  },
-  {
-    "name": "Lords of the Fallen Game of the Year Edition 2014",
-    "price_regular": 29.99,
-    "price_discount": 1.49,
-    "rating": 89,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/2ea0c4180a881c4349c7b53377483760b18131f8672366e12701cd3c48edf5e6.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 23.4,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/lords_of_the_fallen_game_of_the_year_edition"
-  },
-  {
-    "name": "Neverwinter Nights: Enhanced Edition Digital Deluxe Edition",
-    "price_regular": 68.29,
-    "price_discount": 6.82,
-    "rating": 81,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/3835cdf37b0927a05d44a7a7972d6828345afbc04f270914ab361350cbc2ad2d.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 22.8,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/neverwinter_nights_enhanced_edition_digital_deluxe_edition"
   },
   {
     "name": "The Elder Scrolls V: Skyrim Anniversary Edition",
     "price_regular": 49.99,
     "price_discount": 16.49,
-    "rating": 96,
+    "rating": 91,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.gog-statics.com/16a042d9ad86c137414df42707c88a09339acc9b8dc495b9cd5fe895d6ec0af4.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 50.8,
+    "howlongtobeat": 98.8,
     "site": "gog",
     "url": "https://www.gog.com/en/game/the_elder_scrolls_v_skyrim_anniversary_edition"
   },
   {
-    "name": "Crysis Remastered Trilogy",
-    "price_regular": 49.48,
-    "price_discount": 17.31,
-    "rating": 82,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/88a2478fa665c1f86aa74cf7ff07f85d1f5c01ae7c4bbb37f5cbbe9e8bfd09d8.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 35.2,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/crysis_remastered_trilogy"
-  },
-  {
-    "name": "Nox™",
-    "price_regular": 5.99,
-    "price_discount": 1.37,
-    "rating": 97,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/319f768899cd2190b977fc0b420ccb2169b375e14a43c3d88a4f2d740d1da6e7.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 42.9,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/nox"
-  },
-  {
-    "name": "SimCity™ 2000 Special Edition",
-    "price_regular": 5.99,
-    "price_discount": 2.99,
-    "rating": 87,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/6158456175ba7ca5a0a4951841e98282b3bcc5c1b48209c2215810fb40708204.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 43.2,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/simcity_2000_special_edition"
-  },
-  {
-    "name": "Bloodshed",
-    "price_regular": 12.99,
-    "price_discount": 4.41,
-    "rating": 97,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/446da885c09351f2415a401e50a47770ae3928b2b8162009a07f05d214635938.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 42.3,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/bloodshed"
-  },
-  {
-    "name": "Mafia Trilogy",
-    "price_regular": 59.99,
-    "price_discount": 11.99,
-    "rating": 87,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/b1d5e1605ef4c93efc5036f4dcb917e7da2c3a098d4023f4d16c187072c880f9.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 31.1,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/mafia_trilogy"
-  },
-  {
-    "name": "Rise of the Tomb Raider: 20 Year Celebration",
-    "price_regular": 29.99,
-    "price_discount": 4.49,
-    "rating": 99,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/e85d21bec9cecb99ff0e2e63255b9d7b309344a14696a8380b5dd010cf93927d.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 36.5,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/rise_of_the_tomb_raider_20_year_celebration"
-  },
-  {
-    "name": "Tainted Grail: The Fall of Avalon",
-    "price_regular": 44.99,
-    "price_discount": 35.99,
-    "rating": 83,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/e980ac6231f889bed24be1f0563a9b06d2ad9e70345d741b4458fb0210158cde.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 43.7,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/tainted_grail_the_fall_of_avalon"
-  },
-  {
-    "name": "Frostpunk: Game of the Year Edition",
-    "price_regular": 48.99,
-    "price_discount": 5.38,
-    "rating": 97,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/d11e79f5f4a12295974e03c039de49d6f9f82a8e9980627f5d8a339b910f4f6c.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 39.6,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/frostpunk_game_of_the_year_edition"
-  },
-  {
-    "name": "ATOM RPG: Trudograd",
-    "price_regular": 10.99,
-    "price_discount": 2.19,
+    "name": "The Elder Scrolls III: Morrowind GOTY Edition",
+    "price_regular": 14.99,
+    "price_discount": 7.49,
     "rating": 85,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/d5a3345d257a41c310c1b4e2121aaa240be588a5c5ac8b1ef80f7f2b9388d3b0.jpg",
+    "image_url": "https://images.gog-statics.com/408994da00dea6d8c398cdc0e0d419c386355441216f74573880155dbf4deb79.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 51.0,
+    "howlongtobeat": 69.2,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/atom_rpg_trudograd"
+    "url": "https://www.gog.com/en/game/the_elder_scrolls_iii_morrowind_goty_edition"
   },
   {
-    "name": "Tainted Grail: Conquest",
-    "price_regular": 19.99,
-    "price_discount": 3.99,
+    "name": "Fallout 4: Game of the Year Edition",
+    "price_regular": 39.99,
+    "price_discount": 15.99,
+    "rating": 80,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/8b074a51347f0377d0a60ac241e8c5535d829540fe9c2e7ddf9277e4cc6d53d1.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 18.1,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/fallout_4_game_of_the_year_edition"
+  },
+  {
+    "name": "Empire Earth Gold Edition",
+    "price_regular": 5.99,
+    "price_discount": 5.99,
+    "rating": 86,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/df49f2b1be2f16ce1664b0653fd623223066cf80e9723cc86049185eea1fa0c9.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 35.0,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/empire_earth_gold_edition"
+  },
+  {
+    "name": "Heroes of Might and Magic® 3: Complete",
+    "price_regular": 9.99,
+    "price_discount": 4.99,
     "rating": 91,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/43bcefb77593e8e0c6ad09af3d2f8a051e61740ff61f67623f01f260d54e1beb.jpg",
+    "image_url": "https://images.gog-statics.com/a18a7017bdca7bdd14fb003a46522e320051d3e9c1fb939559a4517d90f86170.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 42.4,
+    "howlongtobeat": 34.1,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/tainted_grail"
+    "url": "https://www.gog.com/en/game/heroes_of_might_and_magic_3_complete_edition"
   },
   {
-    "name": "Quake III Arena",
-    "price_regular": 14.99,
-    "price_discount": 5.99,
+    "name": "Settlers® 3: Ultimate Collection",
+    "price_regular": 9.99,
+    "price_discount": 2.49,
+    "rating": 88,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/4359ca2ce063d4c20fd75747b600101f19bd7ef98195a91ee15fd435d60a59f0.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 24.3,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/the_settlers_3_ultimate_collection"
+  },
+  {
+    "name": "Pumpkin Jack",
+    "price_regular": 29.99,
+    "price_discount": 2.99,
+    "rating": 88,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/47922828215edf9deb62bddda313c3543b9a96a06aec0c5364748ad066f1ecf5.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 31.8,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/pumpkin_jack"
+  },
+  {
+    "name": "Hotline Miami",
+    "price_regular": 9.99,
+    "price_discount": 1.99,
     "rating": 84,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/c347949a4325dee6cc3f80e040b4d401ce437382c521c1f3bce794502b5d475e.jpg",
+    "image_url": "https://images.gog-statics.com/124e6f1066799ec18bb6722d4e312773ec9570b16ce450736cd64ba9730c91e0.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 23.4,
+    "howlongtobeat": 30.0,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/quake_iii_arena"
+    "url": "https://www.gog.com/en/game/hotline_miami"
   },
   {
-    "name": "Cossacks Anthology",
+    "name": "Encased: A Sci-Fi Post-Apocalyptic RPG",
+    "price_regular": 29.99,
+    "price_discount": 2.99,
+    "rating": 86,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/a076b79fe5da5c6107c69841fe59188aed7af40209502f91413af65cd08053aa.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 65.8,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/encased_a_scifi_postapocalyptic_rpg"
+  },
+  {
+    "name": "Theme Hospital",
     "price_regular": 5.99,
-    "price_discount": 1.49,
+    "price_discount": 2.99,
     "rating": 99,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/eedfa99715704e15de1223d8c6a683c4227fbec94f74ffb21cdec4ae2351777f.jpg",
+    "image_url": "https://images.gog-statics.com/e179e3bc09e944c3d148c439b4d4af579ed24d4b3a7fbd16c1be108c8450a0af.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 21.2,
+    "howlongtobeat": 26.4,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/cossacks_anthology"
+    "url": "https://www.gog.com/en/game/theme_hospital"
   },
   {
-    "name": "The Settlers®: Rise of an Empire - Gold Edition",
-    "price_regular": 19.99,
-    "price_discount": 7.99,
-    "rating": 93,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/ce5fd2520b71e8827f87a2499c7ecc07b1b575da374e8e8a0bf152228cf31400.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 25.5,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/the_settlers_rise_of_an_empire_gold_edition"
-  },
-  {
-    "name": "Wolfenstein II: The New Colossus",
-    "price_regular": 39.99,
-    "price_discount": 5.99,
-    "rating": 98,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/2e7951e2138a71e1b17785ab97042782ca4213103d28cfec24540e3b6e685c99.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 34.3,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/wolfenstein_ii_the_new_colossus"
-  },
-  {
-    "name": "Kenshi",
-    "price_regular": 29.99,
-    "price_discount": 11.99,
+    "name": "Sniper Ghost Warrior Contracts 2 Complete Edition",
+    "price_regular": 59.24,
+    "price_discount": 8.88,
     "rating": 82,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/af0a8ea68e5df43d360179df04c815dd5887cbc23a2e2a5ddf1ac4112750eedf.jpg",
+    "image_url": "https://images.gog-statics.com/d7921c542ca478be052e77f54b39936334c91f13993bb2adb46897f5c4768fb9.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 37.8,
+    "howlongtobeat": 18.5,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/kenshi"
+    "url": "https://www.gog.com/en/game/sniper_ghost_warrior_contracts_2_complete_edition"
   },
   {
-    "name": "SiN Gold",
-    "price_regular": 9.99,
-    "price_discount": 1.49,
-    "rating": 92,
+    "name": "Baldur's Gate 3",
+    "price_regular": 59.99,
+    "price_discount": 59.99,
+    "rating": 97,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/ed6e1d793c7966cc24f528d2c835e5f7e4cbe6ffdf6b8906aa2eab89479177da.jpg",
+    "image_url": "https://images.gog-statics.com/0a805be8cf3d0848483595fb492b2f99d6def432e2fb9ed42c029cb38f9ccfdd.jpg",
     "distribution_type": "Digital",
     "howlongtobeat": 25.8,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/sin_gold"
+    "url": "https://www.gog.com/en/game/baldurs_gate_iii"
+  },
+  {
+    "name": "Cannon Fodder",
+    "price_regular": 5.99,
+    "price_discount": 2.99,
+    "rating": 83,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/e809b177221fe32b5442c3d50f154738c31a82b87613bf399da865f390386b55.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 27.5,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/cannon_fodder"
+  },
+  {
+    "name": "Darkstone",
+    "price_regular": 5.99,
+    "price_discount": 1.19,
+    "rating": 87,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/f5c6961f344856a00f2f5f65c111af7e2eb1c18d2e5585fbcc28b348c5521cbf.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 34.1,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/darkstone"
+  },
+  {
+    "name": "The Inner World - The Last Wind Monk",
+    "price_regular": 19.99,
+    "price_discount": 1.59,
+    "rating": 94,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/c2c08ce6d720956fb4521fd133944da2f128deaa9c5b6b58c7e4d1e35d107334.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 21.6,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/the_inner_world_the_last_wind_monk"
+  },
+  {
+    "name": "Drakensang",
+    "price_regular": 9.99,
+    "price_discount": 1.99,
+    "rating": 98,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/d422b3cfd194b7bdbfd695486aa8c9c7bb5e6c075403b5f65177868a0157a85b.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 22.1,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/drakensang"
+  },
+  {
+    "name": "Dungeon Keeper™ 2",
+    "price_regular": 5.99,
+    "price_discount": 2.39,
+    "rating": 80,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/3f85f1590f99c8d3ff5c70321fd15e7f7b9e3db71d409bcf7549ae53934374d1.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 24.8,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/dungeon_keeper_2"
+  },
+  {
+    "name": "ANSTOSS 3: Der Fußballmanager",
+    "price_regular": 5.99,
+    "price_discount": 5.99,
+    "rating": 88,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/a84839bd32bba7bbf75a9b0ee815efc4d162c836583850839d516b5bc0fd5665.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 36.5,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/anstoss_3"
   },
   {
     "name": "RollerCoaster Tycoon® 2: Triple Thrill Pack",
@@ -2081,862 +2137,806 @@
     ],
     "image_url": "https://images.gog-statics.com/1aac3c8ff171990ae9c178af719b3155ce43554e180364a772512f059320c0ec.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 22.6,
+    "howlongtobeat": 33.3,
     "site": "gog",
     "url": "https://www.gog.com/en/game/rollercoaster_tycoon_2"
   },
   {
-    "name": "Jade Empire: Special Edition",
-    "price_regular": 14.99,
-    "price_discount": 3.74,
-    "rating": 91,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/010661d2c6213d65106f9f71c19baa2738e15b17dedee19b27a028e87e82f6e7.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 34.3,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/jade_empire_special_edition"
-  },
-  {
-    "name": "Sniper Ghost Warrior 3",
-    "price_regular": 16.99,
-    "price_discount": 1.69,
-    "rating": 83,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/067b37fb0dbe57494957c92bf6d614547dff7897540ca59e1c709656364e5cfd.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 44.7,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/sniper_ghost_warrior_3"
-  },
-  {
-    "name": "Hotline Miami",
-    "price_regular": 9.99,
-    "price_discount": 1.99,
+    "name": "Cossacks Anthology",
+    "price_regular": 5.99,
+    "price_discount": 1.49,
     "rating": 97,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/124e6f1066799ec18bb6722d4e312773ec9570b16ce450736cd64ba9730c91e0.jpg",
+    "image_url": "https://images.gog-statics.com/eedfa99715704e15de1223d8c6a683c4227fbec94f74ffb21cdec4ae2351777f.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 30.4,
+    "howlongtobeat": 25.1,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/hotline_miami"
+    "url": "https://www.gog.com/en/game/cossacks_anthology"
   },
   {
-    "name": "Heroes of Might and Magic® 2: Gold",
+    "name": "Brothers in Arms: Hell's Highway™",
     "price_regular": 9.99,
-    "price_discount": 4.99,
+    "price_discount": 3.99,
     "rating": 92,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/80940c3b71947fd3d83e7e53faf3c232089986188947b3f116f1f3069a534056.jpg",
+    "image_url": "https://images.gog-statics.com/2c40ed9b5d199396d80153ad8c4e7200cfcfc23c0131650fec948420d6a95bba.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 18.1,
+    "howlongtobeat": 30.9,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/heroes_of_might_and_magic_2_gold_edition"
+    "url": "https://www.gog.com/en/game/brothers_in_arms_hells_highway"
   },
   {
-    "name": "ANSTOSS 3: Der Fußballmanager",
-    "price_regular": 5.99,
+    "name": "Sid Meier's Civilization IV®: The Complete Edition",
+    "price_regular": 29.99,
     "price_discount": 5.99,
-    "rating": 98,
+    "rating": 87,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/a84839bd32bba7bbf75a9b0ee815efc4d162c836583850839d516b5bc0fd5665.jpg",
+    "image_url": "https://images.gog-statics.com/37ac843afc2b6d5f3b3b600483948cfc0f849a7c20a95adfcefe5c2b73caa4e7.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 42.6,
+    "howlongtobeat": 55.4,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/anstoss_3"
+    "url": "https://www.gog.com/en/game/sid_meiers_civilization_iv_the_complete_edition"
+  },
+  {
+    "name": "Homeworld® Remastered Collection",
+    "price_regular": 34.99,
+    "price_discount": 3.49,
+    "rating": 99,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/dce7a50009085fcaf3d7e6f1f52623b70de6f5118a065952b26c1c8e4c604d58.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 34.3,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/homeworld_remastered_collection"
+  },
+  {
+    "name": "NecroVision",
+    "price_regular": 4.99,
+    "price_discount": 0.74,
+    "rating": 87,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.gog-statics.com/4a61ffa30fc343aefbf4b16acfab183c9c4de441a88acb000b348a7a8004acdd.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 30.3,
+    "site": "gog",
+    "url": "https://www.gog.com/en/game/necrovision"
   },
   {
     "name": "Far Cry®",
     "price_regular": 9.99,
     "price_discount": 2.99,
-    "rating": 81,
+    "rating": 95,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.gog-statics.com/cd587d720d85c97fdfe8a6863925eb494050061e8451d76a3c77aa0c761b7edc.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 25.5,
+    "howlongtobeat": 35.2,
     "site": "gog",
     "url": "https://www.gog.com/en/game/far_cry"
   },
   {
-    "name": "Cyberpunk 2077: Ultimate Edition",
-    "price_regular": 79.99,
-    "price_discount": 79.99,
-    "rating": 88,
+    "name": "Lands of Lore™ 1+2",
+    "price_regular": 5.99,
+    "price_discount": 1.49,
+    "rating": 89,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/257b1513b1de9146a3e003b3766f14b0073f0152c4eddc01223dc3585ba50320.jpg",
+    "image_url": "https://images.gog-statics.com/940d6fd36425f6c11bc96028905f67d9dc341eb185e81f7198c0da440a41fc46.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 20.9,
+    "howlongtobeat": 43.4,
     "site": "gog",
-    "url": "https://www.gog.com/en/game/cyberpunk_2077_ultimate_edition"
+    "url": "https://www.gog.com/en/game/lands_of_lore_1_2"
   },
   {
-    "name": "Deus Ex: Mankind Divided - Digital Deluxe Edition",
-    "price_regular": 44.99,
-    "price_discount": 6.74,
-    "rating": 85,
+    "name": "Tiny Tina's Wonderlands",
+    "price_regular": 14.99,
+    "price_discount": 11.24,
+    "rating": 81,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/6da1cdef18c2be446de1f62dec0aec879787d58a62703055c1a8a878af54e996.jpg",
+    "image_url": "https://images.greenmangaming.com/8161e01dcc5941c6b24da934bdb84cd1/e42b5c94a8444cbe933f0025e8051d05.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 20.0,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/deus_ex_mankind_divided_deluxe_edition"
+    "howlongtobeat": 44.8,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/tiny-tinas-wonderlands-pc/"
   },
   {
-    "name": "Vampire®: The Masquerade - Bloodlines™",
+    "name": "Cities: Skylines II - Bridges & Ports",
     "price_regular": 19.99,
-    "price_discount": 19.99,
-    "rating": 84,
+    "price_discount": 15.99,
+    "rating": 94,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.gog-statics.com/8bbb356c33d8a97cd6ec70793c81aa29d55680f38e93688d61d69fe3fa831719.jpg",
+    "image_url": "https://images.greenmangaming.com/c3086d4142ae4eed9323faf4a2ababa0/bf65faf7e2c646a08f199a6092ee464c.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 35.9,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/vampire_the_masquerade_bloodlines"
-  },
-  {
-    "name": "Sensible World of Soccer 96/97",
-    "price_regular": 5.99,
-    "price_discount": 2.99,
-    "rating": 96,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/44245179eddb526519c2cba329fa46dc50890fec30966cfccd055752a45947c7.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 29.8,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/sensible_world_of_soccer_9697"
-  },
-  {
-    "name": "Darkstone",
-    "price_regular": 5.99,
-    "price_discount": 1.19,
-    "rating": 83,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.gog-statics.com/f5c6961f344856a00f2f5f65c111af7e2eb1c18d2e5585fbcc28b348c5521cbf.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 38.4,
-    "site": "gog",
-    "url": "https://www.gog.com/en/game/darkstone"
-  },
-  {
-    "name": "CODE VEIN II",
-    "price_regular": 24.99,
-    "price_discount": 18.74,
-    "rating": 86,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/514ac5b9a1754c2f80a739d250bb2b70/923422a801794e97a08490940e14f3a5.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 30.8,
+    "howlongtobeat": 34.0,
     "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/code-vein-ii-pc/"
-  },
-  {
-    "name": "Two Point Museum",
-    "price_regular": 4.99,
-    "price_discount": 4.99,
-    "rating": 83,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/2dc747fb44b642c19c6fbf4f304c9567/54049feae6fa43c3a725b0321fca952d.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 41.5,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/two-point-museum-pc/"
+    "url": "https://www.greenmangaming.com/games/cities-skylines-ii-bridges-and-ports-pc/"
   },
   {
     "name": "Rue Valley",
-    "price_regular": 49.99,
-    "price_discount": 37.49,
-    "rating": 83,
+    "price_regular": 44.99,
+    "price_discount": 38.24,
+    "rating": 80,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.greenmangaming.com/142b7ee01fee4dd994daf282b8e152fb/0540ffd21ba9467c9cc2f10000e17f80.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 34.5,
+    "howlongtobeat": 20.4,
     "site": "gmg",
     "url": "https://www.greenmangaming.com/games/rue-valley-pc/"
   },
   {
-    "name": "Dead by Daylight - Stranger Things Chapter",
-    "price_regular": 39.99,
-    "price_discount": 31.99,
-    "rating": 87,
+    "name": "Fallout 4 GOTY Edition",
+    "price_regular": 34.99,
+    "price_discount": 29.74,
+    "rating": 91,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.greenmangaming.com/58d1985493c64f5c8068dc9c27584977/16f3c18299a04c44b8b99778a190ac4b.jpg",
+    "image_url": "https://images.greenmangaming.com/e11141e7339e411ab8c6e140bdf46023/ac028e3f5946460fb21acce428510f65.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 18.9,
+    "howlongtobeat": 44.9,
     "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/dead-by-daylight-stranger-things-chapter-pc/"
+    "url": "https://www.greenmangaming.com/games/fallout-4-goty-edition-pc/"
   },
   {
-    "name": "Sonic Racing: CrossWorlds",
+    "name": "Red Dead Redemption 2",
+    "price_regular": 59.99,
+    "price_discount": 44.99,
+    "rating": 89,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/d5811458e1394d6d84ea09378631b0b7/85a9edaf1e0640b6826f020a92a9c0b0.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 44.1,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/red-dead-redemption-2-pc/"
+  },
+  {
+    "name": "Homeworld 3",
     "price_regular": 59.99,
     "price_discount": 47.99,
     "rating": 80,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.greenmangaming.com/9080d4a77ee5450e89e8d78f9e297ff1/05ba7a74e176476c9878f189fc9550d2.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 23.5,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/sonic-racing-crossworlds-pc/"
-  },
-  {
-    "name": "Little Problems: A Cozy Detective Game",
-    "price_regular": 49.99,
-    "price_discount": 39.99,
-    "rating": 98,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/c5fbdf26380449c8964f01445a88368e/bc2b383457274caba01ddc89f89bd107.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 20.3,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/little-problems-a-cozy-detective-game-pc/"
-  },
-  {
-    "name": "Borderlands 4",
-    "price_regular": 19.99,
-    "price_discount": 17.99,
-    "rating": 84,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/92aa0dc933d1406dbd59724f78ca8db4/585352f28fa64db0b71b583f76f752d7.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 24.1,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/borderlands-4-pc/"
-  },
-  {
-    "name": "Fallout 4 GOTY Edition",
-    "price_regular": 14.99,
-    "price_discount": 13.49,
-    "rating": 95,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/e11141e7339e411ab8c6e140bdf46023/ac028e3f5946460fb21acce428510f65.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 33.8,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/fallout-4-goty-edition-pc/"
-  },
-  {
-    "name": "SCUM Base Building Decor Pack",
-    "price_regular": 44.99,
-    "price_discount": 33.74,
-    "rating": 95,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/a82e776735c54d94b95150afbd509ed1/fbb2742ce8a6434e98303eea8092056c.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 18.6,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/scum-base-building-decor-pack-pc/"
-  },
-  {
-    "name": "Age of Wonders 4: Thrones of Blood",
-    "price_regular": 4.99,
-    "price_discount": 4.99,
-    "rating": 80,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/cbf17b5a1b744a248d26ede493acb41c/4c5e894237ba41cea8551fb37e3f3a4d.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 18.2,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/age-of-wonders-4-thrones-of-blood-pc/"
-  },
-  {
-    "name": "Cities: Skylines II - Bridges & Ports",
-    "price_regular": 29.99,
-    "price_discount": 29.99,
-    "rating": 83,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/c3086d4142ae4eed9323faf4a2ababa0/bf65faf7e2c646a08f199a6092ee464c.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 31.4,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/cities-skylines-ii-bridges-and-ports-pc/"
-  },
-  {
-    "name": "Deckline",
-    "price_regular": 59.99,
-    "price_discount": 59.99,
-    "rating": 90,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/80232d652e064ecb8c41a4bbea5ec0a4/863211c9b76c44d9a489855a633852a8.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 30.2,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/deckline-pc/"
-  },
-  {
-    "name": "Flesh Made Fear",
-    "price_regular": 44.99,
-    "price_discount": 35.99,
-    "rating": 99,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/ddb9c1d192e54d61b994daaa588926c7/6ffdd939c36e44d3a27c0ea0d7e42bf7.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 29.9,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/flesh-made-fear-pc/"
-  },
-  {
-    "name": "GIGASWORD",
-    "price_regular": 14.99,
-    "price_discount": 14.99,
-    "rating": 86,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/8a8e97dc81374560a4c05dda586c700a/90a5b9e7c053447081e8d16b3a36e366.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 19.6,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/gigasword-pc/"
-  },
-  {
-    "name": "Digimon Story Time Stranger Ultimate Edition",
-    "price_regular": 24.99,
-    "price_discount": 19.99,
-    "rating": 97,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/1c1e42819efd4f27abeb74590336ec39/5a2e1aeaf77643878afe9f873ad66576.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 42.5,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/digimon-story-time-stranger-ultimate-edition-pc/"
-  },
-  {
-    "name": "XCOM® 2",
-    "price_regular": 4.99,
-    "price_discount": 4.24,
-    "rating": 91,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/b8438e47a89c4f24b172e5904e442a55/641e134966af47568c53b2bc5e7e50ac.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 39.4,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/xcom-2/"
-  },
-  {
-    "name": "Wanderer: The Fragments of Fate",
-    "price_regular": 9.99,
-    "price_discount": 8.99,
-    "rating": 83,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/5918b2a010a04ed384207ecc5a07d181/3879193ff5fc484cba8cb82768258f31.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 23.9,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/wanderer-the-fragments-of-fate-pc/"
-  },
-  {
-    "name": "New Tales from the Borderlands: Deluxe Edition",
-    "price_regular": 19.99,
-    "price_discount": 19.99,
-    "rating": 85,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/cf25ca75ba454ff49b2bc8499654623d/810776ea0b3c420dbb34e74614250680.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 21.5,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/new-tales-from-the-borderlands-deluxe-edition-pc/"
-  },
-  {
-    "name": "Tribes of Midgard",
-    "price_regular": 59.99,
-    "price_discount": 44.99,
-    "rating": 94,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/efa5e751e38c46c586fd8fe335adba1b/c7ab91f1faf944209c5a05757fafe191.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 27.5,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/tribes-of-midgard-pc/"
-  },
-  {
-    "name": "Tiny Tina's Wonderlands",
-    "price_regular": 14.99,
-    "price_discount": 13.49,
-    "rating": 93,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/8161e01dcc5941c6b24da934bdb84cd1/e42b5c94a8444cbe933f0025e8051d05.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 25.9,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/tiny-tinas-wonderlands-pc/"
-  },
-  {
-    "name": "Homeworld 3",
-    "price_regular": 49.99,
-    "price_discount": 42.49,
-    "rating": 81,
-    "platforms": [
-      "PC"
-    ],
     "image_url": "https://images.greenmangaming.com/970b2a47028144f9970867be05568826/d19cc53cda6242e791cd0e2ed49467f1.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 29.5,
+    "howlongtobeat": 41.4,
     "site": "gmg",
     "url": "https://www.greenmangaming.com/games/homeworld-3-pc/"
   },
   {
-    "name": "Borderlands 3: Ultimate Edition",
-    "price_regular": 49.99,
-    "price_discount": 44.99,
-    "rating": 89,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/4b5c6490ea1043428fef686f5e9784af/5d95fa363ce54733a49864f5df20ba69.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 35.7,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/borderlands-3-ultimate-edition-pc/"
-  },
-  {
-    "name": "Destiny 2: Renegades",
-    "price_regular": 59.99,
-    "price_discount": 53.99,
-    "rating": 80,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/bf5633287fe84582854217cf5b7c7063/ccf91a63bd024a118550d48e7e7131b8.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 35.3,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/destiny-2-renegades-pc/"
-  },
-  {
-    "name": "Crimson Desert",
-    "price_regular": 9.99,
-    "price_discount": 6.99,
-    "rating": 99,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/ca69195230bf4e19af84ec50f13b2a04/e81d5b6068e94216a16a13963956be32.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 30.4,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/crimson-desert-pc/"
-  },
-  {
     "name": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2",
-    "price_regular": 24.99,
-    "price_discount": 19.99,
-    "rating": 93,
+    "price_regular": 49.99,
+    "price_discount": 49.99,
+    "rating": 96,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.greenmangaming.com/c2d7bc34408a4c84897a625b5eac9605/b33aba981b674edda94acceb549045df.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 35.0,
+    "howlongtobeat": 22.1,
     "site": "gmg",
     "url": "https://www.greenmangaming.com/games/demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-2-pc/"
   },
   {
-    "name": "Monster Hunter Stories 3: Twisted Reflection",
-    "price_regular": 49.99,
-    "price_discount": 39.99,
-    "rating": 97,
+    "name": "Borderlands 4",
+    "price_regular": 19.99,
+    "price_discount": 17.99,
+    "rating": 83,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.greenmangaming.com/7f3262db4a354bec969b450e87eab7a7/d4a4ef31a3a543eeb54c8c769617714b.jpg",
+    "image_url": "https://images.greenmangaming.com/92aa0dc933d1406dbd59724f78ca8db4/585352f28fa64db0b71b583f76f752d7.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 24.3,
+    "howlongtobeat": 24.5,
     "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/monster-hunter-stories-3-twisted-reflection-pc/"
+    "url": "https://www.greenmangaming.com/games/borderlands-4-pc/"
   },
   {
-    "name": "OCTOPATH TRAVELER 0",
-    "price_regular": 4.99,
-    "price_discount": 4.99,
-    "rating": 97,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/87a6b0300fb344f68a4df80efdab3dc0/2e554d818bcc4ae4941c230b0e7a70e9.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 33.7,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/octopath-traveler-0-pc/"
-  },
-  {
-    "name": "Resident Evil Requiem Deluxe Edition",
+    "name": "Final Fantasy Tactics - The Ivalice Chronicles",
     "price_regular": 49.99,
-    "price_discount": 39.99,
+    "price_discount": 37.49,
     "rating": 81,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.greenmangaming.com/8ccf3a926c574300b9d4e399b4894ad2/4fd43ae570af433e9ae303154bfe1119.jpg",
+    "image_url": "https://images.greenmangaming.com/083a8f1a2fe34823a62e6c5f27f14e20/996c44ed113b4f5f8286f379ab685653.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 43.8,
+    "howlongtobeat": 38.7,
     "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/resident-evil-requiem-deluxe-edition-pc/"
+    "url": "https://www.greenmangaming.com/games/final-fantasy-tactics-the-ivalice-chronicles-pc/"
   },
   {
-    "name": "Marvel's Spider-Man 2",
-    "price_regular": 4.99,
-    "price_discount": 3.74,
-    "rating": 80,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/ee08f5431c8c42c8bfa51c7216fcc624/8d5e872e835541dab64f2aedc7a6e0df.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 20.3,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/marvels-spider-man-2-pc/"
-  },
-  {
-    "name": "Little Nightmares III Deluxe Edition",
-    "price_regular": 24.99,
-    "price_discount": 22.49,
-    "rating": 97,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/12f8b491c7094c9aa5e3ea095f0e6ea3/1b17fadd7a9f4ee0a81ec01aa3186567.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 23.2,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/little-nightmares-iii-deluxe-edition-pc/"
-  },
-  {
-    "name": "SILENT HILL f",
-    "price_regular": 29.99,
-    "price_discount": 25.49,
+    "name": "Borderlands 3: Ultimate Edition",
+    "price_regular": 39.99,
+    "price_discount": 35.99,
     "rating": 88,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.greenmangaming.com/c05fdea301514526a40327555fb6c963/9b3e3bea78aa4418bcc54d3c6b4ed882.jpg",
+    "image_url": "https://images.greenmangaming.com/4b5c6490ea1043428fef686f5e9784af/5d95fa363ce54733a49864f5df20ba69.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 32.8,
+    "howlongtobeat": 24.8,
     "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/silent-hill-f-pc/"
+    "url": "https://www.greenmangaming.com/games/borderlands-3-ultimate-edition-pc/"
+  },
+  {
+    "name": "SCUM Base Building Decor Pack",
+    "price_regular": 24.99,
+    "price_discount": 17.49,
+    "rating": 89,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/a82e776735c54d94b95150afbd509ed1/fbb2742ce8a6434e98303eea8092056c.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 38.1,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/scum-base-building-decor-pack-pc/"
+  },
+  {
+    "name": "Digimon Story Time Stranger Ultimate Edition",
+    "price_regular": 14.99,
+    "price_discount": 12.74,
+    "rating": 84,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/1c1e42819efd4f27abeb74590336ec39/5a2e1aeaf77643878afe9f873ad66576.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 27.9,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/digimon-story-time-stranger-ultimate-edition-pc/"
+  },
+  {
+    "name": "Two Point Museum",
+    "price_regular": 9.99,
+    "price_discount": 6.99,
+    "rating": 90,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/2dc747fb44b642c19c6fbf4f304c9567/54049feae6fa43c3a725b0321fca952d.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 30.7,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/two-point-museum-pc/"
   },
   {
     "name": "Yakuza Kiwami 3 & Dark Ties",
     "price_regular": 59.99,
-    "price_discount": 53.99,
-    "rating": 80,
+    "price_discount": 59.99,
+    "rating": 88,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.greenmangaming.com/492a81fc61774dd29b12f0c7e0c285c0/4cbc38f036834df1a6c646d65b458f05.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 37.2,
+    "howlongtobeat": 41.1,
     "site": "gmg",
     "url": "https://www.greenmangaming.com/games/yakuza-kiwami-3-and-dark-ties-pc/"
   },
   {
-    "name": "Vampire: The Masquerade® - Bloodlines™ 2",
-    "price_regular": 29.99,
-    "price_discount": 22.49,
-    "rating": 92,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/928b2224e0104e4fbd241a7b605a3f80/729da7bb377c451b82ea00ee1138946d.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 31.9,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/vampire-the-masquerade-bloodlines-2-pc/"
-  },
-  {
-    "name": "GRADIUS ORIGINS",
-    "price_regular": 24.99,
-    "price_discount": 17.49,
-    "rating": 97,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/e76f4337c8a649ddb7af7b20a8325950/480b21cc05134e10a3a583b42ff8abe5.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 43.4,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/gradius-origins-pc/"
-  },
-  {
-    "name": "DOOM: The Dark Ages",
+    "name": "Sonic Racing: CrossWorlds",
     "price_regular": 14.99,
     "price_discount": 10.49,
     "rating": 95,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.greenmangaming.com/6707e1812d3442f5a5a9128eb9abca38/3a3e0837e4b0497cb3e841eec62b67eb.jpg",
+    "image_url": "https://images.greenmangaming.com/9080d4a77ee5450e89e8d78f9e297ff1/05ba7a74e176476c9878f189fc9550d2.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 39.5,
+    "howlongtobeat": 35.5,
     "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/doom-the-dark-ages-pc/"
+    "url": "https://www.greenmangaming.com/games/sonic-racing-crossworlds-pc/"
   },
   {
-    "name": "Age of Empires IV: Knights of Cross and Rose",
-    "price_regular": 24.99,
-    "price_discount": 18.74,
-    "rating": 80,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/94ec50def04e4602bb13ff1d0ab1c394/b4d6de10ebb0485181b8ba900841f1b6.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 42.3,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/age-of-empires-iv-knights-of-cross-and-rose-pc/"
-  },
-  {
-    "name": "I Am Future: Cozy Apocalypse Survival",
-    "price_regular": 39.99,
-    "price_discount": 35.99,
-    "rating": 83,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/2ce406dacd73413a8d37831c8a2e5eb5/3edc5886b17340b7aeca3a6e0edce9c1.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 35.7,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/i-am-future-cozy-apocalypse-survival-pc/"
-  },
-  {
-    "name": "Lost Soul Aside™",
-    "price_regular": 39.99,
-    "price_discount": 29.99,
-    "rating": 94,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/6c70e9da1f03447da23eb93ffc9f0c61/ab6ac8c5e3c54db8845fe86611f1169e.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 19.5,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/lost-soul-aside-pc/"
-  },
-  {
-    "name": "IXION",
-    "price_regular": 14.99,
-    "price_discount": 14.99,
-    "rating": 85,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/27c992040fee4e2287943a3907cc260f/483d8cc3d1a347cfbedff37067e1711e.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 35.2,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/ixion-pc/"
-  },
-  {
-    "name": "The Outlast Trials",
-    "price_regular": 29.99,
-    "price_discount": 25.49,
+    "name": "Little Nightmares III Deluxe Edition",
+    "price_regular": 4.99,
+    "price_discount": 3.74,
     "rating": 99,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.greenmangaming.com/fde233ebe72948449b257692772c0c4f/3720313e67b24faeba9c05c57194a228.jpg",
+    "image_url": "https://images.greenmangaming.com/12f8b491c7094c9aa5e3ea095f0e6ea3/1b17fadd7a9f4ee0a81ec01aa3186567.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 34.1,
+    "howlongtobeat": 36.1,
     "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/the-outlast-trials-pc/"
-  },
-  {
-    "name": "Tormented Souls 2",
-    "price_regular": 4.99,
-    "price_discount": 4.99,
-    "rating": 82,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/b73b831d21d54b8db805d4a106e83240/76c26823cefc44428113c1925dc2670b.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 29.3,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/tormented-souls-2-pc/"
-  },
-  {
-    "name": "Grand Theft Auto V Enhanced & Great White Shark Card Bundle",
-    "price_regular": 9.99,
-    "price_discount": 9.99,
-    "rating": 93,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/b343628cae6d4c75ad7bae2ec020c927/9effcc3cda97469397746dc4191ea3c8.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 29.4,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/grand-theft-auto-v-enhanced-great-white-shark-card-bundle-pc/"
-  },
-  {
-    "name": "Digimon Story Time Stranger Deluxe Edition",
-    "price_regular": 9.99,
-    "price_discount": 9.99,
-    "rating": 88,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/818230199637467db18b315e605dd73a/ebbdefda26ff4a88bf3efc3511882fa7.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 36.6,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/digimon-story-time-stranger-deluxe-edition-pc/"
-  },
-  {
-    "name": "Fallout 4 - Creations Bundle",
-    "price_regular": 4.99,
-    "price_discount": 3.49,
-    "rating": 96,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/20b7fcc638cd453299c26071b16630f0/c45703fffb324d5c858a84ad079f357f.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 35.0,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/fallout-4-creations-bundle-pc/"
-  },
-  {
-    "name": "Resident Evil Requiem",
-    "price_regular": 39.99,
-    "price_discount": 31.99,
-    "rating": 97,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/325fa4a803ce40eea082bb79d7a11b0d/8cfb059230ba4a91b8b1b685a521a1f6.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 41.8,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/resident-evil-requiem-pc/"
-  },
-  {
-    "name": "Red Dead Redemption 2",
-    "price_regular": 9.99,
-    "price_discount": 7.49,
-    "rating": 88,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/d5811458e1394d6d84ea09378631b0b7/85a9edaf1e0640b6826f020a92a9c0b0.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 37.0,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/red-dead-redemption-2-pc/"
-  },
-  {
-    "name": "Final Fantasy Tactics - The Ivalice Chronicles",
-    "price_regular": 34.99,
-    "price_discount": 26.24,
-    "rating": 98,
-    "platforms": [
-      "PC"
-    ],
-    "image_url": "https://images.greenmangaming.com/083a8f1a2fe34823a62e6c5f27f14e20/996c44ed113b4f5f8286f379ab685653.jpg",
-    "distribution_type": "Digital",
-    "howlongtobeat": 37.0,
-    "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/final-fantasy-tactics-the-ivalice-chronicles-pc/"
+    "url": "https://www.greenmangaming.com/games/little-nightmares-iii-deluxe-edition-pc/"
   },
   {
     "name": "DRAGON QUEST I & II HD-2D Remake",
-    "price_regular": 34.99,
-    "price_discount": 24.49,
-    "rating": 89,
+    "price_regular": 19.99,
+    "price_discount": 16.99,
+    "rating": 88,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.greenmangaming.com/9d07d5e7b5e848e6b077ed21ca18a053/e2b988ad53d54574842f3750bb379789.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 34.8,
+    "howlongtobeat": 29.1,
     "site": "gmg",
     "url": "https://www.greenmangaming.com/games/dragon-quest-i-ii-hd2d-remake-pc/"
   },
   {
-    "name": "Monster Hunter Stories 3: Twisted Reflection Premium Deluxe Edition",
-    "price_regular": 9.99,
-    "price_discount": 7.99,
-    "rating": 80,
+    "name": "Wanderer: The Fragments of Fate",
+    "price_regular": 39.99,
+    "price_discount": 29.99,
+    "rating": 97,
     "platforms": [
       "PC"
     ],
-    "image_url": "https://images.greenmangaming.com/e6c805175e5b40e79683c316ea4de8e4/167eca8dd7f5468f998d05bcb97fca30.jpg",
+    "image_url": "https://images.greenmangaming.com/5918b2a010a04ed384207ecc5a07d181/3879193ff5fc484cba8cb82768258f31.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 33.4,
+    "howlongtobeat": 23.3,
     "site": "gmg",
-    "url": "https://www.greenmangaming.com/games/monster-hunter-stories-3-twisted-reflection-premium-deluxe-edition-pc/"
+    "url": "https://www.greenmangaming.com/games/wanderer-the-fragments-of-fate-pc/"
+  },
+  {
+    "name": "Vampire: The Masquerade® - Bloodlines™ 2",
+    "price_regular": 14.99,
+    "price_discount": 14.99,
+    "rating": 94,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/928b2224e0104e4fbd241a7b605a3f80/729da7bb377c451b82ea00ee1138946d.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 28.7,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/vampire-the-masquerade-bloodlines-2-pc/"
+  },
+  {
+    "name": "SILENT HILL f",
+    "price_regular": 24.99,
+    "price_discount": 19.99,
+    "rating": 97,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/c05fdea301514526a40327555fb6c963/9b3e3bea78aa4418bcc54d3c6b4ed882.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 31.1,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/silent-hill-f-pc/"
+  },
+  {
+    "name": "Lost Soul Aside™",
+    "price_regular": 9.99,
+    "price_discount": 7.49,
+    "rating": 89,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/6c70e9da1f03447da23eb93ffc9f0c61/ab6ac8c5e3c54db8845fe86611f1169e.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 42.4,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/lost-soul-aside-pc/"
+  },
+  {
+    "name": "GRADIUS ORIGINS",
+    "price_regular": 49.99,
+    "price_discount": 34.99,
+    "rating": 94,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/e76f4337c8a649ddb7af7b20a8325950/480b21cc05134e10a3a583b42ff8abe5.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 42.3,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/gradius-origins-pc/"
+  },
+  {
+    "name": "Destiny 2: Renegades",
+    "price_regular": 4.99,
+    "price_discount": 4.49,
+    "rating": 82,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/bf5633287fe84582854217cf5b7c7063/ccf91a63bd024a118550d48e7e7131b8.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 31.0,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/destiny-2-renegades-pc/"
+  },
+  {
+    "name": "DOOM: The Dark Ages",
+    "price_regular": 39.99,
+    "price_discount": 27.99,
+    "rating": 91,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/6707e1812d3442f5a5a9128eb9abca38/3a3e0837e4b0497cb3e841eec62b67eb.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 21.4,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/doom-the-dark-ages-pc/"
+  },
+  {
+    "name": "Marvel's Spider-Man 2",
+    "price_regular": 9.99,
+    "price_discount": 7.49,
+    "rating": 86,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/ee08f5431c8c42c8bfa51c7216fcc624/8d5e872e835541dab64f2aedc7a6e0df.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 44.4,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/marvels-spider-man-2-pc/"
+  },
+  {
+    "name": "CODE VEIN II",
+    "price_regular": 49.99,
+    "price_discount": 37.49,
+    "rating": 85,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/514ac5b9a1754c2f80a739d250bb2b70/923422a801794e97a08490940e14f3a5.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 30.0,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/code-vein-ii-pc/"
+  },
+  {
+    "name": "I Am Future: Cozy Apocalypse Survival",
+    "price_regular": 59.99,
+    "price_discount": 44.99,
+    "rating": 98,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/2ce406dacd73413a8d37831c8a2e5eb5/3edc5886b17340b7aeca3a6e0edce9c1.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 22.8,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/i-am-future-cozy-apocalypse-survival-pc/"
+  },
+  {
+    "name": "Fallout 4 - Creations Bundle",
+    "price_regular": 14.99,
+    "price_discount": 11.24,
+    "rating": 99,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/20b7fcc638cd453299c26071b16630f0/c45703fffb324d5c858a84ad079f357f.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 42.1,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/fallout-4-creations-bundle-pc/"
+  },
+  {
+    "name": "Crimson Desert",
+    "price_regular": 19.99,
+    "price_discount": 16.99,
+    "rating": 92,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/ca69195230bf4e19af84ec50f13b2a04/e81d5b6068e94216a16a13963956be32.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 29.8,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/crimson-desert-pc/"
   },
   {
     "name": "Session: Skate Sim - El Lay",
-    "price_regular": 49.99,
-    "price_discount": 37.49,
-    "rating": 84,
+    "price_regular": 59.99,
+    "price_discount": 50.99,
+    "rating": 81,
     "platforms": [
       "PC"
     ],
     "image_url": "https://images.greenmangaming.com/645a271d5ec640a98bb2031065b99142/dfc0dc0b3aa440c0aa5bd1d1eab90468.jpg",
     "distribution_type": "Digital",
-    "howlongtobeat": 25.3,
+    "howlongtobeat": 26.1,
     "site": "gmg",
     "url": "https://www.greenmangaming.com/games/session-skate-sim-el-lay-pc/"
+  },
+  {
+    "name": "IXION",
+    "price_regular": 14.99,
+    "price_discount": 13.49,
+    "rating": 95,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/27c992040fee4e2287943a3907cc260f/483d8cc3d1a347cfbedff37067e1711e.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 22.5,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/ixion-pc/"
+  },
+  {
+    "name": "Monster Hunter Stories 3: Twisted Reflection Premium Deluxe Edition",
+    "price_regular": 4.99,
+    "price_discount": 3.99,
+    "rating": 96,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/e6c805175e5b40e79683c316ea4de8e4/167eca8dd7f5468f998d05bcb97fca30.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 22.2,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/monster-hunter-stories-3-twisted-reflection-premium-deluxe-edition-pc/"
+  },
+  {
+    "name": "Flesh Made Fear",
+    "price_regular": 9.99,
+    "price_discount": 6.99,
+    "rating": 93,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/ddb9c1d192e54d61b994daaa588926c7/6ffdd939c36e44d3a27c0ea0d7e42bf7.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 34.6,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/flesh-made-fear-pc/"
+  },
+  {
+    "name": "Monster Hunter Stories 3: Twisted Reflection",
+    "price_regular": 49.99,
+    "price_discount": 39.99,
+    "rating": 90,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/7f3262db4a354bec969b450e87eab7a7/d4a4ef31a3a543eeb54c8c769617714b.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 40.3,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/monster-hunter-stories-3-twisted-reflection-pc/"
+  },
+  {
+    "name": "The Outlast Trials",
+    "price_regular": 9.99,
+    "price_discount": 6.99,
+    "rating": 87,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/fde233ebe72948449b257692772c0c4f/3720313e67b24faeba9c05c57194a228.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 43.7,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/the-outlast-trials-pc/"
+  },
+  {
+    "name": "GIGASWORD",
+    "price_regular": 29.99,
+    "price_discount": 25.49,
+    "rating": 87,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/8a8e97dc81374560a4c05dda586c700a/90a5b9e7c053447081e8d16b3a36e366.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 37.9,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/gigasword-pc/"
+  },
+  {
+    "name": "Deckline",
+    "price_regular": 34.99,
+    "price_discount": 26.24,
+    "rating": 87,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/80232d652e064ecb8c41a4bbea5ec0a4/863211c9b76c44d9a489855a633852a8.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 40.2,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/deckline-pc/"
+  },
+  {
+    "name": "OCTOPATH TRAVELER 0",
+    "price_regular": 9.99,
+    "price_discount": 8.99,
+    "rating": 87,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/87a6b0300fb344f68a4df80efdab3dc0/2e554d818bcc4ae4941c230b0e7a70e9.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 20.5,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/octopath-traveler-0-pc/"
+  },
+  {
+    "name": "Tormented Souls 2",
+    "price_regular": 59.99,
+    "price_discount": 44.99,
+    "rating": 89,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/b73b831d21d54b8db805d4a106e83240/76c26823cefc44428113c1925dc2670b.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 20.4,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/tormented-souls-2-pc/"
+  },
+  {
+    "name": "XCOM® 2",
+    "price_regular": 59.99,
+    "price_discount": 47.99,
+    "rating": 95,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/b8438e47a89c4f24b172e5904e442a55/641e134966af47568c53b2bc5e7e50ac.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 33.5,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/xcom-2/"
+  },
+  {
+    "name": "Resident Evil Requiem Deluxe Edition",
+    "price_regular": 29.99,
+    "price_discount": 29.99,
+    "rating": 97,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/8ccf3a926c574300b9d4e399b4894ad2/4fd43ae570af433e9ae303154bfe1119.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 18.1,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/resident-evil-requiem-deluxe-edition-pc/"
+  },
+  {
+    "name": "Grand Theft Auto V Enhanced & Great White Shark Card Bundle",
+    "price_regular": 44.99,
+    "price_discount": 31.49,
+    "rating": 88,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/b343628cae6d4c75ad7bae2ec020c927/9effcc3cda97469397746dc4191ea3c8.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 19.7,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/grand-theft-auto-v-enhanced-great-white-shark-card-bundle-pc/"
+  },
+  {
+    "name": "Age of Empires IV: Knights of Cross and Rose",
+    "price_regular": 39.99,
+    "price_discount": 35.99,
+    "rating": 86,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/94ec50def04e4602bb13ff1d0ab1c394/b4d6de10ebb0485181b8ba900841f1b6.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 35.2,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/age-of-empires-iv-knights-of-cross-and-rose-pc/"
+  },
+  {
+    "name": "New Tales from the Borderlands: Deluxe Edition",
+    "price_regular": 4.99,
+    "price_discount": 4.24,
+    "rating": 90,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/cf25ca75ba454ff49b2bc8499654623d/810776ea0b3c420dbb34e74614250680.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 41.6,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/new-tales-from-the-borderlands-deluxe-edition-pc/"
+  },
+  {
+    "name": "Little Problems: A Cozy Detective Game",
+    "price_regular": 24.99,
+    "price_discount": 18.74,
+    "rating": 87,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/c5fbdf26380449c8964f01445a88368e/bc2b383457274caba01ddc89f89bd107.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 18.5,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/little-problems-a-cozy-detective-game-pc/"
+  },
+  {
+    "name": "Dead by Daylight - Stranger Things Chapter",
+    "price_regular": 19.99,
+    "price_discount": 15.99,
+    "rating": 99,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/58d1985493c64f5c8068dc9c27584977/16f3c18299a04c44b8b99778a190ac4b.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 23.9,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/dead-by-daylight-stranger-things-chapter-pc/"
+  },
+  {
+    "name": "Digimon Story Time Stranger Deluxe Edition",
+    "price_regular": 29.99,
+    "price_discount": 20.99,
+    "rating": 87,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/818230199637467db18b315e605dd73a/ebbdefda26ff4a88bf3efc3511882fa7.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 36.9,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/digimon-story-time-stranger-deluxe-edition-pc/"
+  },
+  {
+    "name": "Tribes of Midgard",
+    "price_regular": 29.99,
+    "price_discount": 22.49,
+    "rating": 83,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/efa5e751e38c46c586fd8fe335adba1b/c7ab91f1faf944209c5a05757fafe191.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 34.6,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/tribes-of-midgard-pc/"
+  },
+  {
+    "name": "Age of Wonders 4: Thrones of Blood",
+    "price_regular": 14.99,
+    "price_discount": 14.99,
+    "rating": 86,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/cbf17b5a1b744a248d26ede493acb41c/4c5e894237ba41cea8551fb37e3f3a4d.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 21.7,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/age-of-wonders-4-thrones-of-blood-pc/"
+  },
+  {
+    "name": "Resident Evil Requiem",
+    "price_regular": 49.99,
+    "price_discount": 49.99,
+    "rating": 89,
+    "platforms": [
+      "PC"
+    ],
+    "image_url": "https://images.greenmangaming.com/325fa4a803ce40eea082bb79d7a11b0d/8cfb059230ba4a91b8b1b685a521a1f6.jpg",
+    "distribution_type": "Digital",
+    "howlongtobeat": 43.1,
+    "site": "gmg",
+    "url": "https://www.greenmangaming.com/games/resident-evil-requiem-pc/"
   }
 ]
