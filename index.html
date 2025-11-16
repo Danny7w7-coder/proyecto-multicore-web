@@ -446,12 +446,12 @@
     let allGames = [];
 
     function formatPrice(value) {
-      if (value === null || value === undefined || value === "" || isNaN(value)) {
-        return "N/D";
-      }
-      return "$" + Number(value).toFixed(2);
+  if (value === null || value === undefined || value === "" || isNaN(value)) {
+    return "N/D";
+  }
+  return "$" + Number(value).toFixed(2);
+}
 
-    }
 
     function calcDiscountPercent(regular, discount) {
       if (
