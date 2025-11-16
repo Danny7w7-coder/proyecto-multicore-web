@@ -4,9 +4,9 @@
 games_scraper_enhanced.py
 
 Scrapea 210 juegos de:
-- Steam (70)
-- GOG (70)
-- PNP Games (70) - usando Steam con otro nombre
+- Steam (80)
+- GOG (80)
+- Green Man Gaming (50)  -> clave 'gmg'
 
 Para cada juego obtiene SIEMPRE:
 - name, price_regular, price_discount, rating (80-99)
@@ -40,9 +40,9 @@ HEADERS = {
 }
 
 TARGET = {
-    "steam": 70,
-    "gog": 70,
-    "pnp": 70,  # Usaremos Steam pero lo llamamos PNP Games
+    "steam": 80,
+    "gog": 80,
+    "gmg": 50,   # Green Man Gaming
 }
 
 JSON_OUT = "results.json"
@@ -80,26 +80,6 @@ def generate_random_price() -> float:
 def random_distribution_type() -> str:
     """Devuelve aleatoriamente: Digital, Físico o Digital y físico."""
     return random.choice(["Digital", "Físico", "Digital y físico"])
-
-def random_pnp_platforms() -> List[str]:
-    """
-    Devuelve combinaciones de plataformas para PNP Games:
-    algunas solo Play, otras solo Switch, otras mixtas.
-    """
-    opciones = [
-        ["PS4"],
-        ["PS5"],
-        ["Switch"],
-        ["PS4", "PS5"],
-        ["PS4", "Switch"],
-        ["PS5", "Switch"],
-        ["PC", "PS4"],
-        ["PC", "PS5"],
-        ["PC", "Switch"],
-        ["PC", "PS4", "PS5"],
-        ["PC", "PS5", "Switch"],
-    ]
-    return random.choice(opciones)
 
 def estimate_howlongtobeat(game_name: str) -> float:
     """
@@ -198,10 +178,9 @@ async def save_csv(path: str, data: List[Dict]):
 
 # ========================== PARSEADORES ==========================
 
-def parse_steam(html: str, site_name: str = "steam") -> Optional[Dict]:
+def parse_steam(html: str) -> Optional[Dict]:
     """
-    Extrae datos de Steam. Para Steam normal: siempre plataforma PC.
-    Para PNP: plataformas aleatorias (PS/Switch/PC) y tipo de distribución variado.
+    Extrae datos de Steam. Siempre plataforma PC, distribución Digital.
     """
     try:
         soup = BeautifulSoup(html, "lxml")
@@ -230,7 +209,6 @@ def parse_steam(html: str, site_name: str = "steam") -> Optional[Dict]:
                 price_discount = price
                 price_regular = price
         
-        # Si no hay precios, se generan
         if not price_regular:
             price_regular = generate_random_price()
             discount_percent = random.choice([0, 0, 0, 10, 15, 20, 25, 30])
@@ -239,15 +217,9 @@ def parse_steam(html: str, site_name: str = "steam") -> Optional[Dict]:
         if not price_discount:
             price_discount = price_regular
         
-        # Plataformas:
-        # - Steam real: solo PC
-        # - PNP: plataformas mixtas (PS/Switch/PC)
-        if site_name == "pnp":
-            platforms = random_pnp_platforms()
-            distribution = random_distribution_type()
-        else:
-            platforms = ["PC"]
-            distribution = "Digital"
+        # Plataformas
+        platforms = ["PC"]
+        distribution = "Digital"
         
         # Imagen
         img = None
@@ -273,7 +245,7 @@ def parse_steam(html: str, site_name: str = "steam") -> Optional[Dict]:
             "image_url": img,
             "distribution_type": distribution,
             "howlongtobeat": hltb,
-            "site": site_name,
+            "site": "steam",
         }
     except Exception:
         return None
@@ -339,6 +311,85 @@ def parse_gog(html: str) -> Optional[Dict]:
     except Exception:
         return None
 
+def parse_gmg(html: str) -> Optional[Dict]:
+    """
+    Extrae datos de Green Man Gaming.
+    Si algún campo no está, se completa con datos aleatorios coherentes.
+    """
+    try:
+        soup = BeautifulSoup(html, "lxml")
+        
+        # Nombre
+        name_el = (
+            soup.select_one("h1.product-title") or
+            soup.select_one("h1")
+        )
+        name = name_el.get_text(strip=True) if name_el else None
+        if not name:
+            return None
+        
+        # Precios
+        price_discount = None
+        price_regular = None
+        
+        price_now_el = (
+            soup.select_one(".price .current") or
+            soup.select_one(".price__current") or
+            soup.select_one(".price")
+        )
+        price_old_el = (
+            soup.select_one(".price .was") or
+            soup.select_one(".price__was") or
+            soup.select_one(".price-old")
+        )
+        
+        if price_now_el:
+            price_discount = money_to_float(price_now_el.get_text(strip=True))
+        if price_old_el:
+            price_regular = money_to_float(price_old_el.get_text(strip=True))
+        
+        if not price_regular and not price_discount:
+            price_regular = generate_random_price()
+            discount_percent = random.choice([0, 10, 15, 20, 25, 30])
+            price_discount = round(price_regular * (1 - discount_percent / 100), 2)
+        else:
+            if price_regular is None and price_discount is not None:
+                price_regular = price_discount
+            if price_discount is None and price_regular is not None:
+                price_discount = price_regular
+        
+        # Imagen
+        img = None
+        og_img = soup.find("meta", property="og:image")
+        if og_img:
+            img = og_img.get("content")
+        if not img:
+            img_tag = soup.select_one("img.product-image") or soup.select_one("img")
+            if img_tag:
+                img = img_tag.get("src")
+        if not img:
+            img = "https://via.placeholder.com/460x215/0b3d2e/ffffff?text=GMG+Game"
+        
+        platforms = ["PC"]
+        distribution = "Digital"
+        
+        rating = generate_random_rating()
+        hltb = estimate_howlongtobeat(name)
+        
+        return {
+            "name": name,
+            "price_regular": price_regular,
+            "price_discount": price_discount,
+            "rating": rating,
+            "platforms": platforms,
+            "image_url": img,
+            "distribution_type": distribution,
+            "howlongtobeat": hltb,
+            "site": "gmg",
+        }
+    except Exception:
+        return None
+
 # ========================== SCRAPING UNITARIO ==========================
 
 async def scrape_game(session: aiohttp.ClientSession, site: str, url: str) -> Optional[Dict]:
@@ -350,11 +401,12 @@ async def scrape_game(session: aiohttp.ClientSession, site: str, url: str) -> Op
         if not html:
             return None
         
-        if site in ["steam", "pnp"]:
-            site_name = "pnp" if site == "pnp" else "steam"
-            base = parse_steam(html, site_name)
+        if site == "steam":
+            base = parse_steam(html)
         elif site == "gog":
             base = parse_gog(html)
+        elif site == "gmg":
+            base = parse_gmg(html)
         else:
             return None
         
@@ -368,16 +420,12 @@ async def scrape_game(session: aiohttp.ClientSession, site: str, url: str) -> Op
 
 # ========================== SEEDERS ==========================
 
-async def seed_steam(session: aiohttp.ClientSession, max_urls: int = 500, offset: int = 0) -> List[str]:
-    """
-    Obtiene URLs de juegos de Steam.
-    offset permite obtener diferentes sets de juegos (para PNP vs Steam).
-    """
-    urls = []
-    start_page = 1 + (offset // 25)
+async def seed_steam(session: aiohttp.ClientSession, max_urls: int = 500) -> List[str]:
+    """Obtiene URLs de juegos de Steam."""
+    urls: List[str] = []
     
     try:
-        for page in range(start_page, start_page + 30):
+        for page in range(1, 30):
             html = await fetch(session, f"https://store.steampowered.com/search/?filter=topsellers&page={page}")
             if not html:
                 continue
@@ -403,7 +451,7 @@ async def seed_steam(session: aiohttp.ClientSession, max_urls: int = 500, offset
 
 async def seed_gog(session: aiohttp.ClientSession, max_urls: int = 500) -> List[str]:
     """Obtiene URLs de juegos de GOG."""
-    urls = []
+    urls: List[str] = []
     
     try:
         for page in range(1, 30):
@@ -425,6 +473,47 @@ async def seed_gog(session: aiohttp.ClientSession, max_urls: int = 500) -> List[
                 break
             
             await asyncio.sleep(0.3)
+        
+        return urls
+    except Exception:
+        return urls
+
+async def seed_gmg(session: aiohttp.ClientSession, max_urls: int = 500) -> List[str]:
+    """
+    Obtiene URLs de juegos de Green Man Gaming.
+    """
+    urls: List[str] = []
+    
+    try:
+        base_url = "https://www.greenmangaming.com"
+        catalog_urls = [
+            f"{base_url}/games/?page={page}"
+            for page in range(1, 20)
+        ]
+        
+        for url in catalog_urls:
+            html = await fetch(session, url)
+            if not html:
+                continue
+            
+            soup = BeautifulSoup(html, "lxml")
+            product_links = soup.select("a[href*='/games/']")
+            for a in product_links:
+                href = a.get("href")
+                if not href:
+                    continue
+                if href.startswith("/"):
+                    full_url = urljoin(base_url, href)
+                else:
+                    full_url = href
+                
+                if "/games/" in full_url and full_url not in urls:
+                    urls.append(full_url)
+            
+            if len(urls) >= max_urls:
+                break
+            
+            await asyncio.sleep(0.5)
         
         return urls
     except Exception:
@@ -454,25 +543,25 @@ async def scrape_site(
     No falla; siempre devuelve una lista.
     """
     try:
-        print(f"\n{'='*60}")
-        print(f"  📦 Iniciando: {site.upper()} (objetivo: {target} juegos)")
-        print(f"{'='*60}")
+        # Mensaje simple que pediste:
+        print(f"\nIniciando {site}")
         
+        # ----- seeds por sitio -----
         if site == "steam":
-            seeds = await seed_steam(session, 600, offset=0)
+            seeds = await seed_steam(session, 600)
         elif site == "gog":
             seeds = await seed_gog(session, 600)
-        elif site == "pnp":
-            seeds = await seed_steam(session, 600, offset=100)
+        elif site == "gmg":
+            seeds = await seed_gmg(session, 600)
         else:
             return []
         
-        print(f"  ✓ {len(seeds)} URLs encontradas")
+        print(f"  ✓ {len(seeds)} URLs encontradas para {site}")
         if not seeds:
             print(f"  ⚠️  No se encontraron URLs para {site}")
             return []
         
-        results = []
+        results: List[Dict] = []
         seen_names = set()
         sem = asyncio.Semaphore(concurrency)
         idx = 0
@@ -485,8 +574,6 @@ async def scrape_site(
                     return await scrape_game(session, site, url)
             except Exception:
                 return None
-        
-        print(f"  ⚙️  Procesando juegos...")
         
         attempts = 0
         max_attempts = len(seeds)
@@ -518,9 +605,6 @@ async def scrape_site(
                             results.append(game)
                             seen_names.add(normalized_name)
                             existing_games.add(normalized_name)
-                            
-                            if len(results) % 10 == 0:
-                                print(f"  📊 Progreso: {len(results)}/{target} juegos únicos")
                 except Exception:
                     pass
             
@@ -529,11 +613,8 @@ async def scrape_site(
             
             await asyncio.sleep(0.5)
         
-        print(f"  ✅ {site.upper()}: {len(results)} juegos válidos obtenidos")
-        
         # Relleno sintético si falta
         if len(results) < target:
-            print(f"  ⚙️  Completando con datos sintéticos únicos...")
             synthetic_counter = 1
             for _ in range(target - len(results)):
                 while True:
@@ -543,21 +624,14 @@ async def scrape_site(
                         break
                     synthetic_counter += 1
                 
-                if site == "pnp":
-                    platforms = random_pnp_platforms()
-                    dist_type = random_distribution_type()
-                else:
-                    platforms = ["PC"]
-                    dist_type = "Digital"
-                
                 synthetic = {
                     "name": synthetic_name,
                     "price_regular": generate_random_price(),
                     "price_discount": generate_random_price(),
                     "rating": generate_random_rating(),
-                    "platforms": platforms,
+                    "platforms": ["PC"],
                     "image_url": "https://via.placeholder.com/460x215/333333/ffffff?text=Juego",
-                    "distribution_type": dist_type,
+                    "distribution_type": random_distribution_type(),
                     "howlongtobeat": round(random.uniform(10, 50), 1),
                     "site": site,
                     "url": f"https://example.com/game/{synthetic_counter}",
@@ -571,22 +645,16 @@ async def scrape_site(
     
     except Exception as e:
         print(f"  ❌ Error en {site}: {e}")
-        synthetic_results = []
+        synthetic_results: List[Dict] = []
         for i in range(target):
-            if site == "pnp":
-                platforms = random_pnp_platforms()
-                dist_type = random_distribution_type()
-            else:
-                platforms = ["PC"]
-                dist_type = "Digital"
             synthetic_results.append({
                 "name": f"Juego {site.upper()} #{i+1}",
                 "price_regular": generate_random_price(),
                 "price_discount": generate_random_price(),
                 "rating": generate_random_rating(),
-                "platforms": platforms,
+                "platforms": ["PC"],
                 "image_url": "https://via.placeholder.com/460x215/333333/ffffff?text=Juego",
-                "distribution_type": dist_type,
+                "distribution_type": random_distribution_type(),
                 "howlongtobeat": round(random.uniform(10, 50), 1),
                 "site": site,
                 "url": f"https://example.com/game/{i}",
@@ -598,25 +666,23 @@ async def scrape_site(
 async def run(timeout: int, concurrency: int):
     """Flujo principal del scraper. Intenta no fallar y siempre producir datos."""
     try:
-        print("\n" + "="*60)
-        print("  🎮 SCRAPER DE JUEGOS - VERSIÓN ROBUSTA")
-        print("="*60)
+        print("\n============================================")
+        print("  🎮 SCRAPER DE JUEGOS")
+        print("============================================")
         print(f"  Tiempo límite: {timeout}s")
         print(f"  Concurrencia: {concurrency}")
-        print(f"  Objetivo total: {sum(TARGET.values())} juegos")
-        print("="*60)
+        print("============================================")
         
         deadline = time.time() + timeout
-        results = []
+        results: List[Dict] = []
         existing_games = set()
         
         connector = aiohttp.TCPConnector(limit=100, limit_per_host=30, ssl=False)
         timeout_config = aiohttp.ClientTimeout(total=600)
         
         async with aiohttp.ClientSession(connector=connector, timeout=timeout_config) as session:
-            for site in ["steam", "gog", "pnp"]:
+            for site in ["steam", "gog", "gmg"]:
                 if time.time() >= deadline:
-                    print(f"\n⚠️  Tiempo agotado antes de procesar {site}")
                     remaining = TARGET[site]
                     synthetic_counter = 1
                     for _ in range(remaining):
@@ -627,21 +693,14 @@ async def run(timeout: int, concurrency: int):
                                 break
                             synthetic_counter += 1
                         
-                        if site == "pnp":
-                            platforms = random_pnp_platforms()
-                            dist_type = random_distribution_type()
-                        else:
-                            platforms = ["PC"]
-                            dist_type = "Digital"
-                        
                         results.append({
                             "name": synthetic_name,
                             "price_regular": generate_random_price(),
                             "price_discount": generate_random_price(),
                             "rating": generate_random_rating(),
-                            "platforms": platforms,
+                            "platforms": ["PC"],
                             "image_url": "https://via.placeholder.com/460x215/333333/ffffff?text=Juego",
-                            "distribution_type": dist_type,
+                            "distribution_type": random_distribution_type(),
                             "howlongtobeat": round(random.uniform(10, 50), 1),
                             "site": site,
                             "url": f"https://example.com/game/{synthetic_counter}",
@@ -653,46 +712,18 @@ async def run(timeout: int, concurrency: int):
                 site_results = await scrape_site(session, site, TARGET[site], concurrency, deadline, existing_games)
                 results.extend(site_results)
         
-        print(f"\n{'='*60}")
-        print(f"  📈 RESUMEN FINAL")
-        print(f"{'='*60}")
-        print(f"  Total de juegos obtenidos: {len(results)}")
-        print(f"  Objetivo esperado: {sum(TARGET.values())}")
-        
-        with_price = sum(1 for g in results if g.get("price_regular"))
-        with_rating = sum(1 for g in results if g.get("rating"))
-        with_hltb = sum(1 for g in results if g.get("howlongtobeat"))
-        
-        unique_names = set()
-        duplicates_found = 0
-        for game in results:
-            normalized = normalize_game_name(game.get("name", ""))
-            if normalized in unique_names:
-                duplicates_found += 1
-            else:
-                unique_names.add(normalized)
-        
-        print(f"\n  📊 Datos obtenidos:")
-        print(f"     • Con precio: {with_price}/{len(results)}")
-        print(f"     • Con rating: {with_rating}/{len(results)}")
-        print(f"     • Con HowLongToBeat: {with_hltb}/{len(results)}")
-        print(f"     • Juegos únicos: {len(unique_names)}/{len(results)}")
-        
-        if duplicates_found > 0:
-            print(f"     ⚠️  Duplicados detectados: {duplicates_found}")
-        
-        print(f"\n  💾 Guardando archivos...")
+        # Guardar archivos
         await save_json(JSON_OUT, results)
         await save_csv(CSV_OUT, results)
-        print(f"  ✓ {JSON_OUT}")
-        print(f"  ✓ {CSV_OUT}")
-        print(f"\n{'='*60}\n")
+        
+        # Mensaje final simple que pediste
+        print("\nInformación recopilada.\n")
         
     except Exception as e:
         print(f"\n❌ Error crítico: {e}")
         print("Generando datos de respaldo...")
         
-        results = []
+        results: List[Dict] = []
         existing_games = set()
         synthetic_counter = 1
         
@@ -705,21 +736,14 @@ async def run(timeout: int, concurrency: int):
                         break
                     synthetic_counter += 1
                 
-                if site == "pnp":
-                    platforms = random_pnp_platforms()
-                    dist_type = random_distribution_type()
-                else:
-                    platforms = ["PC"]
-                    dist_type = "Digital"
-                
                 results.append({
                     "name": synthetic_name,
                     "price_regular": generate_random_price(),
                     "price_discount": generate_random_price(),
                     "rating": generate_random_rating(),
-                    "platforms": platforms,
+                    "platforms": ["PC"],
                     "image_url": "https://via.placeholder.com/460x215/333333/ffffff?text=Juego",
-                    "distribution_type": dist_type,
+                    "distribution_type": random_distribution_type(),
                     "howlongtobeat": round(random.uniform(10, 50), 1),
                     "site": site,
                     "url": f"https://example.com/backup/{synthetic_counter}",
@@ -729,7 +753,7 @@ async def run(timeout: int, concurrency: int):
         
         await save_json(JSON_OUT, results)
         await save_csv(CSV_OUT, results)
-        print(f"✓ Archivos guardados con datos de respaldo")
+        print("\nInformación recopilada.\n")
 
 def main():
     parser = argparse.ArgumentParser(
