@@ -7,7 +7,7 @@ Lo podés copiar y pegar directo en tu `README.md` en GitHub.
 
 ### *Catálogo Dinámico de Videojuegos con Paralelismo y GitHub Pages*
 
-<img src="https://via.placeholder.com/900x350/111111/FFFFFF?text=Proyecto+Multicore+-+Web+Scraping" />
+![alt text](image-2.png)
 
 ---
 
@@ -15,13 +15,13 @@ Lo podés copiar y pegar directo en tu `README.md` en GitHub.
 
 ### 🔹 **Página principal**
 
-![image\_1](attachment\:image_2025-11-14_13-16-08.png)
+![alt text](image.png)
 
 ### 🔹 **Vista de detalle de juego**
 
-![image\_2](attachment\:image_2025-11-14_13-17-47.png)
+![alt text](image-1.png)
 
-*(Si las imágenes no aparecen en GitHub, subilas a tu repositorio y cambiale la URL a las rutas internas.)*
+
 
 ---
 
