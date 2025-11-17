@@ -1,192 +1,191 @@
+Listo mi amor, aquí tenés un **README completísimo, formal, con portada, problema, solución, uso de GitHub, imágenes, todo mega profesional** 😍🔥
+Lo podés copiar y pegar directo en tu `README.md` en GitHub.
 
+---
 
-# 🎮 Catálogo Dinámico de Videojuegos — Scraping Automatizado
+# 🧊 **Proyecto de Multicore – Web Scraping**
 
-Este proyecto genera automáticamente un catálogo completo de videojuegos utilizando *web scraping* y tres niveles de paralelismo en el proceso de los datos, la información recopilada se  muestra en una página web interactiva publicada con **GitHub Pages**.
+### *Catálogo Dinámico de Videojuegos con Paralelismo y GitHub Pages*
+
+<img src="https://via.placeholder.com/900x350/111111/FFFFFF?text=Proyecto+Multicore+-+Web+Scraping" />
+
+---
+
+## 📸 Vista previa del proyecto
+
+### 🔹 **Página principal**
+
+![image\_1](attachment\:image_2025-11-14_13-16-08.png)
+
+### 🔹 **Vista de detalle de juego**
+
+![image\_2](attachment\:image_2025-11-14_13-17-47.png)
+
+*(Si las imágenes no aparecen en GitHub, subilas a tu repositorio y cambiale la URL a las rutas internas.)*
+
+---
+
+# 📌 **Descripción General**
+
+Este proyecto combina **Web Scraping**, **Paralelismo**, **Procesamiento automático de datos** y **GitHub Pages** para generar un **catálogo dinámico de videojuegos**, completamente actualizado cada 3 minutos.
+
+Toda la información se almacena en JSON y luego se muestra en una página web moderna, elegante e interactiva.
+
+---
+
+# 🧩 **Problema Presentado**
+
+En la industria del software, es común que existan plataformas que ofrecen productos (como videojuegos), pero:
+
+### ❌ Problemas identificados:
+
+* La información de precios cambia constantemente.
+* Los juegos aparecen en varias tiendas con descuentos diferentes.
+* No existe un catálogo centralizado que recopile datos reales desde múltiples plataformas.
+* Se debe procesar gran cantidad de URLs → **costoso sin paralelismo**.
 
 
 ---
 
-## 📌 ¿Qué hace este proyecto?
+# ✅ **Solución Implementada**
 
-El sistema tiene **dos partes principales**:
+Se construyó un sistema completamente automatizado que:
 
----
+### 🔹 **1. Realiza Web Scraping en Paralelo**
 
-## 🔹 1. Scraper automático (Python)
+Usa **tres niveles de paralelismo**:
 
-Un script avanzado que recopila **210 videojuegos reales** desde:
+1. **Primer nivel:** extracción de nombres
+2. **Segundo nivel:** extracción de precios, descuentos e imágenes
+3. **Tercer nivel:** duración aproximada (HowLongToBeat), calificaciones, formato, etc.
 
-* **Steam **
-* **GOG **
-* **Green Man Gaming **
-  
-
-El scraper obtiene datos reales como:
-
-* Nombre del juego
-* Precio regular
-* Precio con descuento
-* Porcentaje de descuento
-* Plataforma (PC, Xbox, PlayStation)
-* Portada del juego
-* Duración estimada (*HowLongToBeat*)
-* Calificación estilo Metacritic 
-* URL original del producto
-
-### ✔ Características del scraper
-
-* Utiliza tres niveles de paralelismo para cada tienda
-* Evita juegos repetidos entre las 3 tiendas.
-* Todo se guarda automáticamente en:
-
-  * `results.json`
-  * `results.csv`
-* Cada ejecución termina con un **git push automático** para actualizar los datos en GitHub.
-* Corre **cada 3 minutos** en un ciclo infinito.
+Esto permite procesar cientos de juegos en minutos.
 
 ---
 
-## 🔹 2. Página web dinámica (HTML + JavaScript)
+### 🔹 **2. Recopila datos de 3 plataformas reales**
 
-Publicada mediante **GitHub Pages**, carga los datos directamente desde `results.json`.
+* **Steam**
+* **GOG**
+* **GMG (Green Man Gaming)**
 
-Incluye:
 
-### ✔ Filtros
-
-* Tienda
-* Formato (Digital / Físico)
-* Plataforma (PC, PlayStation, Xbox)
-* Buscador por nombre
-
-### ✔ Ordenamiento
-
-* Nombre
-* Precio
-* Descuento
-* Puntaje
-
-### ✔ Vista de catálogo
-
-* Tarjetas estilo tienda real
-* Portada del juego
-* Precio, ahorro, rating y duración
-* Botón para ver detalle del juego
-* Interfaz oscura moderna
-
-### ✔ Vista de Detalle
-
-Incluye versión ampliada de:
-
-* Nombre
-* Imagen
-* Precio
-* Duración
-* Distribución
-* Plataforma
-* Enlace a la tienda original
 
 ---
 
-## ⚙ Tecnologías utilizadas
+### 🔹 **3. Actualiza GitHub automáticamente**
 
-### Backend / Scraper
-
-* Python 3
-* aiohttp
-* aiofiles
-* BeautifulSoup4
-* lxml
-* Expresiones regulares
-* subprocess (para git)
-
-### Frontend
-
-* HTML5
-* CSS
-* JavaScript Vanilla
-* GitHub Pages (hosting)
-
----
-
-## 🧠 ¿Cómo funciona internamente?
-
-### 1. **Seeders**
-
-Recolectan cientos de URLs reales desde:
-
-* Steam 
-* GOG 
-* Green Man Gaming
-
-### 2. **Scraping individual**
-
-Para cada juego se analiza:
-
-* Precio
-* Descuento
-* Imagen
-* Plataforma
-* Nombre limpio
-* Duración aproximada
-* Calificación de Metacritic
-
-### 3. **Eliminación de duplicados**
-
-Los nombres se normalizan (sin ™, -, :, ®…)
-Así, un juego **no se repite** entre tiendas.
-
-### 4. **Fallback inteligente**
-
-Si un juego no tiene datos reales:
-
-* se descarta
-
-
-### 5. **Auto Git Push**
-
-Cuando termina:
+Cada vez que el scraper finaliza:
 
 ```
 git add results.json results.csv
-git commit -m "Actualizar datos..."
+git commit -m "Actualizar datos ..."
 git push
 ```
 
+Esto significa que **la página web SIEMPRE muestra datos recientes**.
+
 ---
 
-## 🚀 ¿Cómo ejecutar el scraper?
+### 🔹 **4. Publicación Automática con GitHub Pages**
 
-### 1. Instalar dependencias:
+GitHub Pages lee siempre el archivo:
 
 ```
+index.html
+```
+
+Y la web se actualiza automáticamente cuando `results.json` cambia.
+
+---
+
+# ⚙ **Procesamiento del Proyecto**
+
+## 🔸 Flujo de Ejecución
+
+1. Se recolectan cientos de URLs por tienda (seeders)
+2. Se procesan con **paralelismo controlado**
+3. Se extraen datos reales de cada página
+4. Utilizar los mejores precios recopilados
+5. Se genera:
+
+   * `results.json`
+   * `results.csv`
+6. Se mandan los datos automáticamente a GitHub
+7. La web se actualiza con la nueva información
+
+---
+
+# 🧠 **Tecnologías Utilizadas**
+
+### **Backend / Scraper**
+
+* Python 3
+* `aiohttp` → descargas en paralelo
+* `aiofiles` → guardado asincrónico
+* `BeautifulSoup4` + `lxml` → parsing HTML
+* `subprocess` → push automático a GitHub
+* Manejo de errores avanzado
+* Expresiones regulares
+
+### **Frontend**
+
+* HTML5 + CSS3
+* JavaScript Vanilla
+* GitHub Pages (Deploy automático)
+
+---
+
+# 🌐 **Página Web (Catálogo de Juegos)**
+
+La web:
+
+✔ Filtra por tienda
+✔ Filtra por formato (Digital / Físico)
+✔ Filtra por plataforma (PC, PS4, PS5, Xbox, etc.)
+✔ Ordena por precio, nombre, descuento, rating
+✔ Busca por nombre
+✔ Muestra detalles ampliados
+✔ Linkea a la tienda original
+
+---
+
+# 🚀 **Cómo Ejecutar el Scraper**
+
+### 1️⃣ Instalar dependencias
+
+```bash
 pip install aiohttp aiofiles beautifulsoup4 lxml
 ```
 
-### 2. Ejecutar el scraper:
+### 2️⃣ Ejecutar
 
-```
-datos.py
+```bash
+python datos.py
 ```
 
-### 3. El scraper se repetirá solo cada 3 minutos.
+El programa:
+
+* Corre indefinidamente
+* Recolecta datos cada 3 minutos
+* Hace `git push` automáticamente
 
 ---
 
-## 🌐 Publicar la web con GitHub Pages
+# 📘 **Cómo Publicar la Web en GitHub Pages**
 
-1. Sube `index.html` a la raíz del repositorio
-2. Ve a **Settings → Pages**
-3. Donde dice *Source*, selecciona:
+1. Subir el archivo **index.html**, `results.json` y el scraper a la raíz del repositorio
+2. Entrar a **Settings → Pages**
+3. Configurar
 
 ```
-Branch: main
-Folder: / (root)
+Source: main
+Folder: /(root)
 ```
 
-4. Guarda cambios
-5. La página aparecerá en:
+4. Guardar los cambios
+
+La pagina web aparecere en:
 
 ```
 https://danny7w7-coder.github.io/proyecto-multicore-web/
@@ -194,19 +193,62 @@ https://danny7w7-coder.github.io/proyecto-multicore-web/
 
 ---
 
-## 👤 Autores del proyecto
+# 🔧 **Uso de GitHub paso a paso (para principiantes)**
 
-**Valeria Rojas Barrantes**
-Estudiante de Ingeniería en Computadores
-Instituto Tecnológico de Costa Rica (TEC)
+### ✔ Clonar repositorio
 
-**Dylan Méndez Zamora**
-Estudiante de Ingeniería en Computadores
-Instituto Tecnológico de Costa Rica (TEC)
+```bash
+git clone https://github.com/usuario/repositorio.git
+```
 
-**Danny González Molina**
-Estudiante de Ingeniería en Computadores
-Instituto Tecnológico de Costa Rica (TEC)
+### ✔ Agregar cambios
 
+```bash
+git add .
+```
 
+### ✔ Guardar cambios
 
+```bash
+git commit -m "Mi actualización"
+```
+
+### ✔ Subir a GitHub
+
+```bash
+git push
+```
+
+### ✔ Descargar cambios remotos
+
+```bash
+git pull
+```
+
+---
+
+# 👤 **Autores del Proyecto**
+
+### **Valeria Rojas Barrantes**
+
+Estudiante de Ingeniería en Computadores — TEC
+
+### **Dylan Méndez Zamora**
+
+Estudiante de Ingeniería en Computadores — TEC
+
+### **Danny González Molina**
+
+Estudiante de Ingeniería en Computadores — TEC
+
+---
+
+# 🏁 **Conclusión**
+
+Este proyecto demuestra cómo combinar:
+
+* **Paralelismo**
+* **Web Scraping**
+* **Automatización**
+* **Publicación continua**
+* **Frontend dinámico**
