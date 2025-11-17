@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto Multicore – Web Scraping</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background:#020617; color:#e5e7eb; }
+    .wrapper { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+    h1 { font-size: 2rem; margin-bottom: 1rem; }
+    h2 { margin-top: 1.5rem; }
+    a { color:#22c55e; }
+    .top-links { margin-bottom: 1.5rem; display:flex; gap:1rem; flex-wrap:wrap; }
+    .btn {
+      padding:0.4rem 0.9rem; border-radius:999px; border:1px solid #22c55e;
+      text-decoration:none; font-size:0.9rem;
+    }
+    .btn:hover { background:#22c55e; color:#020617; }
+    .content { display:flex; gap:2rem; flex-wrap:wrap; }
+    .text { flex:1 1 260px; }
+    .images { flex:1 1 260px; }
+    .images img { width:100%; border-radius:0.75rem; margin-bottom:1rem; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Proyecto de Multicore – Web Scraping</h1>
+
+    <div class="top-links">
+      <!-- 🔗 al catálogo (tu index.html en GitHub Pages) -->
+      <a class="btn" href="index.html">Ir al catálogo interactivo</a>
+
+      <!-- 🔗 al README del repositorio -->
+      <a class="btn" href="README.md">Ver documentación (README)</a>
+
+      <!-- 🔗 al repo completo en GitHub (cambia por tu URL real) -->
+      <a class="btn" href="https://github.com/Danny7w7-coder/proyecto-multicore-web" target="_blank">
+        Ver repositorio en GitHub ↗
+      </a>
+    </div>
+
+    <div class="content">
+      <div class="text">
+        <h2>Problema</h2>
+        <p>
+          Necesitamos comparar precios, descuentos y características de videojuegos 
+          en varias tiendas digitales. Hacerlo manualmente es lento, propenso a errores 
+          y no escala para cientos de juegos.
+        </p>
+
+        <h2>Solución</h2>
+        <p>
+          Implementamos un sistema de <strong>Web Scraping con paralelismo</strong> que extrae 
+          datos reales de Steam, GOG y Green Man Gaming, limpia la información y la guarda en 
+          <code>results.json</code> y <code>results.csv</code>.   
+          Luego, una página web (GitHub Pages) muestra esos datos como un catálogo filtrable 
+          y ordenable.
+        </p>
+
+        <h2>Procesamiento en paralelo</h2>
+        <p>
+          El scraper usa <strong>tres niveles de paralelismo</strong> con <code>asyncio</code> y 
+          <code>aiohttp</code> para:
+        </p>
+        <ul>
+          <li>Descargar en paralelo páginas de cada tienda.</li>
+          <li>Parsear cada juego (precios, descuentos, duración, rating).</li>
+          <li>Evitar juegos repetidos entre tiendas usando un nombre normalizado.</li>
+        </ul>
+
+        <h2>Flujo general</h2>
+        <ol>
+          <li>Los <em>seeders</em> obtienen listas de URLs de cada tienda.</li>
+          <li>Se hace scraping concurrente de cada juego.</li>
+          <li>Se limpian y normalizan los datos.</li>
+          <li>Se guardan en <code>results.json</code> y <code>results.csv</code>.</li>
+          <li>Se hace <code>git add</code>, <code>commit</code> y <code>push</code> automático.</li>
+          <li>GitHub Pages actualiza el catálogo con los nuevos datos.</li>
+        </ol>
+
+        <h2>Tecnologías clave</h2>
+        <ul>
+          <li><strong>Backend:</strong> Python, asyncio, aiohttp, aiofiles, BeautifulSoup4, lxml.</li>
+          <li><strong>Frontend:</strong> HTML, CSS, JavaScript vanilla.</li>
+          <li><strong>Hosting:</strong> GitHub Pages + repositorio en GitHub.</li>
+        </ul>
+      </div>
+
+      <div class="images">
+        <!-- 💡 sustituye los src por las URLs reales de tus capturas -->
+        <img src="image.png" alt="Vista del catálogo de juegos">
+        <img src="image-1.png" alt="Ventana de detalle del juego">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
