@@ -36,7 +36,7 @@ El scraper obtiene datos reales como:
 
 ### ✔ Características del scraper
 
-* **Asincrónico** (extremadamente rápido) con `aiohttp` + `asyncio`.
+* Utiliza tres niveles de paralelismo para cada tienda
 * Evita juegos repetidos entre las 3 tiendas.
 * Todo se guarda automáticamente en:
 
