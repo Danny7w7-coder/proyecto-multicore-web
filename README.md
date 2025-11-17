@@ -24,7 +24,7 @@
 
 ---
 
-# 📌 **Descripción General**
+#  **Descripción General**
 
 Este proyecto combina **Web Scraping**, **Paralelismo**, **Procesamiento automático de datos** y **GitHub Pages** para generar un **catálogo dinámico de videojuegos**, completamente actualizado cada 3 minutos.
 
@@ -32,11 +32,11 @@ Toda la información se almacena en JSON y luego se muestra en una página web m
 
 ---
 
-# 🧩 **Problema Presentado**
+#  **Problema Presentado**
 
 En la industria del software, es común que existan plataformas que ofrecen productos (como videojuegos), pero:
 
-### ❌ Problemas identificados:
+###  Problemas identificados:
 
 * La información de precios cambia constantemente.
 * Los juegos aparecen en varias tiendas con descuentos diferentes.
@@ -46,7 +46,7 @@ En la industria del software, es común que existan plataformas que ofrecen prod
 
 ---
 
-# ✅ **Solución Implementada**
+#  **Solución Implementada**
 
 Se construyó un sistema completamente automatizado que:
 
@@ -98,7 +98,7 @@ Y la web se actualiza automáticamente cuando `results.json` cambia.
 
 ---
 
-# ⚙ **Procesamiento del Proyecto**
+#  **Procesamiento del Proyecto**
 
 ## 🔸 Flujo de Ejecución
 
@@ -115,7 +115,7 @@ Y la web se actualiza automáticamente cuando `results.json` cambia.
 
 ---
 
-# 🧠 **Tecnologías Utilizadas**
+#  **Tecnologías Utilizadas**
 
 ### **Backend / Scraper**
 
@@ -135,7 +135,7 @@ Y la web se actualiza automáticamente cuando `results.json` cambia.
 
 ---
 
-# 🌐 **Página Web (Catálogo de Juegos)**
+#  **Página Web (Catálogo de Juegos)**
 
 La web:
 
@@ -149,7 +149,7 @@ La web:
 
 ---
 
-# 🚀 **Cómo Ejecutar el Scraper**
+#  **Cómo Ejecutar el Scraper**
 
 ### 1️⃣ Instalar dependencias
 
@@ -171,7 +171,7 @@ El programa:
 
 ---
 
-# 📘 **Cómo Publicar la Web en GitHub Pages**
+#  **Cómo Publicar la Web en GitHub Pages**
 
 1. Subir el archivo **index.html**, `results.json` y el scraper a la raíz del repositorio
 2. Entrar a **Settings → Pages**
@@ -242,7 +242,7 @@ Estudiante de Ingeniería en Computadores — TEC
 
 ---
 
-# 🏁 **Conclusión**
+#  **Conclusión**
 
 Este proyecto demuestra cómo combinar:
 
