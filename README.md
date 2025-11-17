@@ -1,9 +1,8 @@
-Listo mi amor, aquí tenés un **README completísimo, formal, con portada, problema, solución, uso de GitHub, imágenes, todo mega profesional** 😍🔥
-Lo podés copiar y pegar directo en tu `README.md` en GitHub.
+
 
 ---
 
-# 🧊 **Proyecto de Multicore – Web Scraping**
+#  **Proyecto de Multicore – Web Scraping**
 
 ### *Catálogo Dinámico de Videojuegos con Paralelismo y GitHub Pages*
 
