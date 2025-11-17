@@ -230,15 +230,15 @@ git pull
 
 ### **Valeria Rojas Barrantes**
 
-Estudiante de Ingeniería en Computadores — TEC
+Estudiante de Ingeniería en Computacion — TEC
 
 ### **Dylan Méndez Zamora**
 
-Estudiante de Ingeniería en Computadores — TEC
+Estudiante de Ingeniería en Computacion — TEC
 
 ### **Danny González Molina**
 
-Estudiante de Ingeniería en Computadores — TEC
+Estudiante de Ingeniería en Computacion — TEC
 
 ---
 
