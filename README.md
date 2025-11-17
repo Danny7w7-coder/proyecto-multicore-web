@@ -2,8 +2,8 @@
 
 # 🎮 Catálogo Dinámico de Videojuegos — Scraping Automatizado
 
-Este proyecto genera automáticamente un catálogo completo de videojuegos utilizando *web scraping* y lo muestra en una página web interactiva publicada con **GitHub Pages**.
-El objetivo es crear un proyecto profesional para portafolio, útil para añadir en el **Currículum Vitae (CV)** o en **LinkedIn**.
+Este proyecto genera automáticamente un catálogo completo de videojuegos utilizando *web scraping* y tres niveles de paralelismo en el proceso de los datos, la información recopilada se  muestra en una página web interactiva publicada con **GitHub Pages**.
+
 
 ---
 
