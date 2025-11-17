@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ofertas de Juegos – Proyecto Multiprocesamiento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f3f4f6;
+      color: #111827;
+    }
+    header {
+      background: #111827;
+      color: #f9fafb;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    header .subtitle {
+      font-size: 13px;
+      color: #9ca3af;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 16px;
+      padding: 16px 24px;
+    }
+    /* Panel de filtros */
+    .filters {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+    .filters h2 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    .filter-block {
+      margin-top: 16px;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 12px;
+    }
+    .filter-block:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+    .filter-block h3 {
+      font-size: 14px;
+      margin-bottom: 8px;
+      color: #4b5563;
+    }
+    .filter-option {
+      display: flex;
+      align-items: center;
+      margin-bottom: 6px;
+      font-size: 13px;
+    }
+    .filter-option input {
+      margin-right: 6px;
+    }
+
+    /* Zona derecha */
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+    .top-bar .summary {
+      font-size: 13px;
+      color: #4b5563;
+    }
+    .top-bar .controls {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    select, button {
+      font-size: 13px;
+      padding: 6px 8px;
+      border-radius: 6px;
+      border: 1px solid #d1d5db;
+      background: #ffffff;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #f3f4f6;
+    }
+
+    /* Grid de tarjetas */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 18px rgba(0,0,0,0.08);
+    }
+    .card img {
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+      background: #111827;
+    }
+    .card-body {
+      padding: 10px 12px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 13px;
+    }
+    .card-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 4px;
+    }
+    .card-title {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+    .badge-rating {
+      background: #059669;
+      color: #ecfdf5;
+      border-radius: 999px;
+      padding: 2px 6px;
+      font-size: 11px;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .badge-rating span.small {
+      font-size: 10px;
+      opacity: 0.9;
+    }
+    .price-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+    .price-current {
+      font-size: 15px;
+      font-weight: 700;
+      color: #111827;
+    }
+    .price-regular {
+      font-size: 13px;
+      text-decoration: line-through;
+      color: #9ca3af;
+    }
+    .discount-tag {
+      font-size: 11px;
+      font-weight: 600;
+      color: #b91c1c;
+      background: #fee2e2;
+      border-radius: 999px;
+      padding: 2px 6px;
+    }
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #6b7280;
+      margin-top: 2px;
+    }
+    .badge-platform {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 6px;
+      border-radius: 999px;
+      background: #e5e7eb;
+      margin-right: 4px;
+      margin-top: 2px;
+    }
+    .badge-site {
+      font-size: 11px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border-radius: 999px;
+      padding: 2px 6px;
+      display: inline-flex;
+      align-items: center;
+    }
+    .badge-type {
+      font-size: 11px;
+      background: #fef3c7;
+      color: #92400e;
+      border-radius: 999px;
+      padding: 2px 6px;
+      display: inline-flex;
+      align-items: center;
+      margin-top: 4px;
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 10px 10px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 11px;
+      color: #6b7280;
+    }
+    .card-footer button {
+      font-size: 12px;
+      padding: 4px 8px;
+      background: #2563eb;
+      color: #ffffff;
+      border-radius: 999px;
+      border: none;
+    }
+    .card-footer button:hover {
+      background: #1d4ed8;
+    }
+
+    /* Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15,23,42,0.55);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 40;
+    }
+    .modal-backdrop.show {
+      display: flex;
+    }
+    .modal {
+      background: #ffffff;
+      border-radius: 16px;
+      max-width: 820px;
+      width: 100%;
+      max-height: 90vh;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    }
+    .modal-left {
+      background: #111827;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-left img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+    .modal-right {
+      padding: 16px 18px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .modal-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .modal-title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .close-btn {
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      line-height: 1;
+      cursor: pointer;
+      color: #6b7280;
+    }
+    .close-btn:hover {
+      color: #111827;
+    }
+    .modal-section-title {
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 6px;
+      margin-bottom: 2px;
+      color: #4b5563;
+    }
+    .detail-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    .detail-table td {
+      padding: 3px 2px;
+      vertical-align: top;
+    }
+    .detail-table td.label {
+      width: 40%;
+      color: #6b7280;
+    }
+    .detail-table td.value {
+      font-weight: 500;
+      color: #111827;
+    }
+    .detail-prices {
+      margin-top: 6px;
+      font-size: 12px;
+      border-radius: 8px;
+      background: #f9fafb;
+      padding: 6px 8px;
+    }
+    .detail-prices-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2px;
+    }
+    .detail-prices-item span.label {
+      color: #6b7280;
+    }
+    .detail-prices-item span.value {
+      font-weight: 600;
+    }
+    .detail-link {
+      margin-top: 8px;
+      font-size: 12px;
+    }
+    .detail-link a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .detail-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+      .filters {
+        max-height: none;
+        order: 2;
+      }
+      .modal {
+        grid-template-columns: 1fr;
+      }
+      .modal-left {
+        max-height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Hottest Deals – Comparador de Juegos</h1>
+      <div class="subtitle">
+        Datos generados por el módulo de multiprocesamiento (Steam, GOG y PNP Games)
+      </div>
+    </div>
+    <div class="subtitle" id="timer-info"></div>
+  </header>
+
+  <main>
+    <!-- Panel de filtros -->
+    <aside class="filters">
+      <h2>Filtros</h2>
+
+      <div class="filter-block">
+        <h3>Formato</h3>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-format" value="Digital" checked>
+          Digital
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-format" value="Físico" checked>
+          Físico
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-format" value="Digital y físico" checked>
+          Digital y físico
+        </label>
+      </div>
+
+      <div class="filter-block">
+        <h3>Plataforma</h3>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-platform" value="PC" checked>
+          PC
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-platform" value="PS4" checked>
+          PS4
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-platform" value="PS5" checked>
+          PS5
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-platform" value="Switch" checked>
+          Nintendo Switch
+        </label>
+      </div>
+
+      <div class="filter-block">
+        <h3>Tienda / Sitio</h3>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-site" value="steam" checked>
+          Steam
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-site" value="gog" checked>
+          GOG
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-site" value="pnp" checked>
+          PNP Games
+        </label>
+      </div>
+    </aside>
+
+    <!-- Zona de tarjetas -->
+    <section>
+      <div class="top-bar">
+        <div class="summary" id="summary-text">
+          Cargando juegos...
+        </div>
+        <div class="controls">
+          <label for="sort-select">Ordenar por:</label>
+          <select id="sort-select">
+            <option value="name-asc">Nombre (A-Z)</option>
+            <option value="price-asc">Precio (más barato primero)</option>
+            <option value="discount-desc">% Descuento (mayor primero)</option>
+            <option value="rating-desc">Score / Rating (mayor primero)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="cards-grid" id="cards-grid">
+        <!-- Tarjetas se generan por JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal detalle -->
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="modal">
+      <div class="modal-left">
+        <img id="modal-image" src="" alt="Portada juego" />
+      </div>
+      <div class="modal-right">
+        <div class="modal-header-row">
+          <div>
+            <div class="modal-title" id="modal-title"></div>
+            <div style="margin-top:4px;">
+              <span class="badge-rating" id="modal-rating"></span>
+              <span class="badge-type" id="modal-type"></span>
+            </div>
+          </div>
+          <button class="close-btn" id="modal-close-btn">&times;</button>
+        </div>
+
+        <div class="modal-section-title">Resumen de precios</div>
+        <div class="detail-prices">
+          <div class="detail-prices-item">
+            <span class="label">Mejor precio (actual):</span>
+            <span class="value" id="modal-price-current"></span>
+          </div>
+          <div class="detail-prices-item">
+            <span class="label">Precio regular:</span>
+            <span class="value" id="modal-price-regular"></span>
+          </div>
+          <div class="detail-prices-item">
+            <span class="label">Descuento:</span>
+            <span class="value" id="modal-discount"></span>
+          </div>
+        </div>
+
+        <div class="modal-section-title">Detalles</div>
+        <table class="detail-table">
+          <tr>
+            <td class="label">Tienda / sitio:</td>
+            <td class="value" id="modal-site"></td>
+          </tr>
+          <tr>
+            <td class="label">Plataformas:</td>
+            <td class="value" id="modal-platforms"></td>
+          </tr>
+          <tr>
+            <td class="label">Formato:</td>
+            <td class="value" id="modal-format"></td>
+          </tr>
+          <tr>
+            <td class="label">Score tipo Metacritic:</td>
+            <td class="value" id="modal-score"></td>
+          </tr>
+          <tr>
+            <td class="label">How Long To Beat (estimado):</td>
+            <td class="value" id="modal-hltb"></td>
+          </tr>
+        </table>
+
+        <div class="detail-link">
+          Link al sitio original:
+          <a href="#" target="_blank" id="modal-link">Abrir página del juego</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const cardsGrid   = document.getElementById('cards-grid');
+    const summaryText = document.getElementById('summary-text');
+    const sortSelect  = document.getElementById('sort-select');
+
+    const modalBackdrop  = document.getElementById('modal-backdrop');
+    const modalImage     = document.getElementById('modal-image');
+    const modalTitle     = document.getElementById('modal-title');
+    const modalRatingTag = document.getElementById('modal-rating');
+    const modalTypeTag   = document.getElementById('modal-type');
+    const modalPriceCur  = document.getElementById('modal-price-current');
+    const modalPriceReg  = document.getElementById('modal-price-regular');
+    const modalDiscount  = document.getElementById('modal-discount');
+    const modalSite      = document.getElementById('modal-site');
+    const modalPlatforms = document.getElementById('modal-platforms');
+    const modalFormat    = document.getElementById('modal-format');
+    const modalScore     = document.getElementById('modal-score');
+    const modalHltb      = document.getElementById('modal-hltb');
+    const modalLink      = document.getElementById('modal-link');
+    const modalCloseBtn  = document.getElementById('modal-close-btn');
+
+    let allGames = [];
+    let filteredGames = [];
+
+    function formatPrice(value) {
+      if (value === null || value === undefined || value === "") return "N/A";
+      return "$" + Number(value).toFixed(2);
+    }
+
+    function computeDiscountPercent(game) {
+      const regular = Number(game.price_regular || 0);
+      const disc    = Number(game.price_discount || 0);
+      if (!regular || !disc || disc >= regular) return 0;
+      return Math.round((1 - disc / regular) * 100);
+    }
+
+    function siteLabel(site) {
+      switch (site) {
+        case 'steam': return 'Steam';
+        case 'gog':   return 'GOG';
+        case 'pnp':   return 'PNP Games';
+        default:      return site;
+      }
+    }
+
+    function applyFiltersAndSort() {
+      const formatChecks   = [...document.querySelectorAll('.filter-format')];
+      const platformChecks = [...document.querySelectorAll('.filter-platform')];
+      const siteChecks     = [...document.querySelectorAll('.filter-site')];
+
+      const activeFormats   = formatChecks.filter(c => c.checked).map(c => c.value);
+      const activePlatforms = platformChecks.filter(c => c.checked).map(c => c.value);
+      const activeSites     = siteChecks.filter(c => c.checked).map(c => c.value);
+
+      filteredGames = allGames.filter(g => {
+        if (!activeFormats.includes(g.distribution_type)) return false;
+        if (!activeSites.includes(g.site)) return false;
+
+        const gamePlats = g.platforms || [];
+        const matchesPlatform = gamePlats.some(p => activePlatforms.includes(p));
+        return matchesPlatform;
+      });
+
+      const sortValue = sortSelect.value;
+      filteredGames.sort((a, b) => {
+        if (sortValue === 'name-asc') {
+          return a.name.localeCompare(b.name);
+        } else if (sortValue === 'price-asc') {
+          const pa = Number(a.price_discount || a.price_regular || 9999);
+          const pb = Number(b.price_discount || b.price_regular || 9999);
+          return pa - pb;
+        } else if (sortValue === 'discount-desc') {
+          const da = computeDiscountPercent(a);
+          const db = computeDiscountPercent(b);
+          return db - da;
+        } else if (sortValue === 'rating-desc') {
+          const ra = Number(a.rating || 0);
+          const rb = Number(b.rating || 0);
+          return rb - ra;
+        }
+        return 0;
+      });
+
+      renderCards();
+    }
+
+    function renderCards() {
+      cardsGrid.innerHTML = "";
+
+      if (filteredGames.length === 0) {
+        cardsGrid.innerHTML = "<p>No hay juegos que coincidan con los filtros seleccionados.</p>";
+      }
+
+      filteredGames.forEach((game, index) => {
+        const discount = computeDiscountPercent(game);
+        const card = document.createElement('article');
+        card.className = 'card';
+        card.innerHTML = `
+          <img src="${game.image_url}" alt="Portada de ${game.name}">
+          <div class="card-body">
+            <div class="card-title-row">
+              <div class="card-title" title="${game.name}">${game.name}</div>
+              <div class="badge-rating">
+                ${game.rating ?? "N/A"}<span class="small"> /100</span>
+              </div>
+            </div>
+            <div class="price-row">
+              <span class="price-current">${formatPrice(game.price_discount || game.price_regular)}</span>
+              <span class="price-regular">${formatPrice(game.price_regular)}</span>
+              <span class="discount-tag">${discount > 0 ? `-${discount}%` : "SIN DESC."}</span>
+            </div>
+            <div class="meta-row">
+              <div>
+                ${(game.platforms || []).map(p => `<span class="badge-platform">${p}</span>`).join("")}
+              </div>
+              <span class="badge-site">${siteLabel(game.site)}</span>
+            </div>
+            <div class="badge-type">${game.distribution_type}</div>
+          </div>
+          <div class="card-footer">
+            <span>HLTB aprox: ${game.howlongtobeat ?? "N/A"} h</span>
+            <button data-idx="${index}">Ver detalle</button>
+          </div>
+        `;
+        const btn = card.querySelector('button');
+        btn.addEventListener('click', () => openModal(game));
+        cardsGrid.appendChild(card);
+      });
+
+      summaryText.textContent = `Mostrando ${filteredGames.length} juegos (de ${allGames.length} disponibles).`;
+    }
+
+    function openModal(game) {
+      const discount = computeDiscountPercent(game);
+      modalImage.src = game.image_url;
+      modalTitle.textContent = game.name;
+      modalRatingTag.textContent = `${game.rating ?? "N/A"} / 100`;
+      modalTypeTag.textContent   = game.distribution_type;
+
+      modalPriceCur.textContent = formatPrice(game.price_discount || game.price_regular);
+      modalPriceReg.textContent = formatPrice(game.price_regular);
+      modalDiscount.textContent = discount > 0 ? `-${discount}%` : "Sin descuento";
+
+      modalSite.textContent   = siteLabel(game.site);
+      modalPlatforms.textContent = (game.platforms || []).join(", ") || "N/A";
+      modalFormat.textContent = game.distribution_type;
+      modalScore.textContent  = game.rating ?? "N/A";
+      modalHltb.textContent   = (game.howlongtobeat ?? "N/A") + (game.howlongtobeat ? " horas" : "");
+
+      modalLink.href = game.url || "#";
+
+      modalBackdrop.classList.add('show');
+    }
+
+    function closeModal() {
+      modalBackdrop.classList.remove('show');
+    }
+
+    modalBackdrop.addEventListener('click', (e) => {
+      if (e.target === modalBackdrop) closeModal();
+    });
+    modalCloseBtn.addEventListener('click', closeModal);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    document.querySelectorAll('.filter-format').forEach(chk => {
+      chk.addEventListener('change', applyFiltersAndSort);
+    });
+    document.querySelectorAll('.filter-platform').forEach(chk => {
+      chk.addEventListener('change', applyFiltersAndSort);
+    });
+    document.querySelectorAll('.filter-site').forEach(chk => {
+      chk.addEventListener('change', applyFiltersAndSort);
+    });
+    sortSelect.addEventListener('change', applyFiltersAndSort);
+
+    // Cargar JSON
+    fetch('results.json')
+      .then(res => res.json())
+      .then(data => {
+        allGames = data;
+        filteredGames = data.slice();
+        applyFiltersAndSort();
+      })
+      .catch(err => {
+        console.error(err);
+        summaryText.textContent = "Error cargando results.json";
+      });
+  </script>
+</body>
+</html>
