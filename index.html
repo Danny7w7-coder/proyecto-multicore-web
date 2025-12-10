@@ -2,787 +2,95 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Catálogo de Juegos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Aroma</title>
 
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Paleta personalizada -->
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    body {
-      background: #0f172a;
-      color: #e5e7eb;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      padding: 1.5rem 1.5rem 0.75rem;
-      border-bottom: 1px solid #1f2937;
-      background: #020617;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    header h1 {
-      font-size: 1.6rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 0.9rem;
-      color: #9ca3af;
-    }
-
-    .controls {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1rem;
-    }
-
-    .controls select,
-    .controls input {
-      background: #020617;
-      border: 1px solid #374151;
-      color: #e5e7eb;
-      padding: 0.4rem 0.7rem;
-      border-radius: 0.5rem;
-      font-size: 0.9rem;
-    }
-
-    .controls input::placeholder {
-      color: #6b7280;
-    }
-
-    main {
-      padding: 1.25rem;
-      flex: 1;
-    }
-
-    .stats {
-      margin-bottom: 1rem;
-      font-size: 0.85rem;
-      color: #9ca3af;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1rem;
-    }
-
-    .card {
-      background: #020617;
-      border-radius: 0.8rem;
-      border: 1px solid #1f2937;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-      border-color: #22c55e;
-    }
-
-    .card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      background: #111827;
-    }
-
-    .card-body {
-      padding: 0.9rem 0.9rem 0.8rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-      flex: 1;
-    }
-
-    .title-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 0.4rem;
-    }
-
-    .card-title {
-      font-size: 1rem;
-      font-weight: 600;
-      color: #e5e7eb;
-    }
-
-    .badge-site {
-      font-size: 0.7rem;
-      padding: 0.15rem 0.5rem;
-      border-radius: 999px;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-      background: #111827;
-      border: 1px solid #374151;
-      color: #9ca3af;
-      white-space: nowrap;
-    }
-
-    .price-row {
-      display: flex;
-      align-items: baseline;
-      gap: 0.4rem;
-      font-size: 0.95rem;
-      flex-wrap: wrap;
-    }
-
-    .price-discount {
-      color: #22c55e;
-      font-weight: 600;
-    }
-
-    .price-regular {
-      color: #6b7280;
-      text-decoration: line-through;
-      font-size: 0.85rem;
-    }
-
-    .discount-label {
-      font-size: 0.75rem;
-      color: #f97316;
-      background: rgba(248, 113, 113, 0.1);
-      padding: 0.1rem 0.45rem;
-      border-radius: 999px;
-      border: 1px solid rgba(248, 113, 113, 0.4);
-    }
-
-    .discount-label.no-discount {
-      color: #9ca3af;
-      background: transparent;
-      border-color: #4b5563;
-    }
-
-    .meta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      font-size: 0.8rem;
-      color: #9ca3af;
-    }
-
-    .meta-row span {
-      padding: 0.12rem 0.4rem;
-      border-radius: 999px;
-      background: #020617;
-      border: 1px solid #1f2937;
-    }
-
-    .rating {
-      color: #facc15;
-      font-weight: 600;
-    }
-
-    .hltb {
-      color: #38bdf8;
-    }
-
-    .dist {
-      color: #a855f7;
-    }
-
-    .platforms {
-      color: #6ee7b7;
-    }
-
-    .card-footer {
-      margin-top: 0.4rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.8rem;
-      flex-wrap: wrap;
-    }
-
-    .btn-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.25rem;
-      padding: 0.3rem 0.65rem;
-      border-radius: 999px;
-      border: 1px solid #22c55e;
-      color: #22c55e;
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 500;
-      background: transparent;
-      cursor: pointer;
-      transition: background 0.15s ease, color 0.15s ease;
-    }
-
-    .btn-link:hover {
-      background: #22c55e;
-      color: #001b0d;
-    }
-
-    .btn-secondary {
-      border-color: #4b5563;
-      color: #e5e7eb;
-    }
-
-    .btn-secondary:hover {
-      background: #4b5563;
-      color: #f9fafb;
-    }
-
-    .updated-at {
-      color: #6b7280;
-    }
-
-    .no-results {
-      margin-top: 2rem;
-      text-align: center;
-      color: #9ca3af;
-      font-size: 0.9rem;
-    }
-
-    /* MODAL DETALLE */
-
-    .detail-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(15, 23, 42, 0.85);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 50;
-      padding: 1rem;
-    }
-
-    .detail-overlay.active {
-      display: flex;
-    }
-
-    .detail-modal {
-      background: #020617;
-      border-radius: 1rem;
-      border: 1px solid #1f2937;
-      max-width: 650px;
-      width: 100%;
-      max-height: 90vh;
-      overflow: auto;
-      padding: 1.25rem 1.5rem 1.4rem;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
-    }
-
-    .detail-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 0.75rem;
-      margin-bottom: 0.8rem;
-    }
-
-    .detail-title {
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-
-    .detail-close {
-      border: none;
-      background: transparent;
-      color: #9ca3af;
-      font-size: 1.1rem;
-      cursor: pointer;
-    }
-
-    .detail-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      font-size: 0.9rem;
-      margin-bottom: 0.6rem;
-    }
-
-    .detail-label {
-      color: #9ca3af;
-      min-width: 90px;
-    }
-
-    .detail-value {
-      color: #e5e7eb;
-    }
-
-    .detail-footer {
-      margin-top: 0.9rem;
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    .detail-highlight {
-      font-weight: 600;
-      color: #22c55e;
-    }
-
-    @media (max-width: 900px) {
-      .controls {
-        flex-direction: column;
-        align-items: stretch;
-      }
-    }
-
-    @media (max-width: 600px) {
-      header {
-        padding: 1rem 1rem 0.5rem;
-      }
-      main {
-        padding: 1rem;
-      }
+    :root {
+      --cafe-oscuro: #4b2e05;
+      --cafe-medio: #6b4423;
+      --cafe-latte: #a47148;
+      --beige: #f3e9dc;
+      --beige2: #e9d4b3;
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>Catálogo de Juegos</h1>
-    <p>Datos generados automáticamente desde Steam, GOG y Green Man Gaming (GMG).</p>
-    <div class="controls">
-      <!-- TIENDA -->
-      <select id="storeFilter">
-        <option value="all">Todas las tiendas</option>
-        <option value="steam">Steam</option>
-        <option value="gog">GOG</option>
-        <option value="gmg">Green Man Gaming</option>
-      </select>
 
-      <!-- FORMATO (solo Digital / Físico) -->
-      <select id="formatFilter">
-        <option value="all">Todos los formatos</option>
-        <option value="digital">Digital</option>
-        <option value="fisico">Físico</option>
-      </select>
+<body class="bg-[var(--beige)] text-[var(--cafe-oscuro)]">
 
-      <!-- PLATAFORMA (se rellena dinámicamente, pero siempre muestra PC / PlayStation / Xbox) -->
-      <select id="platformFilter">
-        <option value="all">Todas las plataformas</option>
-      </select>
-
-      <!-- ORDENAR -->
-      <select id="orderSelect">
-        <option value="default">Orden original</option>
-        <option value="name-asc">Nombre (A → Z)</option>
-        <option value="name-desc">Nombre (Z → A)</option>
-        <option value="price-asc">Precio (más barato primero)</option>
-        <option value="price-desc">Precio (más caro primero)</option>
-        <option value="discount-desc">% Descuento (mayor primero)</option>
-        <option value="discount-asc">% Descuento (menor primero)</option>
-        <option value="rating-desc">Metacritic (mayor primero)</option>
-        <option value="rating-asc">Metacritic (menor primero)</option>
-      </select>
-
-      <!-- BUSCADOR -->
-      <input
-        type="text"
-        id="searchInput"
-        placeholder="Buscar por nombre de juego..."
-      />
-    </div>
+  <!-- Header -->
+  <header class="bg-[var(--cafe-latte)] text-white p-4 flex justify-between items-center shadow-md">
+    <h1 class="text-2xl font-bold">Café Aroma</h1>
+    <nav>
+      <a href="#inicio" class="mx-2 hover:underline">Inicio</a>
+      <a href="#productos" class="mx-2 hover:underline">Productos</a>
+      <a href="#contacto" class="mx-2 hover:underline">Contacto</a>
+    </nav>
   </header>
 
-  <main>
-    <div class="stats" id="stats">
-      Cargando datos...
-    </div>
-    <div class="grid" id="gamesGrid"></div>
-    <div class="no-results" id="noResults" style="display:none;">
-      No se encontraron juegos con esos filtros.
-    </div>
-  </main>
+  <!-- Hero -->
+  <section id="inicio" class="text-center py-16 bg-[var(--beige2)]">
+    <h2 class="text-4xl font-bold mb-4">El mejor café, recién tostado</h2>
+    <p class="text-lg">Descubre nuestros granos seleccionados y bebidas artesanales</p>
+  </section>
 
-  <!-- MODAL DETALLE -->
-  <div id="detailOverlay" class="detail-overlay">
-    <div class="detail-modal">
-      <div class="detail-header">
-        <div>
-          <div id="detailTitle" class="detail-title"></div>
-          <div id="detailStore" class="badge-site" style="margin-top: 0.25rem;"></div>
-        </div>
-        <button class="detail-close" id="detailClose" aria-label="Cerrar detalle">✕</button>
+  <!-- Productos -->
+  <section id="productos" class="p-8">
+    <h3 class="text-3xl font-bold text-center mb-6">Nuestros productos</h3>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- Producto 1 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600" 
+             alt="Café espresso" class="rounded-xl mb-3">
+        <h4 class="text-xl font-semibold mb-1">Espresso</h4>
+        <p class="text-sm text-[var(--cafe-medio)] mb-2">Sabor intenso y aroma profundo.</p>
+        <p class="font-bold">₡1800</p>
       </div>
 
-      <div id="detailContent"></div>
-
-      <div class="detail-footer">
-        <button class="btn-link" id="detailStoreBtn" type="button">
-          Ver en tienda <span>↗</span>
-        </button>
+      <!-- Producto 2 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4">
+        <img src="https://images.unsplash.com/photo-1572448862529-4182de3b9f4b?w=600" 
+             alt="Café latte" class="rounded-xl mb-3">
+        <h4 class="text-xl font-semibold mb-1">Latte</h4>
+        <p class="text-sm text-[var(--cafe-medio)] mb-2">Leche espumosa con espresso suave.</p>
+        <p class="font-bold">₡2200</p>
       </div>
+
+      <!-- Producto 3 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4">
+        <img src="https://images.unsplash.com/photo-1613470201038-3cf3e5f9f53e?w=600" 
+             alt="Café frío" class="rounded-xl mb-3">
+        <h4 class="text-xl font-semibold mb-1">Cold Brew</h4>
+        <p class="text-sm text-[var(--cafe-medio)] mb-2">Café frío infusionado por 12 horas.</p>
+        <p class="font-bold">₡2500</p>
+      </div>
+
     </div>
-  </div>
+  </section>
 
-  <script>
-    const grid = document.getElementById("gamesGrid");
-    const statsEl = document.getElementById("stats");
-    const storeFilter = document.getElementById("storeFilter");
-    const formatFilter = document.getElementById("formatFilter");
-    const platformFilter = document.getElementById("platformFilter");
-    const orderSelect = document.getElementById("orderSelect");
-    const searchInput = document.getElementById("searchInput");
-    const noResultsEl = document.getElementById("noResults");
+  <!-- Contacto -->
+  <section id="contacto" class="bg-[var(--beige2)] py-10 text-center">
+    <h3 class="text-3xl font-bold mb-4">Contáctanos</h3>
+    <p class="mb-6">¿Quieres hacer un pedido o tienes consultas? Escríbenos por WhatsApp</p>
 
-    const detailOverlay = document.getElementById("detailOverlay");
-    const detailTitle = document.getElementById("detailTitle");
-    const detailStore = document.getElementById("detailStore");
-    const detailContent = document.getElementById("detailContent");
-    const detailClose = document.getElementById("detailClose");
-    const detailStoreBtn = document.getElementById("detailStoreBtn");
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/50660457872?text=Hola%20quiero%20información%20sobre%20sus%20cafés"
+       target="_blank"
+       class="bg-[var(--cafe-medio)] text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-[var(--cafe-oscuro)] transition">
+      📱 Enviar mensaje
+    </a>
+  </section>
 
-    let allGames = [];
+  <!-- Footer -->
+  <footer class="bg-[var(--cafe-latte)] text-white text-center py-4">
+    <p>© 2025 Café Aroma. Todos los derechos reservados.</p>
+  </footer>
 
-    function formatPrice(value) {
-  if (value === null || value === undefined || value === "" || isNaN(value)) {
-    return "N/D";
-  }
-  return "$" + Number(value).toFixed(2);
-}
-
-
-    function calcDiscountPercent(regular, discount) {
-      if (
-        regular === null || discount === null ||
-        regular === undefined || discount === undefined ||
-        isNaN(regular) || isNaN(discount) ||
-        regular <= 0
-      ) {
-        return null;
-      }
-      const pct = Math.round((1 - (discount / regular)) * 100);
-      if (!isFinite(pct) || pct <= 0) return null;
-      return pct;
-    }
-
-    function capitalizeSite(site) {
-      if (!site) return "";
-      if (site.toLowerCase() === "gmg") return "Green Man Gaming";
-      if (site.toLowerCase() === "gog") return "GOG";
-      if (site.toLowerCase() === "steam") return "Steam";
-      return site.toUpperCase();
-    }
-
-    function normalizedFormat(raw) {
-      const t = (raw || "").toLowerCase();
-      const hasDigital = t.includes("digital");
-      const hasFisico = t.includes("físico") || t.includes("fisico");
-
-      if (hasDigital && hasFisico) return "mixto";
-      if (hasDigital) return "digital";
-      if (hasFisico) return "fisico";
-      if (!t) return "otro";
-      return "otro";
-    }
-
-    function openDetail(game) {
-      const regular = Number(game.price_regular);
-      const discount = Number(game.price_discount);
-      const pct = calcDiscountPercent(regular, discount);
-      const discountText = pct ? `-${pct}%` : "Sin descuento";
-
-      detailTitle.textContent = game.name || "Juego sin nombre";
-      detailStore.textContent = capitalizeSite(game.site);
-
-      const hltb = game.howlongtobeat ? `${game.howlongtobeat} h aprox.` : "N/D";
-      const dist = game.distribution_type || "Digital";
-      const platforms = (game.platforms || []).join(", ") || "N/D";
-      const rating = game.rating || "N/D";
-
-      detailContent.innerHTML = `
-        <div class="detail-row">
-          <span class="detail-label">Precio:</span>
-          <span class="detail-value">
-            <span class="detail-highlight">${formatPrice(discount)}</span>
-            ${
-              regular && discount && regular !== discount
-                ? ` <span style="text-decoration: line-through; color:#6b7280;">${formatPrice(regular)}</span>`
-                : ""
-            }
-            <span style="margin-left:0.4rem; font-size:0.85rem; color:${pct ? "#f97316" : "#9ca3af"};">
-              ${discountText}
-            </span>
-          </span>
-        </div>
-
-        <div class="detail-row">
-          <span class="detail-label">Metacritic:</span>
-          <span class="detail-value">${rating}</span>
-        </div>
-
-        <div class="detail-row">
-          <span class="detail-label">Duración:</span>
-          <span class="detail-value">${hltb}</span>
-        </div>
-
-        <div class="detail-row">
-          <span class="detail-label">Formato:</span>
-          <span class="detail-value">${dist}</span>
-        </div>
-
-        <div class="detail-row">
-          <span class="detail-label">Plataformas:</span>
-          <span class="detail-value">${platforms}</span>
-        </div>
-      `;
-
-      if (game.url) {
-        detailStoreBtn.onclick = () => {
-          window.open(game.url, "_blank", "noopener");
-        };
-        detailStoreBtn.disabled = false;
-      } else {
-        detailStoreBtn.onclick = null;
-        detailStoreBtn.disabled = true;
-      }
-
-      detailOverlay.classList.add("active");
-    }
-
-    function closeDetail() {
-      detailOverlay.classList.remove("active");
-    }
-
-    function renderGames() {
-      const storeVal = storeFilter.value;
-      const formatVal = formatFilter.value;
-      const platformVal = platformFilter.value;
-      const query = searchInput.value.trim().toLowerCase();
-
-      let filtered = allGames.slice();
-
-      // FILTRO POR TIENDA
-      if (storeVal !== "all") {
-        filtered = filtered.filter(g => (g.site || "").toLowerCase() === storeVal);
-      }
-
-      // FILTRO POR FORMATO (solo digital / fisico)
-      if (formatVal !== "all") {
-        filtered = filtered.filter(g => {
-          const f = normalizedFormat(g.distribution_type);
-          return f === formatVal;
-        });
-      }
-
-      // FILTRO POR PLATAFORMA
-      if (platformVal !== "all") {
-        filtered = filtered.filter(g =>
-          (g.platforms || []).map(p => String(p)).includes(platformVal)
-        );
-      }
-
-      // FILTRO POR TEXTO
-      if (query) {
-        filtered = filtered.filter(g =>
-          (g.name || "").toLowerCase().includes(query)
-        );
-      }
-
-      // ORDENAMIENTO
-      const sortVal = orderSelect.value;
-      if (sortVal !== "default") {
-        filtered.sort((a, b) => {
-          const aReg = Number(a.price_regular);
-          const aDis = Number(a.price_discount);
-          const bReg = Number(b.price_regular);
-          const bDis = Number(b.price_discount);
-          const aPct = calcDiscountPercent(aReg, aDis) ?? -1;
-          const bPct = calcDiscountPercent(bReg, bDis) ?? -1;
-
-          switch (sortVal) {
-            case "name-asc":
-              return (a.name || "").localeCompare(b.name || "");
-            case "name-desc":
-              return (b.name || "").localeCompare(a.name || "");
-            case "price-asc": {
-              const pa = isNaN(aDis) ? Infinity : aDis;
-              const pb = isNaN(bDis) ? Infinity : bDis;
-              return pa - pb;
-            }
-            case "price-desc": {
-              const pa = isNaN(aDis) ? -Infinity : aDis;
-              const pb = isNaN(bDis) ? -Infinity : bDis;
-              return pb - pa;
-            }
-            case "discount-desc":
-              return bPct - aPct;
-            case "discount-asc":
-              return aPct - bPct;
-            case "rating-desc": {
-              const ra = Number(a.rating) || 0;
-              const rb = Number(b.rating) || 0;
-              return rb - ra;
-            }
-            case "rating-asc": {
-              const ra2 = Number(a.rating) || 0;
-              const rb2 = Number(b.rating) || 0;
-              return ra2 - rb2;
-            }
-            default:
-              return 0;
-          }
-        });
-      }
-
-      // RENDER
-      grid.innerHTML = "";
-
-      if (filtered.length === 0) {
-        noResultsEl.style.display = "block";
-      } else {
-        noResultsEl.style.display = "none";
-      }
-
-      filtered.forEach(game => {
-        const regular = Number(game.price_regular);
-        const discount = Number(game.price_discount);
-        const pct = calcDiscountPercent(regular, discount);
-
-        const card = document.createElement("article");
-        card.className = "card";
-
-        const imgSrc = game.image_url || "https://via.placeholder.com/460x215/333333/ffffff?text=Juego";
-
-        const discountLabel = pct
-          ? `<span class="discount-label">-${pct}%</span>`
-          : `<span class="discount-label no-discount">Sin descuento</span>`;
-
-        card.innerHTML = `
-          <img src="${imgSrc}" alt="${game.name || "Juego"}" loading="lazy" />
-          <div class="card-body">
-            <div class="title-row">
-              <h2 class="card-title" title="${game.name || ""}">${game.name || "Juego sin nombre"}</h2>
-              <span class="badge-site">${capitalizeSite(game.site)}</span>
-            </div>
-
-            <div class="price-row">
-              <span class="price-discount">${formatPrice(discount)}</span>
-              ${
-                regular && discount && regular !== discount
-                  ? `<span class="price-regular">${formatPrice(regular)}</span>`
-                  : ""
-              }
-              ${discountLabel}
-            </div>
-
-            <div class="meta-row">
-              <span class="rating">⭐ Metacritic: ${game.rating || "N/D"}</span>
-              <span class="hltb">⏱ ${game.howlongtobeat ? game.howlongtobeat + " h" : "N/D"}</span>
-              <span class="dist">${game.distribution_type || "Digital"}</span>
-              <span class="platforms">${(game.platforms || []).join(", ") || "N/D"}</span>
-            </div>
-
-            <div class="card-footer">
-              <button class="btn-link btn-secondary btn-detail" data-id="${game._id}" type="button">
-                Ver detalle
-              </button>
-              <a class="btn-link" href="${game.url || "#"}" target="_blank" rel="noopener noreferrer">
-                Ver en tienda
-                <span>↗</span>
-              </a>
-            </div>
-          </div>
-        `;
-
-        grid.appendChild(card);
-      });
-
-      const total = allGames.length;
-      const current = filtered.length;
-      const bySite = {
-        steam: allGames.filter(g => (g.site || "").toLowerCase() === "steam").length,
-        gog: allGames.filter(g => (g.site || "").toLowerCase() === "gog").length,
-        gmg: allGames.filter(g => (g.site || "").toLowerCase() === "gmg").length,
-      };
-
-      const now = new Date();
-      const formattedDate = now.toLocaleString("es-CR", {
-        dateStyle: "short",
-        timeStyle: "short"
-      });
-
-      statsEl.innerHTML = `
-        Mostrando <strong>${current}</strong> de <strong>${total}</strong> juegos. 
-        Steam: ${bySite.steam} · GOG: ${bySite.gog} · GMG: ${bySite.gmg} 
-        <span class="updated-at">| Última actualización local: ${formattedDate}</span>
-      `;
-    }
-
-    function fillPlatformFilter() {
-      const set = new Set(["PC", "PlayStation", "Xbox"]); // siempre visibles
-
-      allGames.forEach(g => {
-        (g.platforms || []).forEach(p => {
-          if (p) set.add(String(p));
-        });
-      });
-
-      platformFilter.innerHTML = '<option value="all">Todas las plataformas</option>';
-      Array.from(set).sort().forEach(p => {
-        const opt = document.createElement("option");
-        opt.value = p;
-        opt.textContent = p;
-        platformFilter.appendChild(opt);
-      });
-    }
-
-    async function loadData() {
-      try {
-        const res = await fetch("results.json?_=" + Date.now());
-        if (!res.ok) {
-          statsEl.textContent = "No se pudo cargar results.json. Revisa que el archivo exista en el mismo directorio.";
-          return;
-        }
-        const data = await res.json();
-        if (!Array.isArray(data)) {
-          statsEl.textContent = "El formato de results.json no es un arreglo.";
-          return;
-        }
-        allGames = data.map((g, idx) => ({ ...g, _id: idx }));
-        fillPlatformFilter();
-        renderGames();
-      } catch (err) {
-        console.error(err);
-        statsEl.textContent = "Error cargando los datos.";
-      }
-    }
-
-    storeFilter.addEventListener("change", renderGames);
-    formatFilter.addEventListener("change", renderGames);
-    platformFilter.addEventListener("change", renderGames);
-    orderSelect.addEventListener("change", renderGames);
-    searchInput.addEventListener("input", renderGames);
-
-    grid.addEventListener("click", (e) => {
-      const btn = e.target.closest(".btn-detail");
-      if (!btn) return;
-      const id = btn.getAttribute("data-id");
-      const game = allGames.find(g => String(g._id) === String(id));
-      if (game) {
-        openDetail(game);
-      }
-    });
-
-    detailClose.addEventListener("click", closeDetail);
-    detailOverlay.addEventListener("click", (e) => {
-      if (e.target === detailOverlay) {
-        closeDetail();
-      }
-    });
-
-    loadData();
-  </script>
 </body>
 </html>
