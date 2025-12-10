@@ -1,96 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CANI CAFE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CANI CAFE - Pedidos</title>
 
-  <!-- TailwindCSS CDN -->
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Paleta personalizada -->
   <style>
-    :root {
-      --cafe-oscuro: #4b2e05;
-      --cafe-medio: #6b4423;
-      --cafe-latte: #a47148;
-      --beige: #f3e9dc;
-      --beige2: #e9d4b3;
+    body {
+      background: #f3e9dc;
+      color: #4b2e05;
+      font-family: "Inter", sans-serif;
+    }
+
+    .card {
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.04);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    /* Animación suave al cargar */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn .8s forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
     }
   </style>
 </head>
 
-<body class="bg-[var(--beige)] text-[var(--cafe-oscuro)]">
+<body>
 
   <!-- Header -->
-  <header class="bg-[var(--cafe-latte)] text-white p-4 flex justify-between items-center shadow-md">
-    <h1 class="text-2xl font-bold">CANI CAFE</h1>
-    <nav>
-      <a href="#inicio" class="mx-2 hover:underline">Inicio</a>
-      <a href="#productos" class="mx-2 hover:underline">Productos</a>
-      <a href="#contacto" class="mx-2 hover:underline">Contacto</a>
-    </nav>
+  <header class="bg-[#a47148] text-white p-5 shadow-md flex justify-between items-center">
+    <h1 class="text-3xl font-bold tracking-wide">☕ CANI CAFE</h1>
   </header>
 
   <!-- Hero -->
-  <section id="inicio" class="text-center py-16 bg-[var(--beige2)]">
-    <h2 class="text-4xl font-bold mb-4">Café de Especialidad</h2>
-    <p class="text-lg">Descubre nuestros granos seleccionados y bebidas artesanales</p>
+  <section class="fade-in text-center py-14 bg-[#e9d4b3]">
+    <h2 class="text-4xl font-bold mb-3">El mejor café artesanal</h2>
+    <p class="text-lg">Selecciona tus productos y envía tu pedido directamente por WhatsApp</p>
   </section>
 
   <!-- Productos -->
-  <section id="productos" class="p-8">
-    <h3 class="text-3xl font-bold text-center mb-6">Nuestros productos</h3>
+  <section class="p-8 fade-in">
+    <h3 class="text-3xl font-bold text-center mb-8">Nuestro Menú</h3>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-
-      <!-- Producto 1 -->
-      <div class="bg-white rounded-2xl shadow-lg p-4">
-        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600" 
-             alt="Café espresso" class="rounded-xl mb-3">
-        <h4 class="text-xl font-semibold mb-1">Espresso</h4>
-        <p class="text-sm text-[var(--cafe-medio)] mb-2">Sabor intenso y aroma profundo.</p>
-        <p class="font-bold">₡1800</p>
-      </div>
-
-      <!-- Producto 2 -->
-      <div class="bg-white rounded-2xl shadow-lg p-4">
-        <img src="https://images.unsplash.com/photo-1572448862529-4182de3b9f4b?w=600" 
-             alt="Café latte" class="rounded-xl mb-3">
-        <h4 class="text-xl font-semibold mb-1">Latte</h4>
-        <p class="text-sm text-[var(--cafe-medio)] mb-2">Leche espumosa con espresso suave.</p>
-        <p class="font-bold">₡2200</p>
-      </div>
-
-      <!-- Producto 3 -->
-      <div class="bg-white rounded-2xl shadow-lg p-4">
-        <img src="https://images.unsplash.com/photo-1613470201038-3cf3e5f9f53e?w=600" 
-             alt="Café frío" class="rounded-xl mb-3">
-        <h4 class="text-xl font-semibold mb-1">Cold Brew</h4>
-        <p class="text-sm text-[var(--cafe-medio)] mb-2">Café frío infusionado por 12 horas.</p>
-        <p class="font-bold">₡2500</p>
-      </div>
-
-    </div>
+    <div id="productos" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"></div>
   </section>
 
-  <!-- Contacto -->
-  <section id="contacto" class="bg-[var(--beige2)] py-10 text-center">
-    <h3 class="text-3xl font-bold mb-4">Contáctanos</h3>
-    <p class="mb-6">¿Quieres hacer un pedido o tienes consultas? Escríbenos por WhatsApp</p>
+  <!-- Enviar pedido -->
+  <section class="bg-[#e9d4b3] text-center py-10 fade-in">
+    <h3 class="text-3xl font-bold mb-4">Enviar Pedido</h3>
+    <p class="mb-4">Revisa tus cantidades y envía tu pedido directo a WhatsApp</p>
 
-    <!-- Botón de WhatsApp -->
-    <a href="https://wa.me/50660457872?text=Hola%20quiero%20información%20sobre%20sus%20cafés"
-       target="_blank"
-       class="bg-[var(--cafe-medio)] text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-[var(--cafe-oscuro)] transition">
-      📱 Enviar mensaje
-    </a>
+    <button
+      onclick="enviarPedido()"
+      class="bg-[#6b4423] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#4b2e05] transition shadow-lg">
+      📲 Enviar pedido por WhatsApp
+    </button>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-[var(--cafe-latte)] text-white text-center py-4">
-    <p>© 2025 CANI CAFE. Todos los derechos reservados.</p>
+  <footer class="bg-[#a47148] text-white text-center py-5 mt-10">
+    © 2025 CANI CAFE. Elaborado con amor y café.
   </footer>
+
+
+<script>
+  // BASE DE PRODUCTOS
+  const productos = [
+    {
+      nombre: "Espresso",
+      precio: 1800,
+      img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600"
+    },
+    {
+      nombre: "Latte",
+      precio: 2200,
+      img: "https://images.unsplash.com/photo-1572448862529-4182de3b9f4b?w=600"
+    },
+    {
+      nombre: "Cold Brew",
+      precio: 2500,
+      img: "https://images.unsplash.com/photo-1613470201038-3cf3e5f9f53e?w=600"
+    },
+    {
+      nombre: "Capuchino",
+      precio: 2000,
+      img: "https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=600"
+    },
+    {
+      nombre: "Mocaccino",
+      precio: 2600,
+      img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600"
+    },
+    {
+      nombre: "Café Negro",
+      precio: 1500,
+      img: "https://images.unsplash.com/photo-1525382455947-f319bc05fb35?w=600"
+    }
+  ];
+
+  // Pintar productos dinámicamente
+  const contenedor = document.getElementById("productos");
+  productos.forEach((p, i) => {
+    contenedor.innerHTML += `
+      <div class="card bg-white rounded-2xl shadow-lg p-4">
+        <img src="${p.img}" class="rounded-xl mb-3 h-48 w-full object-cover">
+        <h4 class="text-2xl font-bold">${p.nombre}</h4>
+        <p class="text-[#6b4423] mb-2">Delicioso y artesanal</p>
+        <p class="font-bold mb-3">₡${p.precio}</p>
+
+        <label class="font-semibold">Cantidad:</label>
+        <input type="number" id="prod_${i}" min="0" value="0"
+               class="border rounded p-2 w-20 mt-1">
+      </div>
+    `;
+  });
+
+  // Crear el mensaje de WhatsApp
+  function enviarPedido() {
+    let mensaje = "Hola! Me gustaría hacer un pedido:%0A%0A";
+
+    let hayPedido = false;
+
+    productos.forEach((p, i) => {
+      const cant = document.getElementById(`prod_${i}`).value;
+      if (cant > 0) {
+        hayPedido = true;
+        mensaje += `• ${p.nombre} x${cant} = ₡${p.precio * cant}%0A`;
+      }
+    });
+
+    if (!hayPedido) {
+      alert("Por favor selecciona al menos un producto.");
+      return;
+    }
+
+    mensaje += "%0AGracias!";
+
+    const numero = "50660457872";
+    const url = `https://wa.me/${numero}?text=${mensaje}`;
+
+    window.open(url, "_blank");
+  }
+</script>
 
 </body>
 </html>
