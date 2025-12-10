@@ -118,25 +118,27 @@
     `;
   });
 
-  function enviarPedido() {
-    let mensaje = "Hola! Me gustaría hacer un pedido:%0A%0A";
-    let hayPedido = false;
+function enviarPedido() {
+  let mensaje = "Hola! Me gustaría hacer un pedido:%0A%0A";
+  let hayPedido = false;
 
-    productos.forEach((p, i) => {
-      const cant = document.getElementById(`prod_${i}`).value;
-      if (cant > 0) {
-        hayPedido = true;
-        mensaje += `• ${p.nombre} x${cant} = ₡${p.precio * cant}%0A`;
-      }
-    });
+  productos.forEach((p, i) => {
+    const cant = document.getElementById(`prod_${i}`).value;
+    if (cant > 0) {
+      hayPedido = true;
 
-    if (!hayPedido) return alert("Debes elegir al menos un producto.");
+      mensaje += `• ${cant} ${p.nombre} = ₡${p.precio * cant}%0A`;
+    }
+  });
 
-    mensaje += "%0A¡Gracias!";
+  if (!hayPedido) return alert("Debes elegir al menos un producto.");
 
-    const numero = "50660457872";
-    window.open(`https://wa.me/${numero}?text=${mensaje}`, "_blank");
-  }
+  mensaje += "%0A¡Gracias!";
+
+  const numero = "50660457872";
+  window.open(`https://wa.me/${numero}?text=${mensaje}`, "_blank");
+}
+
 </script>
 
 </body>
