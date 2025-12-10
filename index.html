@@ -3,34 +3,43 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Café Aroma</title>
+<title>Café Aroma Deluxe</title>
 
 <!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- TIPOGRAFÍA PREMIUM -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<!-- TIPOGRAFÍAS PREMIUM -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Marcellus&family=Parisienne&display=swap" rel="stylesheet">
 
 <style>
   body {
-    font-family: "Inter", sans-serif;
-    background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&w=1600&q=80') no-repeat center center / cover;
-    color: #3c2a21;
+    background: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&w=1800&q=80')
+               no-repeat center center/cover fixed;
+    color: #3a2b23;
+    font-family: "Poppins", sans-serif;
   }
 
   .titulo {
-    font-family: "Playfair Display", serif;
+    font-family: "Marcellus", serif;
+    letter-spacing: 1px;
+  }
+
+  .script {
+    font-family: "Parisienne", cursive;
   }
 
   .card {
-    backdrop-filter: blur(6px);
-    background: rgba(255, 255, 255, 0.80);
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 22px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.28);
     transition: 0.25s ease;
+    backdrop-filter: blur(4px);
   }
 
   .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
   }
 
   .fade-in {
@@ -41,71 +50,70 @@
   @keyframes fadeIn {
     to { opacity: 1; }
   }
-
 </style>
 </head>
 
 <body>
 
 <!-- HEADER -->
-<header class="bg-[#5c3d2e]/90 shadow-lg backdrop-blur-md text-white p-6 flex justify-between items-center">
-  <h1 class="text-4xl titulo font-bold">Café Aroma</h1>
+<header class="bg-black/70 text-white backdrop-blur-md p-6 flex justify-between items-center shadow-lg">
+  <h1 class="text-4xl titulo font-bold">Café Aroma Deluxe</h1>
 </header>
 
 <!-- HERO -->
-<section class="text-center py-24 fade-in bg-gradient-to-b from-black/60 to-black/20 text-white"
-         style="background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.1)), 
-                url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80') center/cover;">
-  <h2 class="text-5xl titulo font-bold mb-4 drop-shadow-lg">El sabor que enamora</h2>
-  <p class="text-xl">Café artesanal, ambiente cálido, experiencia única</p>
+<section class="text-center py-28 fade-in text-white"
+         style="background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.2)), 
+                url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&w=1800&q=80') center/cover;">
+  <h2 class="text-6xl script mb-4 drop-shadow-xl">Pasión por el café</h2>
+  <p class="text-xl mt-4">Sabores artesanales, aromas únicos y una experiencia inolvidable</p>
 </section>
 
 <!-- MENÚ -->
-<section class="p-10 fade-in">
-  <h3 class="text-4xl titulo font-bold text-center mb-10">Nuestro Menú</h3>
+<section class="p-12 fade-in">
+  <h3 class="text-5xl titulo font-bold text-center mb-12">Menú Especial</h3>
 
-  <div id="productos" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10"></div>
+  <div id="productos" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12"></div>
 </section>
 
-<!-- BOTÓN WHATSAPP -->
-<section class="text-center py-16 bg-black/30 backdrop-blur-md text-white fade-in">
-  <h3 class="text-4xl titulo font-bold mb-4">¿Listo para ordenar?</h3>
-  <p class="mb-6 text-lg">Selecciona tus bebidas y envía tu pedido directo por WhatsApp</p>
+<!-- WHATSAPP -->
+<section class="text-center py-16 bg-black/50 text-white backdrop-blur-md fade-in">
+  <h3 class="text-4xl titulo mb-4">¿Deseas realizar un pedido?</h3>
+  <p class="mb-6 text-lg">Selecciona tus bebidas y envía tu orden directamente por WhatsApp</p>
 
   <button onclick="enviarPedido()"
-    class="bg-green-600 hover:bg-green-700 px-8 py-4 rounded-full text-xl font-semibold shadow-xl transition">
+    class="bg-[#d4a574] hover:bg-[#c38f55] px-10 py-4 rounded-full text-xl font-semibold shadow-2xl transition">
     📲 Enviar pedido por WhatsApp
   </button>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-[#5c3d2e]/90 text-white text-center py-6">
-  © 2025 Café Aroma · Elaborado con amor y café ☕
+<footer class="bg-black/70 text-white text-center py-6">
+  © 2025 Café Aroma Deluxe · Donde el sabor se convierte en arte ☕
 </footer>
 
 <script>
   const productos = [
-    { nombre: "Espresso", precio: 1800, img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600" },
-    { nombre: "Latte", precio: 2200, img: "https://images.unsplash.com/photo-1572448862529-4182de3b9f4b?w=600" },
-    { nombre: "Cold Brew", precio: 2500, img: "https://images.unsplash.com/photo-1613470201038-3cf3e5f9f53e?w=600" },
-    { nombre: "Capuchino", precio: 2000, img: "https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=600" },
-    { nombre: "Mocaccino", precio: 2600, img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600" },
-    { nombre: "Café Negro", precio: 1500, img: "https://images.unsplash.com/photo-1525382455947-f319bc05fb35?w=600" }
+    { nombre: "Espresso Doble", precio: 2000, img: "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=600" },
+    { nombre: "Latte Vainilla", precio: 2600, img: "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=600" },
+    { nombre: "Cold Brew Especial", precio: 2800, img: "https://images.unsplash.com/photo-1536520002442-39764a41e067?w=600" },
+    { nombre: "Capuchino Cremoso", precio: 2400, img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600" },
+    { nombre: "Mocaccino Deluxe", precio: 2900, img: "https://images.unsplash.com/photo-1527293808688-4f7f3c145a63?w=600" },
+    { nombre: "Café Tradicional", precio: 1600, img: "https://images.unsplash.com/photo-1459755486867-b55449bb39ff?w=600" }
   ];
 
-  // Pintar productos
+  // Mostrar productos
   const contenedor = document.getElementById("productos");
   productos.forEach((p, i) => {
     contenedor.innerHTML += `
-      <div class="card rounded-2xl shadow-lg p-6">
-        <img src="${p.img}" class="rounded-xl mb-4 h-52 w-full object-cover shadow">
-        <h4 class="text-2xl titulo font-bold">${p.nombre}</h4>
-        <p class="text-[#6b4e3a] mb-2">Artesanal y delicioso</p>
-        <p class="font-bold text-xl mb-4">₡${p.precio}</p>
+      <div class="card">
+        <img src="${p.img}" class="rounded-xl mb-4 h-56 w-full object-cover shadow-lg">
+        <h4 class="text-3xl titulo font-bold">${p.nombre}</h4>
+        <p class="text-[#6b4e3a] mb-2">Bebida artesanal</p>
+        <p class="font-bold text-2xl mb-4">₡${p.precio}</p>
 
-        <label class="font-semibold">Cantidad:</label>
+        <label class="font-semibold text-lg">Cantidad:</label>
         <input type="number" id="prod_${i}" min="0" value="0"
-               class="border rounded p-2 w-20 mt-1 bg-white/80">
+               class="border rounded-lg p-2 w-20 mt-1 bg-white/80 shadow-inner">
       </div>
     `;
   });
@@ -122,7 +130,7 @@
       }
     });
 
-    if (!hayPedido) return alert("Selecciona al menos un producto.");
+    if (!hayPedido) return alert("Debes elegir al menos un producto.");
 
     mensaje += "%0A¡Gracias!";
 
